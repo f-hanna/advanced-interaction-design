@@ -66,7 +66,7 @@ body {
 #c-3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
 }
 
@@ -120,3 +120,14 @@ body {
 }
 
 /************* ROW 2 ********************/
+
+#c-6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.c6-child {
+   background-color: var(--cyan);
+   transition: opacity 0.5s ease; 
+}

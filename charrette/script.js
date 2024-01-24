@@ -14,14 +14,14 @@ c2.addEventListener("click", function () {
 
     setTimeout(function () {
         circleDiv.classList.add("bg-fill-animation");
-        circleDiv.style.backgroundColor = "rgb(255, 204, 0)"; 
+        circleDiv.style.backgroundColor = "rgb(255, 204, 0)";
     }, 300); // Adjust the delay as needed   
 });
 
 //c-3
 var c3 = document.getElementById("c-3");
 // Create div elements dynamically
-for (var i = 0; i < 18; i++) {
+for (var i = 0; i < 24; i++) {
     // Create a new div element
     var newDiv = document.createElement("div");
 
@@ -52,8 +52,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // c-5
 var c5 = document.getElementById("c-5")
 c5.addEventListener("click", function () {
-    document.getElementById("c5-text").textContent +="H"
+    document.getElementById("c5-text").textContent += "H"
 });
 
 /************* ROW 2 ********************/
+
+// c-6
+var c6 = document.getElementById("c-6");
+c6.addEventListener("click", function () {
+    setInterval(function () {
+        var childDivs = c6.querySelectorAll(".c6-child");
+
+        childDivs.forEach((child) => {
+            var randomOpacity = Math.random();
+            child.style.opacity = randomOpacity;
+        });
+    }, 500); // Adjust the interval (in milliseconds) as needed
+
+});
 
