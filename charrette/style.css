@@ -930,6 +930,7 @@ h1 {
 }
 
 /************ ROW 9  ************/
+/* c-41 */
 #c-41 {
     display: flex;
     justify-content: center;
@@ -957,6 +958,14 @@ h1 {
     to {
         border-width: 20px;
     }
+}
+
+/* c-42 */
+#c-42 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
 }
 
 

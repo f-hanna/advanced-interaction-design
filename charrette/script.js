@@ -300,7 +300,7 @@ var c33icon = document.querySelector(".c33-icon"); // Use class selector
 c33.addEventListener("click", function () {
     c33.style.position = "sticky"
     c33.style.top = "400px";
-    c33.style.backgroundColor = "transparent" 
+    c33.style.backgroundColor = "transparent"
     c33.style.border = "none";
 
 });
@@ -323,13 +323,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var c35Ball = document.createElement("div");
     c35Ball.id = "c35-ball";
     c35Container.appendChild(c35Ball);
-  
+
     c35Container.addEventListener("click", function () {
-      c35Ball.style.animation = "none";
-      c35Ball.offsetHeight; 
-      c35Ball.style.animation = "bounce 1s";
+        c35Ball.style.animation = "none";
+        c35Ball.offsetHeight;
+        c35Ball.style.animation = "bounce 1s";
     });
-  });
+});
 
 //***************ROW 8 */
 // c-36
@@ -373,12 +373,24 @@ $("#c-39").click(function () {
 });
 
 // ********* ROW 9 ******************
+// c-41
 $("#c-41").click(function () {
     $("#c41-circle").addClass("animating");
-    
+
+});
+
+// c-42
+var c42 = document.getElementById("c-42");
+
+c42.addEventListener("click", function () {
+    var poofElements = document.querySelectorAll('.poof');
+
+    poofElements.forEach(function (poof) {
+        poof.style.display = 'none';
+    });
 });
 
 
-  
+
 
 
