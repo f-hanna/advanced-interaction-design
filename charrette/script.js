@@ -168,8 +168,7 @@ $("#c-16").click(function () {
 // c-18
 var c18hover = false;
 
-// Assuming you want this to happen on hover, you can use the hover event
-$("#c-18").click(function() {
+$("#c-18").click(function () {
     if (!c18hover) {
         $(this).addClass("c18-expand");
         c18hover = true;
@@ -182,7 +181,7 @@ $("#c-18").click(function() {
 // c-20
 var c20click = false;
 
-$("#c-20").click(function() {
+$("#c-20").click(function () {
     if (!c20click) {
         $(".container").addClass("c20-up");
         c20click = true;
@@ -190,5 +189,46 @@ $("#c-20").click(function() {
         $(".container").removeClass("c20-up");
         c20click = false;
     }
+});
+
+// c-21
+var c21 = document.getElementById("c-21");
+
+for (var i = 0; i < 24; i++) {
+    var newDiv = document.createElement("div");
+    newDiv.classList.add("c21-child");
+    var starIcon = document.createElement("i");
+    starIcon.className = "fa-solid fa-star";
+    newDiv.appendChild(starIcon);
+    c21.appendChild(newDiv);
+}
+
+// c-22
+var c22click = false;
+$("#c-22").click(function () {
+    if (!c20click) {
+        $(".grid-container").addClass("inverted-colors");
+        c20click = true;
+    } else {
+        $(".grid-container").removeClass("inverted-colors");
+        c20click = false;
+    }
+});
+
+// c-23
+var c23Container = document.getElementById("c-23");
+var c23Circle = document.getElementById("c23-circle");
+
+c23Container.addEventListener("click", function () {
+    c23Circle.classList.add("animate-circle");
+});
+
+// c-25 
+
+$("#c25-square").click(function(){
+    
+    $("#c25-square").css("height", "100px");
+    $("#c25-square").css("width", "80%");
+    $("#c25-square").css("border-radius", "0");
 });
 
