@@ -257,7 +257,7 @@ body {
 
 /* c-13 */
 #c-13 {
-    color: var(--indigo);
+    background-color: var(--indigo);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -299,3 +299,37 @@ body {
         /* transform: translateY(0);  */
       }
   }
+
+  /* c-14 */
+  #c-14 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    padding: 2px;
+  }
+
+  .c14-s {
+    background-color: var(--cyan);
+    /* padding: 10px; */
+    /* text-align: center; */
+    
+}
+
+/* c-15 */
+#c-15 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: var(--blue);
+    transition: transform 1s ease; /* Smooth transition effect */
+}
+
+#c-15:hover .square {
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}

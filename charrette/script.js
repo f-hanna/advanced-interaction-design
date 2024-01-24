@@ -133,7 +133,7 @@ c11.addEventListener("click", function () {
 
 // c-12
 var c12 = document.getElementById("c-12");
-c12.addEventListener("click", function(){
+c12.addEventListener("click", function () {
     var c12text = document.getElementById("c12-text");
     var c12content = c12text.textContent;
 
@@ -143,8 +143,19 @@ c12.addEventListener("click", function(){
 // c-13 
 var c13 = document.getElementById("c-13");
 
-  c13.addEventListener("click", function () {
+c13.addEventListener("click", function () {
     var c13text = document.getElementById("c13-text");
     c13text.classList.add("animateLoop");
-  });
+});
+
+//c-14
+var c14 = document.getElementById("c-14");
+
+c14.addEventListener("click", function () {
+    var c14Child = document.getElementsByClassName("c14-s")
+
+    Array.from(c14Child).forEach((child) => {
+        child.style.borderRadius = "50%";
+    })
+});
 
