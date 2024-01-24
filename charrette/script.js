@@ -277,7 +277,7 @@ $("#c-28").click(function () {
 var c29click = false;
 $("#c-29").click(function () {
     if (!c29click) {
-        $(".c29-square").css("width", "400px"); 
+        $(".c29-square").css("width", "400px");
         c29click = true;
     } else {
         $(".c29-square").css("width", "20px");
@@ -285,5 +285,51 @@ $("#c-29").click(function () {
     }
 });
 
+/*********** ROW 7 **********/
+
+// c-32
+var c32Container = document.getElementById("c-32");
+var c32Spinner = document.getElementById("c32-spinner");
+c32Container.addEventListener("click", function () {
+    c32Spinner.classList.add("spin-animation");
+});
+
+// c-33
+var c33 = document.getElementById("c-33");
+var c33icon = document.querySelector(".c33-icon"); // Use class selector
+c33.addEventListener("click", function () {
+    c33.style.position = "sticky"
+    c33.style.top = "400px";
+    c33.style.backgroundColor = "transparent" 
+    c33.style.border = "none";
+
+});
+
+// c-34
+var c34click = false;
+$("#c-34").click(function () {
+    if (!c34click) {
+        $(".container").addClass("c34-blur");
+        c34click = true;
+    } else {
+        $(".container").removeClass("c34-blur");
+        c34click = false;
+    }
+});
+
+// c-35
+document.addEventListener("DOMContentLoaded", function () {
+    var c35Container = document.getElementById("c-35");
+    var c35Ball = document.createElement("div");
+    c35Ball.id = "c35-ball";
+    c35Container.appendChild(c35Ball);
+  
+    c35Container.addEventListener("click", function () {
+      c35Ball.style.animation = "none";
+      c35Ball.offsetHeight; 
+      c35Ball.style.animation = "bounce 1s";
+    });
+  });
+  
 
 

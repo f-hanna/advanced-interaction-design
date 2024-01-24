@@ -648,7 +648,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: none;
-  
+
 }
 
 .c29-square {
@@ -696,6 +696,151 @@ body {
 #c-30 i:hover {
     color: var(--purple);
     transition: all 1s ease;
+}
+
+/*********** ROW 7 **********/
+/* c-31 */
+#c-31 {
+    background-color: var(--yellow);
+
+}
+
+#c-31:hover {
+    animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+/* c-32 */
+#c-32 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+
+
+}
+
+#c32-spinner {
+    border: 8px solid white;
+    border-radius: 50%;
+    border-top: 8px solid var(--purple);
+    width: 60px;
+    height: 60px;
+
+}
+
+#c32-spinner.spin-animation {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* c-33 */
+#c-33 {
+    background-color: var(--indigo);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-33 i {
+    color: var(--cyan);
+    font-size: 84px;
+    transition: transform 0.2s ease;
+}
+
+/* c-34 */
+#c-34 {
+    background-color: var(--pink);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c34-blur {
+    filter: blur(10px);
+}
+
+/* c-35 */
+#c-35 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c35-ball {
+    width: 50px;
+    height: 50px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: relative;
+    /* animation: bounce 1s infinite; */
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Bounce at the top position */
+    }
+
+    40% {
+        transform: translateY(-60px);
+        /* Bounce at the bottom position */
+    }
+
+    60% {
+        transform: translateY(-40px);
+        /* Bounce at a mid-height position */
+    }
 }
 
 
