@@ -225,10 +225,65 @@ c23Container.addEventListener("click", function () {
 
 // c-25 
 
-$("#c25-square").click(function(){
-    
+$("#c25-square").click(function () {
+
     $("#c25-square").css("height", "100px");
     $("#c25-square").css("width", "80%");
     $("#c25-square").css("border-radius", "0");
 });
+
+/*********** ROW 6 **************/
+// c-26
+var c26click = false;
+$("#c-26").click(function () {
+    if (!c26click) {
+
+        $(".grid-container").addClass("black-white");
+        alert("We are always watching.")
+        c26click = true;
+    } else {
+        $(".grid-container").removeClass("black-white");
+        c26click = false;
+    }
+});
+
+//c-27
+var c27 = document.getElementById("c-27");
+// Create div elements dynamically
+for (var i = 0; i < 60; i++) {
+    // Create a new div element
+    var newDiv = document.createElement("div");
+
+    // Set some content or styles for the new div
+    newDiv.classList.add("c27-child"); // Optional: Add a class for styling
+
+    // Append the new div to the container
+    c27.appendChild(newDiv);
+}
+
+// c-28 
+var c28click = false;
+$("#c-28").click(function () {
+    if (!c28click) {
+        $(".container").addClass("c28-rotate");
+        c28click = true;
+    } else {
+        $(".container").removeClass("c28-rotate");
+        c28click = false;
+    }
+});
+
+// c-29
+var c29click = false;
+$("#c-29").click(function () {
+    if (!c29click) {
+        $(".c29-square").css("width", "400px"); 
+        c29click = true;
+    } else {
+        $(".c29-square").css("width", "20px");
+        c29click = false;
+    }
+});
+
+
 
