@@ -372,6 +372,13 @@ $("#c-39").click(function () {
     $('body').animate({ scrollTop: 0 }, 'slow');
 });
 
+// ********* ROW 9 ******************
+$("#c-41").click(function () {
+    $("#c41-circle").addClass("animating");
+    
+});
+
+
   
 
 

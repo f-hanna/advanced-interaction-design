@@ -811,7 +811,7 @@ h1 {
 
 /* c-35 */
 #c-35 {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -827,6 +827,7 @@ h1 {
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -906,25 +907,58 @@ h1 {
 /* c-40 */
 #c-40 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2px;
     padding: 2px;
+    background-color: var(--cyan);
 }
 
 .c40-s {
-    border: 1px solid #ddd;
-    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    /* border: 1px solid #ddd; */
+    transition: box-shadow 0.3s ease;
+    /* Add transition for smooth effect */
 
 }
 
 .c40-s:hover {
-    box-shadow: 0 0 50px var(--cyan); 
+    box-shadow: 0 0 50px var(--yellow);
     border-radius: 50%;
-    background-color: var(--cyan);
+    background-color: var(--yellow);
 
 
 }
+
+/************ ROW 9  ************/
+#c-41 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c41-circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--pink);
+    border-radius: 50%;
+    transition: border-width 0.3s ease-in-out;
+   
+}
+
+#c41-circle.animating {
+    animation: borderAnimation 1s infinite alternate;
+}
+
+@keyframes borderAnimation {
+    from {
+        border-width: 1px;
+    }
+
+    to {
+        border-width: 20px;
+    }
+}
+
 
 
 
