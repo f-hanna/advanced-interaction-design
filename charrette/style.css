@@ -34,23 +34,12 @@ body {
     color: antiquewhite;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: var(--orange);
-    border-radius: 50%;
-}
-
-.square {
-    width: 50px;
-    height: 50px;
-    background-color: var(--yellow);
-}
-
 #c-1 {
     color: var(--red);
     text-align: center;
 }
+
+/* c-2 */
 
 #c-2 {
     display: flex;
@@ -59,15 +48,24 @@ body {
     background-color: var(--indigo);
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange);
+    border-radius: 50%;
+}
+
 .bg-fill-animation {
     transition: background-color 0.5s ease;
 }
+
+/* c-3 */
 
 #c-3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-   
+
 }
 
 .c3-child {
@@ -77,5 +75,44 @@ body {
 .c3-child:hover {
     background-color: var(--yellow);
     border: 1px solid var(--purple);
-    
+
 }
+
+/* c-4 */
+
+#c-4 {
+    background-color: var(--green);
+}
+
+.shake-animation {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* c-5 */
+#c-5 {
+    /* font-size: 20px; */
+    text-align: center;
+    color: var(--mint);
+    overflow: auto;
+    background-color: var(--yellow);
+}
+
+/************* ROW 2 ********************/
