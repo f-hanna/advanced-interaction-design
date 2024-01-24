@@ -111,7 +111,7 @@ c8.addEventListener("click", function () {
 // c-10
 var notClick = true;
 $("#c-10").click(function () {
-    $(".dot").addClass("expand");
+    $(".c10-dot").addClass("expand");
 });
 
 /********** ROW 3 ************/
@@ -157,5 +157,38 @@ c14.addEventListener("click", function () {
     Array.from(c14Child).forEach((child) => {
         child.style.borderRadius = "50%";
     })
+});
+
+/******* ROW 4 ******/
+// var notClick = true;
+$("#c-16").click(function () {
+    $(".c16-dot").addClass("expand-2");
+});
+
+// c-18
+var c18hover = false;
+
+// Assuming you want this to happen on hover, you can use the hover event
+$("#c-18").click(function() {
+    if (!c18hover) {
+        $(this).addClass("c18-expand");
+        c18hover = true;
+    } else {
+        $(this).removeClass("c18-expand");
+        c18hover = false;
+    }
+});
+
+// c-20
+var c20click = false;
+
+$("#c-20").click(function() {
+    if (!c20click) {
+        $(".container").addClass("c20-up");
+        c20click = true;
+    } else {
+        $(".container").removeClass("c20-up");
+        c20click = false;
+    }
 });
 

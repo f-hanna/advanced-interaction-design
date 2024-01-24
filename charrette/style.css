@@ -31,7 +31,9 @@ body {
     /* text-align: center; */
     height: 10em;
     border-radius: 5px;
-    color: antiquewhite;
+    color: white;
+    transition: transform 0.2s ease;
+
 }
 
 #c-1 {
@@ -219,7 +221,7 @@ body {
     max-width: none;
 }
 
-.dot {
+.c10-dot {
     background-color: white;
     width: 20px;
     height: 20px;
@@ -333,3 +335,123 @@ body {
 #c-15:hover .square {
     transform: rotate(360deg); /* Rotate 360 degrees on hover */
 }
+
+/******* ROW 4 ******/
+
+#c-16 {
+    background-color: var(--green);
+    position: relative;
+}
+
+.c16-container {
+    position: absolute;
+    /* display: flex; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
+.c16-dot {
+    background-color: var(--orange);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 5px;
+
+    webkit-transition: all 500ms ease;
+    moz-transition: all 500ms ease;
+    ms-transition: all 500ms ease;
+    o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.expand-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: scale(.5);
+}
+
+/* c-17 */
+
+#c-17 {
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, var(--purple) 50%, white 50%) left;
+    background-size: 200% 100%;
+    color: var(--purple);
+}
+
+#c-17:hover {
+    background-position: right;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+#c-17 i {
+    color: var(--purple);
+    font-size: 84px;
+    transition: transform 0.2s ease;
+}
+
+#c-17 i:hover {
+    color: white;
+    transition: all 1s ease;
+}
+
+/* c-18 */
+#c-18 {
+    background-color: var(--yellow);
+    transition: transform 0.2s ease;
+}
+
+#c-18:hover {
+    border: 1px solid var(--pink);
+}
+
+.c18-expand {
+    transform: scale(1.6);
+    transform: translateY(40%);    
+}
+
+/* c-19 */
+#c-19 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-19 i {
+    color: var(--red);
+    font-size: 84px;
+    transition: transform 0.2s ease;
+}
+
+/* c-20 */
+#c-20 {
+    color: white;
+    background-color: var(--mint);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c20-up {
+    transform: translateY(-100%);    
+}
+
+
+
+/* #c-28 {
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, var(--purple) 50%, white 50%) left;
+    background-size: 200% 100%;
+    color: var(--purple);
+} */
