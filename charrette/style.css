@@ -29,14 +29,16 @@ body {
     border: 1px solid #ddd;
     /* padding: 10px; */
     /* text-align: center; */
-    height: 5em;
+    height: 10em;
     border-radius: 5px;
     color: antiquewhite;
 }
 
 #c-1 {
     color: var(--red);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* c-2 */
@@ -98,18 +100,20 @@ body {
 
     25%,
     75% {
-        transform: translateX(-10px);
+        transform: translateX(-30px);
     }
 
     50% {
-        transform: translateX(10px);
+        transform: translateX(30px);
     }
 }
 
 /* c-5 */
 #c-5 {
     /* font-size: 20px; */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--mint);
     overflow: auto;
     background-color: var(--yellow);
