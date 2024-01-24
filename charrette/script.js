@@ -425,6 +425,52 @@ $("#c-45").click(function () {
     window.close();
 });
 
+// ***** ROW 10
+
+// c-46
+var c46click = false;
+$("#c-46").click(function () {
+    if (!c46click) {
+        $(".container").addClass("make-small");
+        $("h1").css("font-size", "10pt");
+
+        c46click = true;
+    } else {
+        $(".container").removeClass("make-small");
+        $("h1").css("font-size", "30pt");
+        c46click = false;
+    }
+});
+
+// c-47
+var c47 = document.getElementById("c-47");
+var c47circle = document.getElementById("c47-circle");
+
+c47.addEventListener("click", function () {
+    
+    c47circle.classList.add("animate-circle");
+});
+
+// c-48
+var c48click = false;
+$("#c-48").click(function () {
+    if (!c48click) {
+        $(".container").css("width", "5em");
+        $("#c-48").css("background-color", "rgb(40, 205, 65)")
+        $("#c-48").css("color", "white")
+
+        // $("h1").css("font-size", "200pt");
+
+        c48click = true;
+    } else {
+        $(".container").css("width", "15em");
+        $("#c-48").css("color", "rgb(40, 205, 65)")
+        $("#c-48").css("background-color", "white")
+        // $("h1").css("font-size", "30pt");
+        c48click = false;
+    }
+});
+
 
 
 

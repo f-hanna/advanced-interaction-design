@@ -1022,7 +1022,77 @@ h1 {
     color: var(--mint);
 }
 
+/* ROW 10 */
+/* c-46 */
+#c-46 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
 
+#c-46 i {
+    font-size: 84px;
+    transition: transform 0.2s ease; 
+    color: var(--blue);
+}
+
+.make-small {
+    transform: scale(.5);
+}
+
+/* c-47 */
+#c-47 {
+    background-color: var(--indigo);
+}
+
+#c47-circle {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--pink);
+    border-radius: 50%;
+}
+
+#c47-circle.animate-circle {
+    animation-name: c47-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes c47-animation {
+    0% {
+        top: 20%;
+        left: 20%;
+    }
+
+    33% {
+        top: 20%;
+        left: 60%;
+    }
+
+
+    66% {
+        top: 60%;
+        left: 20%;
+    }
+
+    100% {
+        top: 20%;
+        left: 20%;
+    }
+}
+
+#c-48 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+}
 
 
 
