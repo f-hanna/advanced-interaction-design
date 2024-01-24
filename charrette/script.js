@@ -330,6 +330,48 @@ document.addEventListener("DOMContentLoaded", function () {
       c35Ball.style.animation = "bounce 1s";
     });
   });
+
+//***************ROW 8 */
+// c-36
+$("#c-36").hover(function () {
+    $(".grid-container").css("cursor", "wait")
+
+
+    // if (!c34click) {
+    //     $(".container").addClass("c34-blur");
+    //     c34click = true;
+    // } else {
+    //     $(".container").removeClass("c34-blur");
+    //     c34click = false;
+    // }
+});
+
+// c-37 
+$("#c-37").click(function () {
+    $("#c37-square").css("height", "100%");
+    $("#c37-square").css("width", "100%");
+    $("#c37-square").css("border-radius", "0");
+});
+
+// c-38
+var c38click = false;
+$("#c-38").click(function () {
+    if (!c38click) {
+        $(this).css("width", "500px");
+        c38click = true;
+    } else {
+        $(this).css("width", "auto");
+        c38click = false;
+    }
+});
+
+// c-39
+$("#c-39").click(function () {
+    location.reload();
+    $('html').animate({ scrollTop: 0 }, 'slow');
+    $('body').animate({ scrollTop: 0 }, 'slow');
+});
+
   
 
 
