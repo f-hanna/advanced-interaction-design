@@ -34,6 +34,48 @@ body {
     color: antiquewhite;
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange);
+    border-radius: 50%;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: var(--yellow);
+}
+
 #c-1 {
-    background-color: var(--red);
+    color: var(--red);
+    text-align: center;
+}
+
+#c-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+}
+
+.bg-fill-animation {
+    transition: background-color 0.5s ease;
+}
+
+#c-3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+}
+
+.c3-child {
+    border: 1px solid #ddd;
+}
+
+.c3-child:hover {
+    background-color: var(--yellow);
+    border: 1px solid var(--purple);
+    
 }
