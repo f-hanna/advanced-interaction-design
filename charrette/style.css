@@ -121,6 +121,7 @@ body {
 
 /************* ROW 2 ********************/
 
+/* c-6 */
 #c-6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -128,6 +129,173 @@ body {
 }
 
 .c6-child {
-   background-color: var(--cyan);
-   transition: opacity 0.5s ease; 
+    background-color: var(--cyan);
+    transition: opacity 0.5s ease;
 }
+
+/* c-7 */
+#c-7 {
+    position: relative;
+    overflow: hidden;
+    /* Ensure that the cursor divs are bounded by the container */
+    height: 100%;
+    width: 100%;
+
+}
+
+.cursorDiv {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red);
+    border-radius: 50%;
+    pointer-events: none;
+    /* Ensure that the divs do not interfere with mouse events */
+}
+
+
+/* c-8 */
+#c-8 {
+    background-color: var(--blue);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-8 i {
+    color: var(--pink);
+    font-size: 84px;
+    transition: transform 0.2s ease;
+}
+
+.pulse {
+    transform: scale(1.2);
+}
+
+/* c-9 */
+#c-9 {
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, var(--purple) 50%, white 50%) top;
+    background-size: 100% 200%;
+    color: var(--purple);
+
+}
+
+#c-9:hover {
+    background-position: bottom;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+#c-9 i {
+    color: var(--purple);
+    font-size: 84px;
+    transition: transform 0.2s ease;
+}
+
+#c-9 i:hover {
+    color: white;
+    transition: all 1s ease;
+
+}
+
+/* c-10 */
+#c-10 {
+    background-color: var(--pink);
+    position: relative;
+}
+
+.c10-container {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
+.dot {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+
+    webkit-transition: all 500ms ease;
+    moz-transition: all 500ms ease;
+    ms-transition: all 500ms ease;
+    o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.expand {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/********** ROW 3 ************/
+/* c-11 */
+#c-11 {
+    background-color: var(--red);
+}
+
+.expand-h {
+    grid-column: span 3;
+}
+
+/* c-12 */
+#c-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+}
+
+/* c-13 */
+#c-13 {
+    color: var(--indigo);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c13-text {
+    position: absolute;
+    /* white-space: nowrap;
+    animation: moveText 5s linear infinite; */
+}
+
+#c13-text.animateLoop {
+    animation: moveText 2s linear infinite; 
+
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(0, 0);
+      }
+      30% {
+        transform: translate(200%, 10%); /* Move off the left side */
+        /* transform: translateY(10%);  */
+
+      }
+      50% {
+        transform: translateY(0); 
+
+      }
+      70% {
+        transform: translate(-200%, 10%); 
+        /* transform: translateY(10%);  */
+      }
+
+      100% {
+        transform: translate(0, 0);
+        /* transform: translateY(0);  */
+      }
+  }

@@ -71,3 +71,80 @@ c6.addEventListener("click", function () {
 
 });
 
+// c-7
+document.addEventListener("DOMContentLoaded", function () {
+    var c7Container = document.getElementById("c-7");
+    var div1 = document.getElementById("div1");
+
+    if (c7Container && div1) {
+        c7Container.addEventListener("mousemove", function (event) {
+            // Get the mouse coordinates relative to the c-7 container
+            var rect = c7Container.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;
+            var mouseY = event.clientY - rect.top;
+
+            // Ensure the cursor divs stay within the bounds of the c-7 container
+            mouseX = Math.max(0, Math.min(mouseX, c7Container.clientWidth - div1.clientWidth));
+            mouseY = Math.max(0, Math.min(mouseY, c7Container.clientHeight - div1.clientHeight));
+
+            // Set the positions of div1 and div2
+            div1.style.left = mouseX + "px";
+            div1.style.top = mouseY + "px";
+
+        });
+    }
+});
+
+
+// c-8
+var c8 = document.getElementById("c-8");
+c8.addEventListener("click", function () {
+    var heart = c8.querySelector("i.fa-heart");
+    heart.classList.add("pulse");
+
+    // Remove the pulse class after a short delay
+    setTimeout(function () {
+        heart.classList.remove("pulse");
+    }, 300);
+});
+
+// c-10
+var notClick = true;
+$("#c-10").click(function () {
+    $(".dot").addClass("expand");
+});
+
+/********** ROW 3 ************/
+// c-11
+var c11 = document.getElementById("c-11");
+var c11Bool = false;
+
+c11.addEventListener("click", function () {
+    if (!c11Bool) {
+        c11.classList.add("expand-h");
+        c11Bool = true;
+    }
+    else {
+        c11.classList.remove("expand-h");
+        c11Bool = false;
+
+    }
+});
+
+// c-12
+var c12 = document.getElementById("c-12");
+c12.addEventListener("click", function(){
+    var c12text = document.getElementById("c12-text");
+    var c12content = c12text.textContent;
+
+    c12text.textContent = parseInt(c12content) + 1;
+});
+
+// c-13 
+var c13 = document.getElementById("c-13");
+
+  c13.addEventListener("click", function () {
+    var c13text = document.getElementById("c13-text");
+    c13text.classList.add("animateLoop");
+  });
+
