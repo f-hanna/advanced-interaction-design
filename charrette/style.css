@@ -33,7 +33,7 @@ h1 {
     border: 1px solid #ddd;
     /* padding: 10px; */
     /* text-align: center; */
-    height: 10em;
+    height: 15em;
     border-radius: 5px;
     color: white;
     transition: transform 1s ease;
@@ -865,7 +865,7 @@ h1 {
 }
 
 #c37-square {
-    background-color: var(--purple);
+    background-color: var(--cyan);
     width: 20px;
     height: 20px;
     /* border-radius: 50%; */
@@ -908,7 +908,7 @@ h1 {
 #c-40 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 2px;
     padding: 2px;
     background-color: var(--cyan);
@@ -967,6 +967,62 @@ h1 {
     align-items: center;
     background-color: var(--purple);
 }
+
+/* c-43 */
+#c-43 {
+    background-color: var(--red);
+    position: relative;
+}
+
+.c43-flex {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+}
+
+.c43-circle {
+    background-color: var(--orange);
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    /* z-index: 100; */
+
+    webkit-transition: all 500ms ease;
+    moz-transition: all 500ms ease;
+    ms-transition: all 500ms ease;
+    o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    /* bottom: 0%;
+    left: 50%; */
+
+}
+
+/* c-44 */
+#c-44 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+}
+
+#c-44 i {
+    font-size: 84px;
+    transition: transform 0.2s ease; 
+    color: var(--yellow);
+}
+
+/* c-45 */
+#c-45 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mint);
+}
+
+
 
 
 

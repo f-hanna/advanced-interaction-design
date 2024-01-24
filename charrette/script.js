@@ -390,6 +390,41 @@ c42.addEventListener("click", function () {
     });
 });
 
+// c-43
+var c43click = false;
+$("#c-43").click(function () {
+    if (!c43click) {
+        $(".c43-circle").css("width", "70px");
+        $(".c43-circle").css("height", "70px");
+        $(".c43-circle").css("margin", "10px");
+        $(".c43-circle").css("border-radius", "50%");
+        c43click = true;
+    } else {
+        $(".c29-circle").css("width", "20px");
+        c43click = false;
+    }
+});
+
+// c-44
+var c44click = false;
+$("#c-44").click(function () {
+    if (!c44click) {
+        $(".container").css("height", "40em");
+        $("h1").css("font-size", "200pt");
+
+        c44click = true;
+    } else {
+        $(".container").css("height", "15em");
+        $("h1").css("font-size", "30pt");
+        c44click = false;
+    }
+});
+
+// c-45
+$("#c-45").click(function () {
+    window.close();
+});
+
 
 
 
