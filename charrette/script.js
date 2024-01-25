@@ -463,7 +463,7 @@ $("#c-48").click(function () {
 
         c48click = true;
     } else {
-        $(".container").css("width", "15em");
+        $(".container").css("width", "auto");
         $("#c-48").css("color", "rgb(40, 205, 65)")
         $("#c-48").css("background-color", "white")
         // $("h1").css("font-size", "30pt");
