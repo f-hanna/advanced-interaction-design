@@ -32,6 +32,38 @@
 
 }
 
+/* letter B */
+
+#B {
+    display: inline-flex;
+    position: relative;
+    margin-top: 2em;
+
+}
+
+#B-structure {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#B-structure > :nth-child(2) {
+  margin-top: -40px;
+    
+}
+
+#B .line-2 {
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+
+
+#B .circle-2 {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
 
 
 

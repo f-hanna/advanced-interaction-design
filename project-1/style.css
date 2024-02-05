@@ -59,16 +59,23 @@ h1 {
     color: white;
     transition: transform 1s ease;
     padding: 1em;
-    
+
 }
 
-#module > * {
+#module>* {
     margin: 0 1em;
 }
 
 .vertical {
     transform: rotate(90deg);
-    transform-origin: bottom left; 
+    transform-origin: bottom left;
+
+}
+
+.horizontal {
+    transform: rotate(90deg);
+    /* transform-origin: bottom left;  */
+    margin-left: -90px;
 
 }
 
@@ -87,10 +94,12 @@ h1 {
 }
 
 
-.circle-2, .circle-3, .circle-4 {
+.circle-2,
+.circle-3,
+.circle-4 {
     position: relative;
     display: inline-block;
-    
+
 }
 
 .circle-2 {
@@ -98,12 +107,12 @@ h1 {
     justify-content: center;
     align-items: center; */
     width: 60px;
-    height: 90px;
+    height: 100px;
 }
 
-.circle-2 > .circle {
-   width: 50px;
-   height: 50px;
+.circle-2>.circle {
+    width: 60px;
+    height: 60px;
 }
 
 .circle-3 {
@@ -111,8 +120,8 @@ h1 {
     height: 100px;
 }
 
-.circle-3 > .circle {
-     width: 40px;
+.circle-3>.circle {
+    width: 40px;
     height: 40px;
 }
 
@@ -121,9 +130,13 @@ h1 {
     height: 110px;
 }
 
-.circle-4 > .circle {
+.circle-4>.circle {
     width: 30px;
-   height: 30px;
+    height: 30px;
+}
+
+.line-1 {
+    width: 120px;
 }
 
 .line-2 {
@@ -133,7 +146,7 @@ h1 {
 
 }
 
-.line-2 > hr {
+.line-2>hr {
     margin: 15px 0;
 }
 
@@ -151,7 +164,7 @@ h1 {
     display: inline-block;
 
     width: 80px;
-   height: 80px;
+    height: 80px;
 
 }
 
@@ -207,4 +220,3 @@ h1 {
     top: 75px;
     left: 0;
 }
-
