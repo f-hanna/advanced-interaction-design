@@ -1,6 +1,41 @@
+/* Letter A*/
+
+#A {
+    margin-top: 2em;
+    display: inline-flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: space-between; */
+    /* position: absolute; */
+}
+
+
+#A > :nth-child(1) {
+    transform: rotate(30deg);
+    margin-left: 10px;
+}
+
+
+#A .line-2 {
+
+    margin-left: -50px;
+    margin-top: 40px;
+    /* width: 50%; */
+    z-index: 1;
+
+}
+
+#A > :nth-child(3) {
+    margin-left: -60px; /* Adjust the negative margin as needed */
+    transform: rotate(-30deg);
+    /* margin-bottom: 10px; */
+
+}
+
+
+
 
 /* Letter H */
-
 
 #H {
     margin-top: 2em;
@@ -23,7 +58,7 @@
 
 #H .line-2 {
 
-    margin-left: -20px;
+    margin-left: -50px;
     margin-top: 20px;
     /* width: 50%; */
     z-index: 1;
@@ -31,7 +66,7 @@
 }
 
 #H > :nth-child(3) {
-    margin-left: -20px; /* Adjust the negative margin as needed */
+    margin-left: -50px; /* Adjust the negative margin as needed */
 }
 
 /* #H-structure {
