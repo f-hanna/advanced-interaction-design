@@ -1,0 +1,209 @@
+:root {
+    --red: rgb(255, 59, 48);
+    --orange: rgb(255, 149, 0);
+    --yellow: rgb(255, 204, 0);
+    --green: rgb(40, 205, 65);
+    --mint: rgb(0, 199, 190);
+    --cyan: rgb(85, 190, 240);
+    --blue: rgb(0, 122, 255);
+    --indigo: rgb(88, 86, 214);
+    --purple: rgb(175, 82, 222);
+    --pink: rgb(255, 45, 85);
+    --black: rgb(10, 13, 21);
+}
+
+body {
+    margin: 0;
+    font-family: 'Cutive Mono', monospace;
+    background-color: var(--black);
+}
+
+h1 {
+    max-width: 90%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.container {
+    border: 1px solid #ddd;
+    height: 15em;
+    border-radius: 5px;
+    color: white;
+    transition: transform 1s ease;
+
+}
+
+.letter-header {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+}
+
+.letter-header p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#module {
+    grid-column: 1/-1;
+    border: 1px solid #ddd;
+    /* height: 15em; */
+    border-radius: 5px;
+    color: white;
+    transition: transform 1s ease;
+    padding: 1em;
+    
+}
+
+#module > * {
+    margin: 0 1em;
+}
+
+.vertical {
+    transform: rotate(90deg);
+    transform-origin: bottom left; 
+
+}
+
+.container {
+    padding: 1em;
+}
+
+/* MODULAR DEFINITION */
+
+.circle {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* width: 40px;
+    height: 40px; */
+}
+
+
+.circle-2, .circle-3, .circle-4 {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.circle-2 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 60px;
+    height: 90px;
+}
+
+.circle-2 > .circle {
+   width: 50px;
+   height: 50px;
+}
+
+.circle-3 {
+    width: 40px;
+    height: 100px;
+}
+
+.circle-3 > .circle {
+     width: 40px;
+    height: 40px;
+}
+
+.circle-4 {
+    width: 30px;
+    height: 110px;
+}
+
+.circle-4 > .circle {
+    width: 30px;
+   height: 30px;
+}
+
+.line-2 {
+    width: 120px;
+    /* position: relative; */
+    display: inline-block;
+
+}
+
+.line-2 > hr {
+    margin: 15px 0;
+}
+
+.line-3 {
+    width: 120px;
+    /* position: relative; */
+    display: inline-block;
+
+}
+
+.circle-1 {
+    /* position: absolute; */
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+
+    width: 80px;
+   height: 80px;
+
+}
+
+/* circle 2 */
+
+.c2-1 {
+    top: 0;
+    left: 0px;
+}
+
+.c2-2 {
+    top: 35px;
+    left: 0;
+}
+
+
+
+/* circle 3 */
+
+.c3-1 {
+    top: 0;
+    left: 0px;
+}
+
+.c3-2 {
+    top: 30px;
+    left: 0;
+}
+
+.c3-3 {
+    top: 60px;
+    left: 0;
+}
+
+/* circle 4 */
+
+.c4-1 {
+    top: 0;
+    left: 0px;
+}
+
+.c4-2 {
+    top: 25px;
+    left: 0;
+}
+
+.c4-3 {
+    top: 50px;
+    left: 0;
+}
+
+.c4-4 {
+    top: 75px;
+    left: 0;
+}
+

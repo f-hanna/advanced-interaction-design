@@ -1,0 +1,68 @@
+
+/* Letter H */
+
+
+#H {
+    margin-top: 2em;
+    display: inline-flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: space-between; */
+    /* position: absolute; */
+}
+
+
+
+#H-structure {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+#H .line-2 {
+
+    margin-left: -20px;
+    margin-top: 20px;
+    /* width: 50%; */
+    z-index: 1;
+
+}
+
+#H > :nth-child(3) {
+    margin-left: -20px; /* Adjust the negative margin as needed */
+}
+
+/* #H-structure {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+} */
+
+/* R */
+
+#R {
+    position: relative;
+    margin-top: 3em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+}
+
+#R-structure {
+    display: flex;
+    position: absolute;
+    margin: auto;
+}
+
+#R-structure > .circle-1 {
+    margin-left: -1em;
+}
+
+#R > .line-3 {
+    margin-top: 20px;
+    transform: rotate(40deg);
+
+}
