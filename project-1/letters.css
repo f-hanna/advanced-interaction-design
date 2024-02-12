@@ -143,6 +143,32 @@
     top: 10px;
 }
 
+/* E */
+
+#E {
+
+    margin-top: 2em;
+}
+
+#E > * {
+    position: absolute;
+}
+
+#E-l2-2 {
+    top: 50px;
+
+}
+
+#E-l2-3 {
+    top: 100px;
+
+}
+
+#E .circle-1 {
+    top: 10px;
+    left: 10px;
+}
+
 
 
 /* #D-structure {
@@ -214,6 +240,10 @@
     justify-content: space-between; */
     /* position: absolute; */
 }
+
+/* #H > * {
+    position: absolute;
+} */
 
 
 
@@ -335,21 +365,23 @@
     position: absolute;
 }
 
-#L .circle-3 {
-    top: 100px;
-    left: 80px;
+#L .circle-4 {
+    top: 95px;
+    left: 140px;
 }
 
-#L .line-2{
-    top: 60px;
+#L .line-1{
+    top: 120px;
     left: 10px;
 
 }
 
-#L .circle-2 {
-    top: 20px;
-    left: -20px;
+#L .line-2 {
+    /* top: 20px; */
+    left: 40px;
+
 }
+
 
 /* M */
 
@@ -413,9 +445,10 @@
 
 /* O */
 
-/* #O {
-    margin-left: 2.5em;
-} */
+#O {
+   margin: 2em auto;
+   margin-left: 1em;
+}
 
 #O > * {
     position: absolute;
@@ -462,12 +495,26 @@
 
 /* Q */
 
-/* #Q {
+#Q {
+
+    margin-left: 1em;
    
-} */
+}
 
 #Q > * {
     position: absolute;
+}
+
+#Q .circle-4 {
+    /* transform: rotate(-40deg); */
+    left: 50px;
+    top: 20px;
+}
+
+#Q .line-3 {
+    /* transform: rotate(40deg); */
+    top: 50px;
+    left: 10px;
 }
 
 
@@ -545,7 +592,7 @@
 }
 
 #U .circle-1 {
-    top: 40px;
+    top: 60px;
     left: 10px;
 }
 
