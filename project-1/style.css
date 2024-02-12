@@ -37,6 +37,7 @@ h1 {
     border-radius: 5px;
     color: white;
     transition: transform 1s ease;
+    padding: 1em;
 
 }
 
@@ -75,7 +76,7 @@ h1 {
 .horizontal {
     transform: rotate(90deg);
     /* transform-origin: bottom left;  */
-    margin-left: -90px;
+    
 
 }
 
@@ -135,27 +136,6 @@ h1 {
     height: 30px;
 }
 
-.line-1 {
-    width: 120px;
-}
-
-.line-2 {
-    width: 120px;
-    /* position: relative; */
-    display: inline-block;
-
-}
-
-.line-2>hr {
-    margin: 15px 0;
-}
-
-.line-3 {
-    width: 120px;
-    /* position: relative; */
-    display: inline-block;
-
-}
 
 .circle-1 {
     /* position: absolute; */
@@ -219,4 +199,37 @@ h1 {
 .c4-4 {
     top: 75px;
     left: 0;
+}
+
+/* LINE */
+
+.line {
+    border-top: 1px solid white;
+    /* margin: 10px 0; */
+  }
+
+
+.line-2 {
+    width: 120px;
+    display: inline-block;
+    margin: 20px 0;
+
+}
+
+.line-2 > * {
+    /* display: inline-block; */
+    margin: 20px 0;
+
+}
+
+.line-3 {
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.line-3 > *{
+    /* display: inline-block; */
+    margin: 10px 0;
+
 }
