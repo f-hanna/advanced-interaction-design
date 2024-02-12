@@ -298,6 +298,33 @@
     left: 100px;
 }
 
+/* K */
+
+#K {
+    margin-left: .5em;
+
+}
+
+#K > * {
+    position: absolute;
+}
+
+#K .line-1 {
+    left: 20px;
+}
+
+#K .line-3 {
+    top: 50px;
+    left: -10px;
+    transform: rotate(40deg);
+}
+
+#K .circle-4 {
+    top: -20px;
+    left: 20px;
+    transform: rotate(400deg);
+}
+
 /* R */
 
 #R {
