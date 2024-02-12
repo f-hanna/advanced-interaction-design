@@ -259,11 +259,26 @@ h1 {
     margin: 10px 0;
 }
 
-.line-3 > *{
+.line-3 > :nth-child(2){
     /* display: inline-block; */
     margin-bottom: 10px;
+    margin-top: 10px;
 
 }
+
+
+.line-3 > :nth-child(1){
+    /* display: inline-block; */
+    margin: 0;
+
+}
+
+.line-3 > :nth-child(3){
+    /* display: inline-block; */
+    margin: 0;
+
+}
+
 
 
 
@@ -275,5 +290,5 @@ h1 {
 }
 
 .outline {
-    border: 1px solid rgb(10, 13, 21);
+    border: 3px solid rgb(10, 13, 21);
 }
