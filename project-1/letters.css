@@ -329,7 +329,6 @@
 
 #L {
     margin-left: .5em;
-
 }
 
 #L > * {
@@ -350,6 +349,39 @@
 #L .circle-2 {
     top: 20px;
     left: -20px;
+}
+
+/* M */
+
+#M {
+    margin-left: .5em;
+}
+
+#M > * {
+    position: absolute;
+}
+
+#M .line-1 {
+    /* margin-left: .5em; */
+    left: -10px;
+    
+}
+
+#M .circle-2 {
+    /* margin-left: .5em; */
+    top: 20px;
+}
+
+#M .line-3 {
+    /* margin-left: .5em; */
+    left: 80px;
+    top: 20px;
+}
+
+#M-c2-2 {
+
+    left: 65px;
+
 }
 
 /* #L .line-1 {
