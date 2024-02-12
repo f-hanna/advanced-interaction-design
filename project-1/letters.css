@@ -270,6 +270,34 @@
     left: 80px;
 }
 
+/* J */
+#J > * {
+    position: absolute;
+}
+
+#J .circle-1 {
+    /* left: 30px; */
+    top: -20px;
+}
+
+#J .line-1 {
+    left: 100px;
+}
+
+#J .line-2 {
+    top: -30px;
+}
+
+#J-c2-1 {
+    top: 50px;
+    left: 70px;
+}
+
+#J-c2-2 {
+    top: 110px;
+    left: 100px;
+}
+
 /* R */
 
 #R {
