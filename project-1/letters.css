@@ -411,6 +411,30 @@
     top: -30px;
 }
 
+/* O */
+
+/* #O {
+    margin-left: 2.5em;
+} */
+
+#O > * {
+    position: absolute;
+}
+
+#O .line-2 {
+    top: -20px;
+}
+
+
+#O .line-3 {
+    top: 80px;
+}
+
+#O .circle-3{
+    top: 50px;
+    left: 110px;
+}
+
 
 /* R */
 
