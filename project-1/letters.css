@@ -353,9 +353,9 @@
 
 /* M */
 
-#M {
+/* #M {
     margin-left: .5em;
-}
+} */
 
 #M > * {
     position: absolute;
@@ -374,8 +374,8 @@
 
 #M .line-3 {
     /* margin-left: .5em; */
-    left: 80px;
-    top: 20px;
+    left: 140px;
+    top: -10px;
 }
 
 #M-c2-2 {
@@ -388,6 +388,28 @@
     left: 20px;
 } */
 
+/* N */
+
+#N {
+    margin-left: 2.5em;
+}
+
+#N > * {
+    position: absolute;
+}
+
+#N-l2-1 {
+    left: 20px;
+}
+
+#N .circle-4 {
+    transform: rotate(140deg);
+}
+
+#N-l2-2 {
+    left: 80px;
+    top: -30px;
+}
 
 
 /* R */
