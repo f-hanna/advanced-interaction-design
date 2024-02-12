@@ -42,9 +42,15 @@
 
 }
 
+
+#B > *{
+    position: absolute;
+
+}
+
+
 #B-structure {
-    display: inline-block;
-    margin-left: 20px;
+    left: 25px;
 }
 
 #B-structure> :nth-child(2) {
@@ -54,17 +60,17 @@
 
 #B .line-2 {
     position: absolute;
-    /* left: 20px; */
-    top: 5px;
-    right: -60px;
+    left: 30px;
+    top: -25px;
+    /* left: -30px; */
 }
 
 
-#B .circle-2 {
+/* #B .circle-2 {
     position: absolute;
     left: 45px;
     top: 10px;
-}
+} */
 
 /* letter C */
 
@@ -83,24 +89,26 @@
 
 #C .line-3 {
     position: absolute;
-    top: 20px;
-    left: -40px;
+    top: -15px;
+    left: 40px;
     /* left: -30px; */
 }
 
 #C-structure {
     /* margin-top: 10em; */
     position: absolute;
-    left: 30px;
-    top: 40px;
+    left: 110px;
+    top: 60px;
     /* bottom: 0; */
 }
 
 #C-structure> :nth-child(1) {
     /* margin-top: 10em; */
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
 }
+
+/* D */
 
 #D {
     position: relative;
@@ -112,7 +120,8 @@
 }
 
 #D .line-2 {
-    right: 40px;
+    left: 45px;
+    top: -25px;
 }
 
 #D .circle-4 {
@@ -121,6 +130,7 @@
 
 #D .circle-2 {
     left: 40px;
+    top: 10px;
 }
 
 
@@ -129,6 +139,30 @@
     left: 20px;
 } */
 
+/* F */
+
+#F {
+    position: relative;
+}
+
+#F > * {
+    position: absolute;
+}
+
+#F .line-3 {
+    top: 10px;
+    left: 20px;
+}
+
+#F .circle-3 {
+    top: 80px;
+    left: 80px;
+}
+
+#F .circle-2 {
+    top: 20px;
+    left: 105px;
+}
 
 
 

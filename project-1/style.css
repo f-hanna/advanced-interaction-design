@@ -75,8 +75,7 @@ h1 {
 
 .horizontal {
     transform: rotate(90deg);
-    /* transform-origin: bottom left;  */
-    
+    transform-origin: top left;    
 
 }
 
@@ -108,12 +107,12 @@ h1 {
     justify-content: center;
     align-items: center; */
     width: 60px;
-    height: 100px;
+    height: 90px;
 }
 
 .circle-2>.circle {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .circle-3 {
@@ -223,7 +222,7 @@ h1 {
 }
 
 .line-3 {
-    width: 100px;
+    width: 120px;
     display: inline-block;
     margin: 10px 0;
 }
