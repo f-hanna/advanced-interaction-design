@@ -100,7 +100,7 @@ h1 {
 .circle {
     position: absolute;
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 40%;
     /* width: 40px;
     height: 40px; */
 }
@@ -119,12 +119,12 @@ h1 {
     justify-content: center;
     align-items: center; */
     width: 60px;
-    height: 90px;
+    height: 110px;
 }
 
 .circle-2>.circle {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 60px;
 }
 
 .circle-3 {
@@ -133,8 +133,8 @@ h1 {
 }
 
 .circle-3>.circle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 50px;
 }
 
 .circle-4 {
@@ -143,19 +143,19 @@ h1 {
 }
 
 .circle-4>.circle {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 40px;
 }
 
 
 .circle-1 {
     /* position: absolute; */
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 30%;
     display: inline-block;
 
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 90px;
 
 }
 
