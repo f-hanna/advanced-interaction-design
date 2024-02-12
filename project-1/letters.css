@@ -431,7 +431,7 @@
 }
 
 #O .circle-3{
-    top: 35px;
+    top: 40px;
     left: 110px;
 }
 
@@ -460,6 +460,16 @@
     /* left: -10px; */
 }
 
+/* Q */
+
+/* #Q {
+   
+} */
+
+#Q > * {
+    position: absolute;
+}
+
 
 /* R */
 
@@ -485,4 +495,71 @@
 #R>.line-3 {
     margin-top: 20px;
     transform: rotate(40deg);
+}
+
+/* S */
+
+#S {
+
+    margin-left: 1em;
+   
+}
+
+#S > * {
+    position: absolute;
+}
+
+#S > .line-2 {
+    transform: rotate(140deg);
+}
+
+#S .circle-4 {
+    transform: rotate(120deg);
+    left: 20px;
+    top: 20px;
+}
+
+#S-l2-1 {
+    left: -10px;
+
+    /* top: 80px; */
+
+}
+
+#S-l2-2 {
+
+    left: 00px;
+    top: 90px;
+
+}
+
+/* T */
+
+/* U */
+
+/* #U {
+} */
+
+#U > * {
+    position: absolute;
+}
+
+#U .circle-1 {
+    top: 40px;
+    left: 10px;
+}
+
+#U .circle-3 {
+    top: 20px;
+    left: 70px;
+}
+
+#U .line-3 {
+    top: -10px;
+    left: 30px;
+}
+
+#U .line-1 {
+    /* left: 20px; */
+    top: 110px;
 }
