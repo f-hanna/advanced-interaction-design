@@ -1,3 +1,8 @@
+.letter {
+    position: relative;
+    margin-top: 2em;
+}
+
 /* Letter A*/
 
 #A {
@@ -51,6 +56,7 @@
 
 #B-structure {
     left: 25px;
+    top: -10px;
 }
 
 #B-structure> :nth-child(2) {
@@ -150,18 +156,43 @@
 }
 
 #F .line-3 {
-    top: 10px;
+    /* top: 10px; */
     left: 20px;
 }
 
 #F .circle-3 {
-    top: 80px;
+    top: 60px;
     left: 80px;
 }
 
 #F .circle-2 {
-    top: 20px;
+    /* top: 20px; */
     left: 105px;
+}
+
+/* G */
+
+#G > * {
+    position: absolute;
+}
+
+#G-C2-2 {
+    top: 30px;
+}
+
+#G-C2-1 {
+    left: 100px;
+}
+
+#G .line-3 {
+    top: 80px;
+    left: 20px;
+}
+
+#G .line-1 {
+    top: 40px;
+    left: 120px;
+
 }
 
 
