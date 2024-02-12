@@ -27,8 +27,9 @@ h1 {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 5%;
+    margin-top: 2%;
 }
 
 .container {
@@ -44,6 +45,20 @@ h1 {
 .container:hover {
     background-color: rgb(27, 33, 49);
  
+}
+
+/* BUTTON */
+
+#toggle {
+    grid-column: 1/-1;
+    font-family: 'Cutive Mono', monospace;
+    height: 3em;
+    width: 90%;
+    margin: 0 5%;
+    border: 1px solid white;
+    margin-top: 2%;
+    border-radius: 5px;
+    
 }
 
 /* HEADER */
@@ -72,7 +87,7 @@ h1 {
     color: white;
     transition: transform 1s ease;
     padding: 1em;
-
+    margin: 0 5%;
 }
 
 #module>* {
@@ -232,9 +247,9 @@ h1 {
 
 }
 
-.line-2 > * {
+.line-2 > :nth-child(1) {
     /* display: inline-block; */
-    margin: 20px 0;
+    margin-bottom: 20px;
 
 }
 
@@ -246,6 +261,19 @@ h1 {
 
 .line-3 > *{
     /* display: inline-block; */
-    margin: 10px 0;
+    margin-bottom: 10px;
 
+}
+
+
+
+.fill {
+    border: none;
+    background-color: rgb(10, 13, 21);
+    /* border-radius: 10px; */
+
+}
+
+.outline {
+    border: 1px solid rgb(10, 13, 21);
 }

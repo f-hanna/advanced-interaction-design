@@ -57,7 +57,7 @@
 
 
 #B-structure {
-    left: 25px;
+    left: 35px;
     top: -10px;
 }
 
@@ -68,7 +68,7 @@
 
 #B .line-2 {
     position: absolute;
-    left: 30px;
+    left: 40px;
     top: -25px;
     /* left: -30px; */
 }
@@ -99,7 +99,7 @@
 #C .line-3 {
     position: absolute;
     top: -15px;
-    left: 40px;
+    left: 30px;
     /* left: -30px; */
 }
 
@@ -130,7 +130,7 @@
 }
 
 #D .line-2 {
-    left: 45px;
+    left: 30px;
     top: -25px;
 }
 
@@ -229,7 +229,7 @@
 #H .line-2 {
 
     margin-left: -50px;
-    margin-top: 20px;
+    margin-top: 30px;
     /* width: 50%; */
     z-index: 1;
 
@@ -341,7 +341,7 @@
 }
 
 #L .line-2{
-    top: 50px;
+    top: 60px;
     left: 10px;
 
 }
@@ -398,16 +398,16 @@
     position: absolute;
 }
 
-#N-l2-1 {
-    left: 20px;
-}
+/* #N-l2-1 {
+    left: 10px;
+} */
 
 #N .circle-4 {
     transform: rotate(140deg);
 }
 
 #N-l2-2 {
-    left: 80px;
+    left: 65px;
     top: -30px;
 }
 
@@ -431,7 +431,7 @@
 }
 
 #O .circle-3{
-    top: 50px;
+    top: 35px;
     left: 110px;
 }
 
@@ -451,7 +451,7 @@
 }
 
 #P .line-2 {
-    top: 10px;
+    top: 20px;
     left: -10px;
 }
 
