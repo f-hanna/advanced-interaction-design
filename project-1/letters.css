@@ -325,6 +325,39 @@
     transform: rotate(400deg);
 }
 
+/* L */
+
+#L {
+    margin-left: .5em;
+
+}
+
+#L > * {
+    position: absolute;
+}
+
+#L .circle-3 {
+    top: 100px;
+    left: 80px;
+}
+
+#L .line-2{
+    top: 50px;
+    left: 10px;
+
+}
+
+#L .circle-2 {
+    top: 20px;
+    left: -20px;
+}
+
+/* #L .line-1 {
+    left: 20px;
+} */
+
+
+
 /* R */
 
 #R {
