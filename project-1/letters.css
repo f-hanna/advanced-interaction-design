@@ -240,6 +240,26 @@
     margin: 100px;
 } */
 
+/* I */
+
+#I > * {
+    position: absolute;
+    /* left: 80px; */
+}
+
+#I .line-3 {
+    left: 50px;
+}
+
+#I .circle-2 {
+    left: 72px;
+}
+
+#I .circle-3 {
+    top: 95px;
+    left: 80px;
+}
+
 /* R */
 
 #R {

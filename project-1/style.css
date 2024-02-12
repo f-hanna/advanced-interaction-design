@@ -40,6 +40,13 @@ h1 {
     padding: 1em;
 
 }
+/* 
+.container:hover {
+    background-color: rgb(27, 33, 49);
+ 
+} */
+
+/* HEADER */
 
 .letter-header {
     display: flex;
@@ -50,6 +57,11 @@ h1 {
 .letter-header p {
     margin-top: 0;
     margin-bottom: 0;
+    margin: auto;
+}
+
+.letterform {
+    display: none;
 }
 
 #module {
