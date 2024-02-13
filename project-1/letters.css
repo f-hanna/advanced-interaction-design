@@ -582,6 +582,24 @@
 
 /* T */
 
+#T {
+    margin-top: 3em;
+    margin-left: .5em;
+}
+
+#T > * {
+    position: absolute;
+}
+
+#T .circle-4 {
+    left: 50px;
+}
+
+#T .circle-1 {
+    left: 25px;
+    top: 5px;
+}
+
 /* U */
 
 /* #U {
