@@ -35,7 +35,7 @@ document.querySelectorAll('.container').forEach(container => {
             element.classList.add('glow');
             setTimeout(() => {
                 element.classList.remove('glow');
-            }, 2000);
+            }, 1000);
         }
 
         // Function to apply grow effect to an element for a second
@@ -43,7 +43,7 @@ document.querySelectorAll('.container').forEach(container => {
             element.classList.add('grow');
             setTimeout(() => {
                 element.classList.remove('grow');
-            }, 2000);
+            }, 1000);
         }
 
         // Apply glow effect sequentially to each desired grandchild
@@ -52,13 +52,13 @@ document.querySelectorAll('.container').forEach(container => {
                 // console.log(grandchild);
                 setTimeout(() => {
                     applyGlowEffect(grandchild);
-                }, index * 2000); // Delay each glow effect by 2 seconds
+                }, index * 1500); // Delay each glow effect by 2 seconds
             }
             else {
                 // console.log(grandchild);
                 setTimeout(() => {
                     applyGrowEffect(grandchild);
-                }, index * 2000); // Delay each glow effect by 2 seconds
+                }, index * 1500); // Delay each glow effect by 2 seconds
 
             }
         });

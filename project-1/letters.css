@@ -287,17 +287,24 @@
     /* left: 80px; */
 }
 
-#I .line-3 {
-    left: 40px;
+#I .line-2 {
+    top: 80px;
+    left: -25px;
 }
 
-#I .circle-2 {
-    left: 72px;
+#I .line-1 {
+    top: 20px;
+    left: -25px;
 }
 
 #I .circle-3 {
-    top: 95px;
-    left: 80px;
+    top: 5px;
+    left: 85px;
+}
+
+#I .circle-2 {
+    top: 25px;
+    left: 5px;
 }
 
 /* J */
@@ -306,25 +313,24 @@
 }
 
 #J .circle-1 {
-    /* left: 30px; */
-    top: -20px;
+    left: 30px;
+    top: -10px;
 }
 
-#J .line-1 {
-    left: 100px;
-}
 
-#J .line-2 {
-    top: -30px;
+#J .line-3 {
+    top: 10px;
+    left: 10px;
+    /* transform: rotate(20deg); */
 }
 
 #J-c2-1 {
-    top: 50px;
+    top: 30px;
     left: 70px;
 }
 
 #J-c2-2 {
-    top: 110px;
+    top: 90px;
     left: 100px;
 }
 

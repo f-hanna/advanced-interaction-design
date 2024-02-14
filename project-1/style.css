@@ -320,11 +320,12 @@ h1 {
         box-shadow: 0 0 10px #ffffff; /* Initial glow effect */
     }
 
-    50% {
+    60% {
         width: 100%;
         border-color: #ffffff;
         background-color: white;
         box-shadow: 0 0 20px #ffff; /* Increased glow effect */
+        border: .5px solid white;
     }
 
     100% {
