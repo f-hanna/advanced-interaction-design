@@ -665,3 +665,37 @@
     top: 70px;
     left: -70px;
 }
+
+/* W */
+
+#W {
+    margin-left: .5em;
+}
+
+#W > * {
+    position: absolute;
+}
+
+#W .line-2 {
+    top: 20px;
+    transform: rotate(60deg);
+}
+
+#W .line-1 {
+    top: 60px;
+    transform: rotate(120deg);
+    left: 50px;
+}
+
+#W .circle-3 {
+    transform: rotate(40deg);
+    left: 20px;
+}
+
+#v-l2-1 {
+    left: -50px;
+}
+
+#v-l2-2 {
+    left: 20px;
+}
