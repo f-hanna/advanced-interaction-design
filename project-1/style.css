@@ -165,7 +165,7 @@ h2, h3, p, a {
 
 .circle {
     position: absolute;
-    border: 2px solid var(--grey);
+    border: 1.5px solid var(--grey);
     border-radius: 50%;
     transition: border-color 0.3s ease-in-out;
     /* width: 40px;
@@ -217,7 +217,7 @@ h2, h3, p, a {
 
 .circle-1 {
     /* position: absolute; */
-    border: 2px solid var(--grey);
+    border: 1.5px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
 
@@ -285,7 +285,7 @@ h2, h3, p, a {
     position: relative;
     /* Ensure that the ::after pseudo-element is positioned correctly */
     border: .5px solid var(--grey);
-    height: .25px;
+    height: .5px;
     background-color: var(--grey);
     transition: border-color 0.3s ease-in-out;
     
