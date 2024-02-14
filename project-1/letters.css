@@ -8,7 +8,7 @@
 #A {
     margin-top: 2.5em;
     display: inline-flex;
-    margin-left: .5em;
+    /* margin-left: .5em; */
     /* flex-direction: column; */
     /* align-items: center;
     justify-content: space-between; */
@@ -45,7 +45,7 @@
     display: inline-flex;
     position: relative;
     margin-top: 2em;
-    margin-left: 1em;
+    margin-left: 0em;
 
 }
 
@@ -363,9 +363,6 @@
 
 /* L */
 
-#L {
-    margin-left: .5em;
-}
 
 #L>* {
     position: absolute;
@@ -458,7 +455,7 @@
 
 #O {
     margin: 2em auto;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 #O>* {
@@ -769,22 +766,23 @@
 }
 
 #z-c2-1 {
-    left: 100px;
+    left: 120px;
 
 }
 
 #z-c2-2 {
     top: 100px;
-    left: 100px;
+    left: 120px;
 
 }
 
 #Z .line-3 {
     transform: rotate(130deg);
     top: 60px;
-    left: -10px;
+    left: 10px;
 }
 
 #Z .line-1 {
     top: 80px;
+    left: 20px;
 }
