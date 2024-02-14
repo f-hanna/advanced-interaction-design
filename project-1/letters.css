@@ -732,28 +732,28 @@
 
 /* Y */
 
-#Y {
+#Y, #Y-2 {
     margin-top: 3em;
     /* margin-left: 1em; */
 }
 
-#Y>* {
+#Y>*, #Y-2>* {
     position: absolute;
 }
 
-#Y .circle-4 {
+#Y .circle-4, #Y-2 .circle-4 {
     transform: rotate(40deg);
     left: 60px;
     top: -5px;
 }
 
-#Y .line-1 {
+#Y .line-1, #Y-2 .line-1 {
     transform: rotate(310deg);
     top: 80px;
     left: 30px;
 }
 
-#Y .line-3 {
+#Y .line-3, #Y-2 .line-3 {
     transform: rotate(60deg);
     top: 20px;
     left: 0px;
