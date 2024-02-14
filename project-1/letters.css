@@ -382,6 +382,11 @@
 
 }
 
+#L .circle-1 {
+    left: 20px;
+    top: 25px;
+}
+
 #L .line-2 {
     /* top: 20px; */
     left: 40px;
