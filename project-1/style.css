@@ -31,10 +31,11 @@ h1 {
     /* padding: 20px; */
     margin: 0 5%;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .container {
-    border: 1px solid #ddd;
+    border: 1px solid var(--black);
     height: 12em;
     border-radius: 5px;
     color: white;
@@ -45,6 +46,7 @@ h1 {
 
 .container:hover {
     background-color: rgb(27, 33, 49);
+    border: 1px solid white;
 
 }
 
@@ -82,7 +84,7 @@ h1 {
 
 #module {
     grid-column: 1/-1;
-    border: 1px solid #ddd;
+    background-color: rgb(27, 33, 49);
     /* height: 15em; */
     border-radius: 5px;
     color: white;
