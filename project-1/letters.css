@@ -628,3 +628,29 @@
     /* left: 20px; */
     top: 110px;
 }
+
+/* V */
+
+#V {
+
+    margin-left: 2em;
+}
+
+#V > * {
+    position: absolute;
+}
+
+#V .circle-4 {
+    transform: rotate(150deg);
+}
+
+#V .line-3 {
+    transform: rotate(130deg);
+    top: 40px;
+}
+
+#V .line-1 {
+    transform: rotate(-120deg);
+    top: 70px;
+    left: -70px;
+}

@@ -10,6 +10,7 @@
     --purple: rgb(175, 82, 222);
     --pink: rgb(255, 45, 85);
     --black: rgb(10, 13, 21);
+    --grey:  rgb(160, 160, 160);
 }
 
 body {
@@ -44,7 +45,7 @@ h1 {
 
 .container:hover {
     background-color: rgb(27, 33, 49);
- 
+
 }
 
 /* BUTTON */
@@ -58,7 +59,7 @@ h1 {
     border: 1px solid white;
     margin-top: 2%;
     border-radius: 5px;
-    
+
 }
 
 /* HEADER */
@@ -102,7 +103,7 @@ h1 {
 
 .horizontal {
     transform: rotate(90deg);
-    transform-origin: top left;    
+    transform-origin: top left;
 
 }
 
@@ -114,8 +115,9 @@ h1 {
 
 .circle {
     position: absolute;
-    border: 1px solid white;
+    border: 2px solid var(--grey);
     border-radius: 50%;
+    transition: border-color 0.3s ease-in-out;
     /* width: 40px;
     height: 40px; */
 }
@@ -165,7 +167,7 @@ h1 {
 
 .circle-1 {
     /* position: absolute; */
-    border: 1px solid white;
+    border: 2px solid var(--grey);
     border-radius: 50%;
     display: inline-block;
 
@@ -230,9 +232,17 @@ h1 {
 /* LINE */
 
 .line {
-    border-top: 1px solid white;
+    position: relative;
+    /* Ensure that the ::after pseudo-element is positioned correctly */
+    border: .1px solid var(--grey);
+    height: .1px;
+    background-color: var(--grey);
+    transition: border-color 0.3s ease-in-out;
+    
+    
     /* margin: 10px 0; */
-  }
+}
+
 
 .line-1 {
     width: 120px;
@@ -247,7 +257,7 @@ h1 {
 
 }
 
-.line-2 > :nth-child(1) {
+.line-2> :nth-child(1) {
     /* display: inline-block; */
     margin-bottom: 20px;
 
@@ -259,7 +269,7 @@ h1 {
     margin: 10px 0;
 }
 
-.line-3 > :nth-child(2){
+.line-3> :nth-child(2) {
     /* display: inline-block; */
     margin-bottom: 10px;
     margin-top: 10px;
@@ -267,13 +277,13 @@ h1 {
 }
 
 
-.line-3 > :nth-child(1){
+.line-3> :nth-child(1) {
     /* display: inline-block; */
     margin: 0;
 
 }
 
-.line-3 > :nth-child(3){
+.line-3> :nth-child(3) {
     /* display: inline-block; */
     margin: 0;
 
@@ -281,14 +291,45 @@ h1 {
 
 
 
+.glow {
+    animation: glow-animation .5s infinite alternate;
+}
 
-.fill {
-    border: none;
-    background-color: rgb(10, 13, 21);
-    /* border-radius: 10px; */
+.grow {
+    animation: fill-animation 1s;
 
 }
 
-.outline {
-    border: 3px solid rgb(10, 13, 21);
+@keyframes glow-animation {
+    0% {
+        box-shadow: 0 0 10px #ffffff;
+        border-color: #ffffff;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #ffff;
+        border-color: #ffffff;
+    }
+}
+
+/* Apply fill animation to the line */
+@keyframes fill-animation {
+    0% {
+        width: 0;
+        border-color: var(--grey);
+        box-shadow: 0 0 10px #ffffff; /* Initial glow effect */
+    }
+
+    50% {
+        width: 100%;
+        border-color: #ffffff;
+        background-color: white;
+        box-shadow: 0 0 20px #ffff; /* Increased glow effect */
+    }
+
+    100% {
+        width: 100%;
+        border-color: var(--grey);
+        box-shadow: 0 0 20px #ffffff; /* Back to the initial glow effect */
+    }
 }
