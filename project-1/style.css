@@ -129,7 +129,7 @@ h2, h3, p, a {
 
 #module {
     grid-column: 1/-1;
-    background-color: rgb(27, 33, 49);
+    /* background-color: rgb(27, 33, 49); */
     /* height: 15em; */
     border-radius: 5px;
     color: white;

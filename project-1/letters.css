@@ -145,26 +145,26 @@
 
 /* E */
 
-#E {
+#E, #E-2 {
 
     margin-top: 2em;
 }
 
-#E>* {
+#E>*, #E-2>* {
     position: absolute;
 }
 
-#E-l2-2 {
+#E #E-l2-2, #E-2 #E-l2-2 {
     top: 50px;
 
 }
 
-#E-l2-3 {
+#E #E-l2-3, #E-2 #E-l2-3 {
     top: 100px;
 
 }
 
-#E .circle-1 {
+#E .circle-1, #E-2 .circle-1 {
     top: 10px;
     left: 10px;
 }
@@ -364,27 +364,27 @@
 /* L */
 
 
-#L>* {
+#L>*, #L-2>*, #L-3>* {
     position: absolute;
 }
 
-#L .circle-4 {
+#L .circle-4, #L-2 .circle-4, #L-3 .circle-4 {
     top: 95px;
     left: 140px;
 }
 
-#L .line-1 {
+#L .line-1, #L-2 .line-1, #L-3 .line-1 {
     top: 120px;
     left: 10px;
 
 }
 
-#L .circle-1 {
+#L .circle-1, #L-2 .circle-1, #L-3 .circle-1 {
     left: 20px;
     top: 25px;
 }
 
-#L .line-2 {
+#L .line-2, #L-2 .line-2, #L-3 .line-2 {
     /* top: 20px; */
     left: 40px;
 
@@ -453,25 +453,25 @@
 
 /* O */
 
-#O {
+#O, #O-2 {
     margin: 2em auto;
     margin-left: 0.5em;
 }
 
-#O>* {
+#O>*, #O-2>* {
     position: absolute;
 }
 
-#O .line-2 {
+#O .line-2, #O-2 .line-2 {
     top: -20px;
 }
 
 
-#O .line-3 {
+#O .line-3, #O-2 .line-3 {
     top: 80px;
 }
 
-#O .circle-3 {
+#O .circle-3, #O-2 .circle-3 {
     top: 40px;
     left: 110px;
 }
@@ -528,7 +528,7 @@
 
 /* R */
 
-#R {
+#R, #R-2 {
     position: relative;
     margin-top: 3.5em;
     display: inline-flex;
@@ -537,17 +537,17 @@
     /* margin: auto; */
 }
 
-#R-structure {
+#R #R-structure, #R-2 #R-structure {
     display: flex;
     position: absolute;
     /* left: 60px; */
 }
 
-#R-structure>.circle-1 {
+#R #R-structure>.circle-1, #R-2 #R-structure>.circle-1 {
     margin-left: -1em;
 }
 
-#R>.line-3 {
+#R>.line-3, #R-2>.line-3 {
     margin-top: 20px;
     transform: rotate(40deg);
 }
