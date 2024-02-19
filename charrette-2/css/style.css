@@ -9,15 +9,26 @@
     --indigo: rgb(88, 86, 214);
     --purple: rgb(175, 82, 222);
     --pink: rgb(255, 45, 85);
+    --black: rgb(10, 13, 21);
+    --grey:  rgb(160, 160, 160);
 }
 
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    background-color: var(--black);
 }
 
 h1 {
     max-width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.caption {
+    text-transform: capitalize;
 }
 
 .grid-container {
@@ -26,6 +37,8 @@ h1 {
     grid-template-rows: repeat(10, 1fr);
     gap: 10px;
     padding: 20px;
+    width: 70%;
+    margin: auto;
 }
 
 /* Optional: Style the grid items */
@@ -33,9 +46,20 @@ h1 {
     border: 1px solid #ddd;
     /* padding: 10px; */
     /* text-align: center; */
-    height: 15em;
+    height: 10em;
     border-radius: 5px;
-    color: white;
+    background-color: white;
     transition: transform 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container-text {
+    display: block; /* Ensure <p> and <h2> behave as block-level elements */
+    margin: 0;
+}
+
+.container-text > * {
+    margin: 0;
 }
