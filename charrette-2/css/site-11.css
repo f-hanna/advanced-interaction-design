@@ -1,0 +1,18 @@
+@import "../css/style.css";
+
+.trigger {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 80vw;
+  height: 80vh;
+  /* background-color: lightgray; */
+  padding: 60px;
+}
+.box {
+  background-color: var(--mint);
+  width: 10vw;
+  height: 10vw;
+  /* margin: auto; */
+  border-radius: 50%;
+}
