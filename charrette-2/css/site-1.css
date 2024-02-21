@@ -1,8 +1,8 @@
-@import "style.css";
+@import "../css/style.css";
 
-body {
-    background-color: var(--indigo);
-}
+/* body {
+    background-color: var(--cyan);
+} */
 
 .wrapper {
     height: 2000px;
@@ -15,4 +15,10 @@ svg {
     right: 0;
     bottom: 0;
     margin: auto;
+    /* fill: var(--pink); */
+
+}
+
+path {
+    fill: var(--pink);
 }

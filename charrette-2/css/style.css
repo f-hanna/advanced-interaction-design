@@ -63,3 +63,23 @@ a {
 .container-text > * {
     margin: 0;
 }
+
+.back-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Span entire width of the page */
+    
+    padding: 5%;
+    box-sizing: border-box; /* Include padding in the width/height */
+}
+
+.back-btn button {
+    
+    left: 0;
+    width: 100%; /* Span entire width of the page */
+    height: 10%; /* Span entire height of the page */
+    padding: 1em;
+    box-sizing: border-box; /* Include padding in the width/height */
+    border-radius: 30px;
+}
