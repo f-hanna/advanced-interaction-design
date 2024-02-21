@@ -1,0 +1,40 @@
+@import "../css/style.css";
+
+p {
+    color: white;
+}
+
+.space {
+    width: 40%;
+    margin: auto;
+    height: 120vh;
+}
+
+.progressBar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 0; /* Start with zero height */
+    background: var(--blue);
+    width: 100%; /* Adjust width of the progress bar */
+    transition: height 0.2s ease-out; /* Use height transition */
+    /* border: 1px white solid; */
+    /* z-index: 100; */
+}
+
+
+.wrapper {
+    height: 200vh;
+}
+
+.drowned {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    z-index: 90;
+}
