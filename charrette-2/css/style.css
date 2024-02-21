@@ -19,8 +19,8 @@ body {
     background-color: var(--black);
 }
 
-h1 {
-    max-width: 90%;
+h3 {
+    max-width: 80%;
 }
 
 a {
