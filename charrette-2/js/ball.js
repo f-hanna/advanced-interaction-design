@@ -5,7 +5,7 @@ const tl = gsap.timeline({
     end: "+=8000",
     scrub: 1,
     pin: true,
-    markers: true
+    // markers: true
   }
 });
 tl.to(".box", {
