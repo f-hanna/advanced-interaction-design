@@ -19,9 +19,9 @@ body {
     background-color: var(--black);
 }
 
-h3 {
+/* h3 {
     max-width: 80%;
-}
+} */
 
 a {
     text-decoration: none;
@@ -36,7 +36,7 @@ a:visited {
     color: white;
     width: 60%;
     margin: auto;
-    padding: 10em 0;
+    padding: 15em 0;
     text-align: center;
 }
 
@@ -46,8 +46,8 @@ a:visited {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     padding: 20px;
     width: 70%;
@@ -59,7 +59,7 @@ a:visited {
     border: 1px solid var(--black);
     /* padding: 10px; */
     /* text-align: center; */
-    height: 10em;
+    height: 20em;
     border-radius: 5px;
     background-color: white;
     transition: transform 1s ease;
@@ -146,4 +146,8 @@ a:visited {
 
 #s-11 {
     background-color: var(--mint);
+}
+
+#s-12 {
+    background-color: var(--yellow);
 }

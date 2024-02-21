@@ -1,0 +1,27 @@
+@import "../css/style.css";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 4em 0;
+  width: 70%;
+  margin: auto;
+  }
+  
+  .block {
+    border: 1px solid var(--black);
+    /* padding: 10px; */
+    /* text-align: center; */
+    height: 20em;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    transition: transform 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    /* max-width: 30%; */
+
+  }
