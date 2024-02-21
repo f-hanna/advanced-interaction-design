@@ -10,11 +10,11 @@ p {
 }
 
 .progressBar {
-    position: fixed;
+position: fixed;
 top: 0;
 left: 0;
 height: 8px;
-background: var(--orange);
+background: var(--purple);
 width: 0%;
 z-index: 100;
 transition: width 0.2s ease-out;

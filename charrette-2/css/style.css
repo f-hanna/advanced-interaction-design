@@ -29,7 +29,15 @@ a {
 }
 
 a:visited {
-    color: var(--black);
+    color: var(--purple);
+}
+
+.index-header {
+    color: white;
+    width: 60%;
+    margin: auto;
+    padding: 10em 0;
+    text-align: center;
 }
 
 .caption {
@@ -102,4 +110,20 @@ a:visited {
 
 #s-2 {
     background-color: var(--green);
+}
+
+#s-3 {
+    background-color: var(--cyan);
+}
+
+#s-4 {
+    background-color: var(--yellow);
+}
+
+#s-5 {
+    background-color: var(--purple);
+}
+
+#s-6 {
+    background-color: var(--orange);
 }
