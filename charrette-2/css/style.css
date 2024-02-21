@@ -25,6 +25,11 @@ h1 {
 
 a {
     text-decoration: none;
+    border: none;
+}
+
+a:visited {
+    color: var(--black);
 }
 
 .caption {
@@ -43,7 +48,7 @@ a {
 
 /* Optional: Style the grid items */
 .container {
-    border: 1px solid #ddd;
+    border: 1px solid var(--black);
     /* padding: 10px; */
     /* text-align: center; */
     height: 10em;
@@ -53,6 +58,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--black);
+}
+
+.container:hover {
+    border: 1px solid #fff;
+
 }
 
 .container-text {
@@ -82,4 +93,12 @@ a {
     padding: 1em;
     box-sizing: border-box; /* Include padding in the width/height */
     border-radius: 30px;
+}
+
+#s-1 {
+    background-color: var(--pink);
+}
+
+#s-2 {
+    background-color: var(--green);
 }

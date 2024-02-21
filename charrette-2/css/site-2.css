@@ -1,0 +1,39 @@
+@import "../css/style.css";
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 80vh;
+    height: 50vh;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    margin: auto;
+    margin-top: 5em;
+}
+
+.wrap::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers (like Chrome and Safari) */
+}
+
+.wrapper {
+    white-space: nowrap; /* Ensure items stay on the same line */
+    width: fit-content; /* Make wrapper width fit its content */
+    padding: 10px; /* Add padding to create space around items */
+}
+
+.item {
+    display: inline-flex; /* Display items in a row */
+    width: 80%; /* Adjust item width as needed */
+    height: 40vh; /* Adjust item height as needed */
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 10px; /* Adjust item margin as needed */
+    text-align: center; /* Center-align text */
+    line-height: 100px; /* Vertically center text */
+    background-color: var(--green);
+    border-radius: 10px;
+}
