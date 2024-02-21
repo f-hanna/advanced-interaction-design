@@ -1,0 +1,21 @@
+@import "../css/style.css";
+
+p {
+    color: white;
+}
+
+.text {
+    width: 40%;
+    margin: auto;
+}
+
+.progressBar {
+    position: fixed;
+top: 0;
+left: 0;
+height: 8px;
+background: var(--orange);
+width: 0%;
+z-index: 100;
+transition: width 0.2s ease-out;
+}
