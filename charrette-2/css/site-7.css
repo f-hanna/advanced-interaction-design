@@ -1,0 +1,18 @@
+@import "../css/style.css";
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100vw; */
+  height: 100vh;
+  /* background-color: lightgray; */
+  /* padding: 60px; */
+}
+.circle {
+  background-color: var(--red);
+  width: 10vw;
+  height: 10vw;
+  margin: auto;
+  border-radius: 50%;
+}
