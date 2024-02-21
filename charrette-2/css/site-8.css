@@ -1,0 +1,40 @@
+@import "../css/style.css";
+
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* html {
+    color: #D6E793;
+    background-color: #222222;
+    font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+  } */
+  
+  /* Add some basic styles */
+  .wrapper {
+    padding: 7em 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    width: 80vw;
+    height: 140vh;
+  }
+  
+  .block {
+    height: 200px;
+    width: 80%;
+    color: var(--black);
+    background-color: var(--indigo);
+    margin-bottom: 24px;
+    /* Center text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border-radius: 10px;
+
+  }
