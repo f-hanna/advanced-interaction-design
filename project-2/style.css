@@ -1,0 +1,65 @@
+/* Main */
+:root {
+    --red: rgb(255, 59, 48);
+    --orange: rgb(255, 149, 0);
+    --yellow: rgb(255, 204, 0);
+    --green: rgb(40, 205, 65);
+    --mint: rgb(0, 199, 190);
+    --cyan: rgb(85, 190, 240);
+    --blue: rgb(0, 122, 255);
+    --indigo: rgb(88, 86, 214);
+    --purple: rgb(175, 82, 222);
+    --pink: rgb(255, 45, 85);
+    --black: rgb(10, 13, 21);
+    --grey: rgb(160, 160, 160);
+}
+
+body {
+    background: linear-gradient(to bottom, var(--black), #21262b);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.star {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow:
+        0 0 30px 15px #fff,
+        /* inner white */
+        0 0 50px 30px #f0f,
+        /* middle magenta */
+        0 0 70px 45px #0ff;
+    /* outer cyan */
+
+    /* position */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+}
+
+.bg-star {
+    height: .1em;
+    width: .1em;
+    border-radius: 50%;
+    background-color: white;
+
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+#sequence {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--black), #21262b);
+
+}
