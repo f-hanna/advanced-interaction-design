@@ -16,10 +16,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="sequence">
 
-    <div id="sequence" class="star-container">
-
+    <div id="one" class="star-container">
         <div id="title">
 
             <!-- <svg viewBox="0 0 800 800">
@@ -28,9 +27,9 @@
                         m -100, 0
                         a 100,100 0 1,1 200,0
                         a 100,100 0 1,1 -200,0
-  " />
+    " />
                 </defs>
-
+    
                 <text font-family="Cutive Mono" font-size="20" fill="white">
                     <textPath xlink:href="#MyPath">
                         The Life and Death of a Star.
@@ -38,27 +37,33 @@
                 </text>
             </svg> -->
             
-            <img src="./imgs/circle-text-1.png" alt="title-text" id="title-text">
+            
             <div class="star" id="title-star">
             </div>
+            <img src="./imgs/circle-text-1.png" alt="title-text" id="title-text">
             <!-- <div class="text-wrapper">
     
     
     
             </div> -->
-
+    
         </div>
 
     </div>
 
+    
 
 
-    <!-- SCRIPTS -->
-    <script src="scripts/stars.js"></script>
+
+   
     <!-- Load GSAP (Animation Library) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- Load the scroll library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+     <!-- SCRIPTS -->
+     <script src="scripts/stars.js"></script>
+     <script src="scripts/title.js"></script>
 </body>
 
 </html>

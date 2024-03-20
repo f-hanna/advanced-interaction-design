@@ -18,7 +18,7 @@ function createStar(containerWidth, containerHeight) {
 
 // Function to add stars to the background
 function fillBackgroundWithStars() {
-    const numStars = 50; // Number of stars
+    const numStars = 300; // Number of stars
     const container = document.querySelector('.star-container');
 
     const containerWidth = container.clientWidth; // Get container width

@@ -15,7 +15,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, var(--black), #21262b);
+    background-color: var(--black);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -35,9 +35,11 @@ body {
     /* outer cyan */
 
     /* position */
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 70%;
     left: 48%;
+/* 
+    transform: translate(-50%, -50%); */
 
     z-index: 100;
 
@@ -51,7 +53,7 @@ body {
 
     /* position */
     position: absolute;
-    
+
     /* left: 5%; */
 
 }
@@ -61,10 +63,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--black), #21262b);
+    /* height: 100%; */
+    /* background: linear-gradient(to bottom, var(--black), #21262b); */
     /* need to change this value later */
-    height: 100vh;
+    /* height: 5000px; */
 }
 
 #title-text {
@@ -72,5 +74,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    opacity: 0%;
 
+}
+
+#one {
+    height: 4000px;
 }
