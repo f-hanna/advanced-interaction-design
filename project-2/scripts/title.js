@@ -104,48 +104,38 @@ for (let i = 0; i < 30; i++) {
     nebulaDiv.appendChild(star);
 }
 
-    // GSAP ScrollTrigger effect
-    gsap.registerPlugin(ScrollTrigger);
+// GSAP ScrollTrigger effect
+gsap.registerPlugin(ScrollTrigger);
 
-    const stars = gsap.utils.toArray('.nebula-star');
+// Create a GSAP timeline
+const timeline = gsap.timeline();
 
-    gsap.timeline({
+// Iterate over each .nebula-star element
+gsap.utils.toArray('.nebula-star').forEach((star) => {
+    // Add a tween to the timeline for each star
+    timeline.to(star, {
         scrollTrigger: {
-            trigger: "#nebula",
-            start: "top top",
-            end: "bottom top",
-            pin: true,
-            pinSpacing: false,
-            onEnter: (self) => {
-                animateStars(self);
-              },
-        
-              onUpdate: (self) => {
-                animateStars(self);
-              },
-            },
-        
+            trigger: "#two",
+            start: 'top top',
+            end: "+=5000",
+            scrub: true,
+            onUpdate: (self) => {
+                const progress = self.progress;
+                const centerX = window.innerWidth / 2;
+                const centerY = window.innerHeight / 2;
+                const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
+                const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
+                // Adjusted x and y based on progress
+                const adjustedX = centerX - currentX + (progress - 0.5) * 100;
+                const adjustedY = centerY - currentY + (progress - 0.5) * 100;
+                // Add tween to the timeline
+                return gsap.to(star, {
+                    duration: .5,
+                    x: adjustedX,
+                    y: adjustedY,
+                    ease: "power1.inOut"
+                });
+            }
+        }
     });
-
-    function animateStars(self) {
-        const progress = self.progress;
-
-        const centerX = window.innerWidth / 2;
-        const centerY = window.innerHeight / 2;
-
-        stars.forEach((star) => {
-const progress = self.progress;
-                    const centerX = window.innerWidth / 2;
-                    const centerY = window.innerHeight / 2;
-                    const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
-                    const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
-            gsap.to(star, {
-                x: centerX - currentX,
-                y: centerY - currentY,
-                duration: randomInRange(0.5, 5),
-                yoyo: true,
-                repeat: -1,
-                ease: "power1.inOut"
-            });
-        });
-    }
+});

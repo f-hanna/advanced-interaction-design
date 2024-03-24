@@ -21,7 +21,7 @@ body {
     height: 100%;
 }
 
-p {
+p, h1, h2, h3 {
     color: white;
     font-family: "Crimson Text", serif;
 }
@@ -128,14 +128,14 @@ p {
 
     height: 2em;
     width: 2em;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: white;
     box-shadow:
-        0 0 30px 15px #fff,
+        0 0 30px 15px #ffffffa0,
         /* inner white */
-        0 0 50px 30px #f0f,
+        30px 10px 50px 30px rgba(255, 0, 255, 0.215),
         /* middle magenta */
-        0 0 70px 45px #0ff;
+        10px 30px 70px 50px rgba(0, 255, 255, 0.164);
     /* outer cyan */
 
     
