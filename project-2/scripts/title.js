@@ -61,9 +61,9 @@ for (let i = 0; i < 30; i++) {
 
     const star = document.createElement('div');
     star.className = 'nebula-star';
-    const size = randomInRange(1, 4);
-    star.style.width = size + 'px';
-    star.style.height = size + 'px';
+    const size = randomInRange(.5, 2);
+    star.style.width = size + 'em';
+    star.style.height = size + 'em';
     star.style.left = randomInRange(0, nebulaW - size) + 'px'; // Adjust left position
     star.style.top = randomInRange(0, nebulaH - size) + 'px'; // Adjust top position
     nebulaDiv.appendChild(star);
@@ -74,9 +74,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const nebulaT1 = gsap.timeline({
     scrollTrigger: {
-        trigger: "#two",
+        trigger: "#inner-1",
         start: "top top",
         end: "+=7000",
+        scrub: 2,
         pin: true,
         pinSpacing: false,
 
@@ -89,6 +90,12 @@ const nebulaT1 = gsap.timeline({
         },
     },
 });
+
+nebulaT1.to("#stage-nebula", { 
+    yPercent: 120,
+    opacity: 1,
+    // fontSize: "1em", 
+    duration: 5 })
 
 const stars = gsap.utils.toArray(".nebula-star");
 
@@ -105,7 +112,7 @@ function animateStars(self) {
         const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
         // console.log(progress)
         gsap.to(star, {
-            duration: randomInRange(1, 5),
+            duration: randomInRange(.5, 1),
             x: (centerX - currentX) * progress,
             y: (centerY - currentY) * progress,
             yoyo: true,
@@ -117,9 +124,24 @@ function animateStars(self) {
 
 nebulaT1.set("#stage-nebula", { opacity: 0 }); // Set initial opacity to 0
 
-nebulaT1.to("#stage-nebula", { 
-    yPercent: 100,
-    opacity: 1,
-    // fontSize: "1em", 
-    duration: 4 })
+
+/******
+ *      PROTOSTAR
+ *****/
+// const protoT1 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#inner-1",
+//         start: "7000px 10", // Adjusted start point
+//         end: "+=5000",
+//         pin: true,
+//         pinSpacing: false,
+//     },
+// });
+
+// stars.forEach((star) => {
+//     star.classList.remove("nebula-star"); // Remove the old class
+//     star.classList.add("proto-star"); // Add the new class
+// });
+
+
 

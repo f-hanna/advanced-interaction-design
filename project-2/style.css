@@ -102,9 +102,11 @@ h1 {
 
 
 #two {
-    height: 7000px;
+    height: 12000px;
     position: relative;
 }
+
+/* SEQEUNCE START */
 
 
 
@@ -143,21 +145,32 @@ h1 {
     height: 2em;
     width: 2em;
     border-radius: 100%;
-    background-color:  #ffffff51;
+    background-color: #ffffff89;
     box-shadow:
         0 0 30px 10px #ffffffa0,
         /* middle magenta */
         10px 30px 70px 100px rgba(0, 255, 255, 0.164),
         /* inner white */
         30px 10px 100px 70px rgba(255, 0, 255, 0.215);
-        
-    /* outer cyan */
 
-
-    /* 
-    transform: translate(-50%, -50%); */
 
     z-index: 100;
 
+
+}
+
+/* PROTOSTAR */
+
+.proto-star {
+
+    position: absolute;
+
+    height: 2em;
+    width: 2em;
+    border-radius: 100%;
+    background-color: #ffffff89;
+   
+
+    z-index: 100;
 
 }
