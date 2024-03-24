@@ -91,8 +91,14 @@ const nebulaT1 = gsap.timeline({
     },
 });
 
+nebulaT1.set("#stage-nebula", { 
+    yPercent: 200,
+    opacity: 0 
+}); // Set initial opacity to 0
+
+
 nebulaT1.to("#stage-nebula", { 
-    yPercent: 120,
+    yPercent: 60,
     opacity: 1,
     // fontSize: "1em", 
     duration: 5 })
@@ -122,26 +128,30 @@ function animateStars(self) {
     });
 }
 
-nebulaT1.set("#stage-nebula", { opacity: 0 }); // Set initial opacity to 0
+
+
 
 
 /******
  *      PROTOSTAR
  *****/
-// const protoT1 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#inner-1",
-//         start: "7000px 10", // Adjusted start point
-//         end: "+=5000",
-//         pin: true,
-//         pinSpacing: false,
-//     },
-// });
+const protoT1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inner-1",
+        start: "7000px 10", // Adjusted start point
+        end: "+=5000",
+        pin: true,
+        pinSpacing: false,
 
-// stars.forEach((star) => {
-//     star.classList.remove("nebula-star"); // Remove the old class
-//     star.classList.add("proto-star"); // Add the new class
-// });
+        onEnter: (self) => {
+            animateStars(self);
+        },
+
+        onUpdate: (self) => {
+            animateStars(self);
+        },
+    },
+});
 
 
 
