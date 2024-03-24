@@ -107,35 +107,74 @@ for (let i = 0; i < 30; i++) {
 // GSAP ScrollTrigger effect
 gsap.registerPlugin(ScrollTrigger);
 
-// Create a GSAP timeline
-const timeline = gsap.timeline();
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#two",
+        start: "top 10",
+        end: "bottom top",
+        pin: true,
+        pinSpacing: false,
 
-// Iterate over each .nebula-star element
-gsap.utils.toArray('.nebula-star').forEach((star) => {
-    // Add a tween to the timeline for each star
-    timeline.to(star, {
-        scrollTrigger: {
-            trigger: "#two",
-            start: 'top top',
-            end: "+=5000",
-            scrub: true,
-            onUpdate: (self) => {
-                const progress = self.progress;
-                const centerX = window.innerWidth / 2;
-                const centerY = window.innerHeight / 2;
-                const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
-                const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
-                // Adjusted x and y based on progress
-                const adjustedX = centerX - currentX + (progress - 0.5) * 100;
-                const adjustedY = centerY - currentY + (progress - 0.5) * 100;
-                // Add tween to the timeline
-                return gsap.to(star, {
-                    duration: .5,
-                    x: adjustedX,
-                    y: adjustedY,
-                    ease: "power1.inOut"
-                });
-            }
-        }
-    });
+        onEnter: (self) => {
+            animateStars(self);
+        },
+
+        onUpdate: (self) => {
+            animateStars(self);
+        },
+    },
 });
+
+const stars = gsap.utils.toArray(".nebula-star");
+
+function animateStars(self) {
+    const progress = self.progress;
+
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+
+    stars.forEach((star) => {
+
+        const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
+        const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
+        // console.log(progress)
+        gsap.to(star, {
+            duration: randomInRange(0.1, 0.5),
+            x: (centerX - currentX) * progress,
+            y: (centerY - currentY) * progress,
+            yoyo: true,
+            repeat: -1,
+            ease: "power1.inOut",
+        });
+    });
+}
+// // Iterate over each .nebula-star element
+// gsap.utils.toArray('.nebula-star').forEach((star) => {
+//     // Add a tween to the timeline for each star
+//     timeline.to(star, {
+//         scrollTrigger: {
+//             trigger: "#two",
+//             start: 'top top',
+//             end: "+=5000",
+//             scrub: true,
+//             onUpdate: (self) => {
+//                 const progress = self.progress;
+//                 const centerX = window.innerWidth / 2;
+//                 const centerY = window.innerHeight / 2;
+//                 const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
+//                 const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
+//                 // Adjusted x and y based on progress
+//                 const adjustedX = centerX - currentX + (progress - 0.5) * 100;
+//                 const adjustedY = centerY - currentY + (progress - 0.5) * 100;
+//                 // Add tween to the timeline
+//                 return gsap.to(star, {
+//                     duration: .5,
+//                     x: adjustedX,
+//                     y: adjustedY,
+//                     ease: "power1.inOut"
+//                 });
+//             }
+//         }
+//     });
+// });
