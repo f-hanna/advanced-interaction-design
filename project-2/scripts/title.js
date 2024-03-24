@@ -43,40 +43,6 @@ tl.to("#title-text", {
 })
 
 
-const tl1 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#inner-1",
-        start: "top top",
-        end: "+=5000",
-        scrub: 2,
-        pin: true,
-        onEnter: function () {
-            document.getElementById("title-text").style.display = "block";
-        },
-        onLeaveBack: function () {
-            document.getElementById("title-text").style.display = "block";
-        },
-        onEnterBack: function () {
-            document.getElementById("title-text").style.display = "block";
-        },
-        onLeave: function () {
-            document.getElementById("title-text").style.display = "none";
-        }
-        // markers: true
-    }
-});
-tl1.to("#title-text", { yPercent: -50, duration: 3 })
-tl1.to("#title-text", { yPercent: 30, opacity: 1, duration: 15 })
-tl1.to("#title-text", { rotation: -90, duration: 10 })
-tl1.to("#title-text", { rotation: -180, duration: 10 })
-tl1.to("#title-text", { rotation: -270, duration: 10 })
-tl1.to("#title-text", { rotation: -360, duration: 10 })
-tl1.to("#title-text", {
-    yPercent: 200,
-    opacity: 0,
-    duration: 20,
-
-})
 
 /******************************* 
  * NEBULA
@@ -109,8 +75,8 @@ gsap.registerPlugin(ScrollTrigger);
 const nebulaT1 = gsap.timeline({
     scrollTrigger: {
         trigger: "#two",
-        start: "top 10",
-        end: "+=5000",
+        start: "top top",
+        end: "+=7000",
         pin: true,
         pinSpacing: false,
 
@@ -139,7 +105,7 @@ function animateStars(self) {
         const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
         // console.log(progress)
         gsap.to(star, {
-            duration: randomInRange(0.1, 0.5),
+            duration: randomInRange(1, 5),
             x: (centerX - currentX) * progress,
             y: (centerY - currentY) * progress,
             yoyo: true,
@@ -152,37 +118,8 @@ function animateStars(self) {
 nebulaT1.set("#stage-nebula", { opacity: 0 }); // Set initial opacity to 0
 
 nebulaT1.to("#stage-nebula", { 
-    yPercent: 80,
+    yPercent: 100,
     opacity: 1,
     // fontSize: "1em", 
     duration: 4 })
 
-// // Iterate over each .nebula-star element
-// gsap.utils.toArray('.nebula-star').forEach((star) => {
-//     // Add a tween to the timeline for each star
-//     timeline.to(star, {
-//         scrollTrigger: {
-//             trigger: "#two",
-//             start: 'top top',
-//             end: "+=5000",
-//             scrub: true,
-//             onUpdate: (self) => {
-//                 const progress = self.progress;
-//                 const centerX = window.innerWidth / 2;
-//                 const centerY = window.innerHeight / 2;
-//                 const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
-//                 const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
-//                 // Adjusted x and y based on progress
-//                 const adjustedX = centerX - currentX + (progress - 0.5) * 100;
-//                 const adjustedY = centerY - currentY + (progress - 0.5) * 100;
-//                 // Add tween to the timeline
-//                 return gsap.to(star, {
-//                     duration: .5,
-//                     x: adjustedX,
-//                     y: adjustedY,
-//                     ease: "power1.inOut"
-//                 });
-//             }
-//         }
-//     });
-// });
