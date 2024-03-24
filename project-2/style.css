@@ -21,9 +21,16 @@ body {
     height: 100%;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
     color: white;
     font-family: "Crimson Text", serif;
+}
+
+h1 {
+    font-size: 6em;
 }
 
 .star {
@@ -43,7 +50,7 @@ p, h1, h2, h3 {
     position: absolute;
     top: 70%;
     left: 48%;
-/* 
+    /* 
     transform: translate(-50%, -50%); */
 
     z-index: 100;
@@ -103,12 +110,19 @@ p, h1, h2, h3 {
 
 .caption {
     position: absolute;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
+#stage-nebula {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 #nebula {
-   
+
     /* border-radius: 50%; */
     /* background: radial-gradient(ellipse at center, #3a3a3a 0%, #000 70%); */
 
@@ -119,10 +133,10 @@ p, h1, h2, h3 {
     height: 100vh;
 
     /* width: ; */
-    
-  }
 
-  .nebula-star {
+}
+
+.nebula-star {
 
     position: absolute;
 
@@ -138,12 +152,11 @@ p, h1, h2, h3 {
         10px 30px 70px 50px rgba(0, 255, 255, 0.164);
     /* outer cyan */
 
-    
-/* 
+
+    /* 
     transform: translate(-50%, -50%); */
 
     z-index: 100;
 
 
-  }
-
+}

@@ -91,7 +91,6 @@ const nebulaDiv = document.getElementById("nebula")
 var nebulaW = nebulaDiv.clientWidth; // Get container width
 var nebulaH = nebulaDiv.clientHeight; // Get container height
 
-// Create atoms dynamically and animate them
 for (let i = 0; i < 30; i++) {
 
     const star = document.createElement('div');
@@ -107,11 +106,11 @@ for (let i = 0; i < 30; i++) {
 // GSAP ScrollTrigger effect
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.timeline({
+const nebulaT1 = gsap.timeline({
     scrollTrigger: {
         trigger: "#two",
         start: "top 10",
-        end: "bottom top",
+        end: "+=5000",
         pin: true,
         pinSpacing: false,
 
@@ -149,6 +148,15 @@ function animateStars(self) {
         });
     });
 }
+
+nebulaT1.set("#stage-nebula", { opacity: 0 }); // Set initial opacity to 0
+
+nebulaT1.to("#stage-nebula", { 
+    yPercent: 80,
+    opacity: 1,
+    // fontSize: "1em", 
+    duration: 4 })
+
 // // Iterate over each .nebula-star element
 // gsap.utils.toArray('.nebula-star').forEach((star) => {
 //     // Add a tween to the timeline for each star
