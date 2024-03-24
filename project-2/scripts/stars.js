@@ -19,23 +19,25 @@ function createStar(containerWidth, containerHeight) {
 // Function to add stars to the background
 function fillBackgroundWithStars() {
     const numStars = 300; // Number of stars
-    const container = document.querySelector('.star-container');
+    const containers = document.querySelectorAll('.star-container');
 
-    const containerWidth = container.clientWidth; // Get container width
-    const containerHeight = container.clientHeight; // Get container height
+    containers.forEach((container) => {
+        var containerWidth = container.clientWidth; // Get container width
+        var containerHeight = container.clientHeight; // Get container height
 
-    // Create stars and append them to the container
-    for (let i = 0; i < numStars; i++) {
-        const star = createStar(containerWidth, containerHeight); // Pass container dimensions
-        container.appendChild(star);
-    }
-    // Blinking effect
-    setInterval(function () {
-        const stars = document.querySelectorAll('.bg-star');
-        stars.forEach(function (star) {
-            star.style.opacity = Math.random(); // Random opacity to simulate blinking
-        });
-    }, 500); // Blinking interval in milliseconds
+        // Create stars and append them to the container
+        for (let i = 0; i < numStars; i++) {
+            const star = createStar(containerWidth, containerHeight); // Pass container dimensions
+            container.appendChild(star);
+        }
+        // Blinking effect
+        setInterval(function () {
+            const stars = document.querySelectorAll('.bg-star');
+            stars.forEach(function (star) {
+                star.style.opacity = Math.random(); // Random opacity to simulate blinking
+            });
+        }, 500); // Blinking interval in milliseconds
+    });
 }
 
 // Call the function to fill background with stars when the DOM is loaded

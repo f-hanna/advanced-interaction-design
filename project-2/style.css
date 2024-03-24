@@ -21,6 +21,11 @@ body {
     height: 100%;
 }
 
+p {
+    color: white;
+    font-family: "Crimson Text", serif;
+}
+
 .star {
     height: 5em;
     width: 5em;
@@ -79,5 +84,56 @@ body {
 }
 
 #one {
-    height: 4000px;
+    height: 5000px;
+    position: relative;
 }
+
+.break {
+    position: relative;
+    height: 1000px;
+}
+
+
+#two {
+    height: 5000px;
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+}
+
+#nebula {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, #3a3a3a 0%, #000 70%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px 20px rgba(58, 58, 58, 0.5);
+  }
+
+  #nebula::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 30px;
+    left: 50px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, #5d5d5d 0%, #000 80%);
+    transform: rotate(45deg);
+    opacity: 0.8;
+  }
+
+  #nebula::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: -20px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, #3a3a3a 0%, #000 70%);
+    opacity: 0.7;
+  }
