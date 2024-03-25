@@ -194,6 +194,15 @@ h1 {
 }
 
 #three {
-    height: 7000px;
+    height: 9000px;
     position: relative;
+}
+
+.color  {
+    box-shadow: 
+    0 0 20px 5px rgba(255, 69, 0, 0.8), /* Red */
+    0 0 40px 10px rgba(255, 165, 0, 0.8), /* Orange */
+    0 0 60px 15px rgba(255, 255, 159, 0.8), /* Yellow */
+    0 0 80px 20px rgba(255, 215, 0, 0.8), /* Gold */
+    0 0 100px 25px rgba(255, 255, 255, 0.8); /* White */
 }

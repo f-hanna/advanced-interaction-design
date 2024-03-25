@@ -7,7 +7,7 @@
 
 // Register plugins
 gsap.registerPlugin(ScrollTrigger); // Register MotionPathPlugin
-gsap.registerPlugin(MotionPathPlugin) 
+gsap.registerPlugin(MotionPathPlugin)
 
 // Get the viewport dimensions
 const screenWidth = window.innerWidth;
@@ -166,36 +166,99 @@ function animateStars(self) {
 
 const protoStars = document.querySelectorAll(".proto-start")
 
-// console.log(protoStars)
+
 
 protoStars.forEach((protoStar) => {
     const size = randomInRange(.5, 2);
     protoStar.style.width = size + 'em';
     protoStar.style.height = size + 'em';
-    protoStar.style.left = randomInRange(centerX - 100, centerX + 100) + 'px'; // Adjust left position
-    protoStar.style.top = randomInRange(centerY - 100, centerY + 100) + 'px'; // Adjust top position
-
+    protoStar.style.left = randomInRange(centerX - 200, centerX + 200) + 'px'; // Adjust left position
+    protoStar.style.top = randomInRange(centerY - 200, centerY + 200) + 'px'; // Adjust top position
 });
+
+// protoStars.forEach((protoStar, index) => {
+//     gsap.set(
+//         protoStar,
+//       {
+//         x: centerX / 2,
+//         y: centerY / 2,
+//       },
+//       0
+//     );
+//   });
+
+
+
+// console.log(protoStars)
+
 
 const protoTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#inner-2",
         start: "top top",
-        end: "+=7000",
+        end: "+=9000",
         scrub: 2,
         markers: true,
         pin: true,
         pinSpacing: false,
-        overwrite: "auto"
+        overwrite: "auto",
+        toggleClass: "color"
+        // onUpdate: (self) => {
+        //     rotateStars(self);
+        // }
     },
 });
-
-
+protoTl.set("#stage-proto", {
+    yPercent: 120,
+    opacity: 0
+});
 protoTl.to("#stage-proto", {  //tween
-    yPercent: 320,
+    yPercent: 400,
     opacity: 1,
     duration: 5
 })
+
+protoTl.to(".proto-start", {  //tween
+
+    boxShadow: 
+    "30px 10px 30px 80px #ffffffa0",
+    duration: 6, 
+})
+
+protoTl.to(".proto-start", {  //tween
+    width: "10em",
+    height: "10em",
+    transformOrigin:"center center",
+    xPercent: -60,
+    backgroundColor: "rgba(255, 255, 159, 0.8)",
+    boxShadow: 
+    "30px 10px 100px 70px rgba(200, 255, 255, 0.164)",
+
+    duration: randomInRange(3, 10)
+})
+
+
+const pStars = gsap.utils.toArray(".proto-start");
+
+// console.log(pStars)
+
+// pStars.forEach((star) => {
+
+//     protoTl.to(star,
+//         {
+
+//             rotation: 360 * 5,
+//             transformOrigin: "40px -100px",
+//             duration: 10, ease: 'none',
+
+
+//         })
+
+
+// })
+
+// protoTl.play();
+
 
 
 
