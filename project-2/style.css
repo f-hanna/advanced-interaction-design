@@ -97,7 +97,7 @@ h1 {
 }
 
 #one {
-    height: 5000px;
+    height: 10000px;
     position: relative;
 }
 
@@ -124,6 +124,7 @@ h1 {
     position: absolute;
     margin-left: 5%;
     margin-top: 5%;
+    font-size: 2em;
 }
 
 #stage-nebula, #stage-proto {
@@ -269,3 +270,5 @@ h1 {
 
     border-radius: 50%;
   }
+
+  /* RED SUPER GIANT */

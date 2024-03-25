@@ -19,7 +19,7 @@ const centerY = window.innerHeight / 2;
 //Set all intial sections to 0
 gsap.set(".section:not(#two)", { autoAlpha: 0 });
 
-//Set ScrollTrigger between sections: https://gsap.com/community/forums/topic/30744-how-use-scrolltrigger-to-move-between-sections/
+// https://gsap.com/community/forums/topic/30744-how-use-scrolltrigger-to-move-between-sections/
 document.querySelectorAll(".section").forEach((section, index, sections) => {
     if (index > 0) {
         gsap.to(section, {
@@ -47,7 +47,7 @@ const tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#title",
         start: "top top",
-        end: "+=5000",
+        end: "+=10000",
         scrub: 2,
         pin: true,
         onEnter: function () {
@@ -399,6 +399,11 @@ massTl.to("#mass", {
         duration: 3
     }, 0
     );
+
+
+/******************************* 
+ * RED SUPER GIANT
+**************************************/
 
 
 
