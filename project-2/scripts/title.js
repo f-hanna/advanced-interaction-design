@@ -4,7 +4,6 @@
 
  */
 
-
 // Register plugins
 gsap.registerPlugin(ScrollTrigger); // Register MotionPathPlugin
 gsap.registerPlugin(MotionPathPlugin)
@@ -176,21 +175,6 @@ protoStars.forEach((protoStar) => {
     protoStar.style.top = randomInRange(centerY - 200, centerY + 200) + 'px'; // Adjust top position
 });
 
-// protoStars.forEach((protoStar, index) => {
-//     gsap.set(
-//         protoStar,
-//       {
-//         x: centerX / 2,
-//         y: centerY / 2,
-//       },
-//       0
-//     );
-//   });
-
-
-
-// console.log(protoStars)
-
 
 const protoTl = gsap.timeline({
     scrollTrigger: {
@@ -203,9 +187,7 @@ const protoTl = gsap.timeline({
         pinSpacing: false,
         overwrite: "auto",
         toggleClass: "color"
-        // onUpdate: (self) => {
-        //     rotateStars(self);
-        // }
+
     },
 });
 protoTl.set("#stage-proto", {
@@ -217,25 +199,6 @@ protoTl.to("#stage-proto", {  //tween
     opacity: 1,
     duration: 5
 })
-
-// const pStars = gsap.utils.toArray(".proto-start");
-
-// console.log(pStars)
-
-// pStars.forEach((star) => {
-
-//     protoTl.to(star,
-//         {
-
-//             rotation: 360 * 5,
-//             transformOrigin: "40px -100px",
-//             duration: 10, ease: 'none',
-
-
-//         })
-
-
-// }, 0)
 
 protoTl.to(".proto-start", {  //tween
 
@@ -266,38 +229,10 @@ protoTl.to(".proto-start", {  //tween
 })
 
 
-
-
-// protoTl.play();
-
 /**********
  *  HIGH MASS STAR * 
  */
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const container = document.getElementById('mass');
-//     const numStars = 100; // Adjust this number as needed
-//     const spacing = 3;
-//     const angleChange = 0.1;
-//     let angle = 0;
-//     let radius = 0;
-
-//     for (let i = 0; i < numStars; i++) {
-//         const star = document.createElement('div');
-//         star.classList.add('mass-star');
-//         container.appendChild(star);
-//     }
-
-//     const stars = document.querySelectorAll('.mass-star');
-//     stars.forEach((star, index) => {
-//         const x = radius * Math.cos(angle);
-//         const y = radius * Math.sin(angle);
-//         star.style.left = `${x}px`;
-//         star.style.top = `${y}px`;
-//         angle += angleChange;
-//         radius += spacing;
-//     });
-// });
 
 const massTl = gsap.timeline({
     scrollTrigger: {
@@ -341,21 +276,6 @@ function spiralStars(self) {
         angle += angleChange;
         radius += spacing;
     });
-
-    // stars.forEach((star) => {
-
-    //     const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
-    //     const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
-    //     // console.log(progress)
-    //     gsap.to(star, {
-    //         duration: randomInRange(.5, 1),
-    //         x: (centerX - currentX) * progress,
-    //         y: (centerY - currentY) * progress,
-    //         yoyo: true,
-    //         repeat: -1,
-    //         ease: "power1.inOut",
-    //     });
-    // });
 }
 
 massTl.set("#mass-init", {
@@ -390,9 +310,6 @@ massTl.to("#mass", {
 }, 0
 )
     .to("#mass-init", {
-        // yPercent: 120,
-        // yPercent: 80,
-        // xPercent: 100,
         width: "1em",
         height: "1em",
         opacity: 0,
