@@ -20,12 +20,20 @@ gsap.set(".section:not(#two):not(#five)", { autoAlpha: 0 });
 
 // https://gsap.com/community/forums/topic/30744-how-use-scrolltrigger-to-move-between-sections/
 document.querySelectorAll(".section").forEach((section, index, sections) => {
+    var startPosi = "top top"
+    var endPosi = "bottom top"
+
+    if (index == 5) {
+        var endPosi = "bottom bottom"
+
+    }
+
     if (index > 0) {
         gsap.to(section, {
             scrollTrigger: {
                 trigger: section,
-                start: "top top",
-                end: "bottom top",
+                start: startPosi,
+                end: endPosi,
                 toggleActions: "play play play reverse",
                 markers: true
             },
@@ -469,7 +477,7 @@ const supernovaTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#inner-5",
         start: "top top",
-        end: "+=10000",
+        end: "+=12000",
         scrub: .5,
         markers: true,
         delay: 1,
@@ -562,13 +570,60 @@ supernovaTl.to('#nova-blackHole', {
         yPercent: -20,
         width: "200em",
         height: "200em",
-        delay: .21,
+        // delay: .21,
         // opacity: 1,
-        duration: 2
+        duration: 1
     })
 
+    /******************************* 
+ * Black Hole
+**************************************/
+const bhTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inner-6",
+        start: "top top",
+        end: "+=5000",
+        scrub: .5,
+        markers: true,
+        delay: 1,
+        pin: true,
+        pinSpacing: false,
+        overwrite: "auto",
 
+    },
+});
 
+bhTl.set('#heading-bh', {
+    opacity: 0,
+    // yPercent: -100
+})
+    .set('#caption-bh', {
+        opacity: 0,
+        // yPercent: 100
+    })
+    
+
+    bhTl.to('#heading-bh', {
+        duration: 1,
+        opacity: 1,
+        // yPercent: -100
+    })
+        .to('#caption-bh', {
+            duration: 1,
+            opacity: 1,
+            // yPercent: 100
+        }, 0)
+        
+// AJAX
+document.getElementById("end-btn").addEventListener("click", function() {
+    // Scroll to the top of the first div with the ID "sequence"
+    document.getElementById("sequence").scrollIntoView({ behavior: 'smooth' });
+    
+    // Refresh the page after scrolling
+    setTimeout(function() {
+        location.reload();
+    }, 2000); // Adjust the delay if needed
+});
 
 
 
