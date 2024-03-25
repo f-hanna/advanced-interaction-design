@@ -213,7 +213,7 @@ protoTl.set("#stage-proto", {
     opacity: 0
 });
 protoTl.to("#stage-proto", {  //tween
-    yPercent: 400,
+    yPercent: 360,
     opacity: 1,
     duration: 5
 })
