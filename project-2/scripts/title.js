@@ -197,7 +197,7 @@ const protoTl = gsap.timeline({
         trigger: "#inner-2",
         start: "top top",
         end: "+=9000",
-        scrub: 2,
+        scrub: 1,
         markers: true,
         pin: true,
         pinSpacing: false,
@@ -218,27 +218,7 @@ protoTl.to("#stage-proto", {  //tween
     duration: 5
 })
 
-protoTl.to(".proto-start", {  //tween
-
-    boxShadow: 
-    "30px 10px 30px 80px #ffffffa0",
-    duration: 6, 
-})
-
-protoTl.to(".proto-start", {  //tween
-    width: "10em",
-    height: "10em",
-    transformOrigin:"center center",
-    xPercent: -60,
-    backgroundColor: "rgba(255, 255, 159, 0.8)",
-    boxShadow: 
-    "30px 10px 100px 70px rgba(200, 255, 255, 0.164)",
-
-    duration: randomInRange(3, 10)
-})
-
-
-const pStars = gsap.utils.toArray(".proto-start");
+// const pStars = gsap.utils.toArray(".proto-start");
 
 // console.log(pStars)
 
@@ -255,9 +235,172 @@ const pStars = gsap.utils.toArray(".proto-start");
 //         })
 
 
-// })
+// }, 0)
+
+protoTl.to(".proto-start", {  //tween
+
+    boxShadow:
+        "30px 10px 30px 80px #ffffffa0",
+    duration: 6,
+})
+
+protoTl.to(".proto-start", {  //tween
+    width: "10em",
+    height: "10em",
+    transformOrigin: "center center",
+    xPercent: -60,
+    backgroundColor: "rgba(255, 255, 159, 0.8)",
+    boxShadow:
+        "30px 10px 100px 70px rgba(200, 255, 255, 0.164)",
+
+    duration: 4
+})
+
+protoTl.to(".proto-start", {  //tween
+    width: "100vh",
+    height: "100vh",
+    borderRadius: 100,
+    xPercent: -50,
+    yPercent: -50,
+    duration: 8, 
+})
+
+
+
 
 // protoTl.play();
+
+/**********
+ *  HIGH MASS STAR * 
+ */
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const container = document.getElementById('mass');
+//     const numStars = 100; // Adjust this number as needed
+//     const spacing = 3;
+//     const angleChange = 0.1;
+//     let angle = 0;
+//     let radius = 0;
+
+//     for (let i = 0; i < numStars; i++) {
+//         const star = document.createElement('div');
+//         star.classList.add('mass-star');
+//         container.appendChild(star);
+//     }
+
+//     const stars = document.querySelectorAll('.mass-star');
+//     stars.forEach((star, index) => {
+//         const x = radius * Math.cos(angle);
+//         const y = radius * Math.sin(angle);
+//         star.style.left = `${x}px`;
+//         star.style.top = `${y}px`;
+//         angle += angleChange;
+//         radius += spacing;
+//     });
+// });
+
+const massTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inner-3",
+        start: "top top",
+        end: "+=15000",
+        scrub: 2,
+        markers: true,
+        pin: true,
+        pinSpacing: false,
+        overwrite: "auto",
+        onUpdate: (self) => {
+            spiralStars(self);
+        }
+    },
+});
+
+function spiralStars(self) {
+    const progress = self.progress;
+
+    const container = document.getElementById('mass');
+    const numStars = Math.floor(10 * progress) / 2; // Adjust this number as needed
+    console.log(numStars)
+    const spacing = 3;
+    const angleChange = 0.1;
+    let angle = 0;
+    let radius = 0;
+
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('mass-star');
+        container.appendChild(star);
+    }
+
+    const stars = document.querySelectorAll('.mass-star');
+    stars.forEach((star, index) => {
+        const x = radius * Math.cos(angle);
+        const y = radius * Math.sin(angle);
+        star.style.left = `${x}px`;
+        star.style.top = `${y}px`;
+        angle += angleChange;
+        radius += spacing;
+    });
+
+    // stars.forEach((star) => {
+
+    //     const currentX = parseFloat(star.style.left) + parseFloat(star.style.width) / 2;
+    //     const currentY = parseFloat(star.style.top) + parseFloat(star.style.height) / 2;
+    //     // console.log(progress)
+    //     gsap.to(star, {
+    //         duration: randomInRange(.5, 1),
+    //         x: (centerX - currentX) * progress,
+    //         y: (centerY - currentY) * progress,
+    //         yoyo: true,
+    //         repeat: -1,
+    //         ease: "power1.inOut",
+    //     });
+    // });
+}
+
+massTl.set("#mass-init", {
+    // yPercent: 50,
+    opacity: 1
+}).set("#mass", {
+    // yPercent: 50,
+    opacity: 0
+});
+
+massTl.from(".line", 1.8, {
+    y: 100,
+    ease: "power4.out",
+    opacity: 0,
+    delay: 1,
+    skewY: 20,
+    stagger: {
+      amount: 1
+    }
+  })
+
+massTl.to("#mass", {
+    // yPercent: 120,
+    // yPercent: 100,
+    // xPercent: 50,
+    width: "1em",
+    height: "1em",
+    rotation: 360 * 5,
+    transformOrigin: "center top",
+    opacity: 1,
+    duration: 20
+}, 0
+)
+    .to("#mass-init", {
+        // yPercent: 120,
+        // yPercent: 80,
+        // xPercent: 100,
+        width: "1em",
+        height: "1em",
+        opacity: 0,
+        duration: 3
+    }, 0
+    );
+
+
 
 
 
