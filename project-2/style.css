@@ -71,6 +71,7 @@ h1 {
 
     /* position */
     position: absolute;
+    z-index: 1;
 
     /* left: 5%; */
 
@@ -252,7 +253,7 @@ h1 {
 }
 
 .line {
-    line-height: 1em;
+    line-height: .6em;
 }
 
 .mass-star {
@@ -272,3 +273,41 @@ h1 {
   }
 
   /* RED SUPER GIANT */
+
+  #five {
+    height: 20000px;
+    position: relative;
+}
+
+#inner-4 > * {
+    position: absolute;
+}
+
+#red {
+    position: absolute;
+    width: 90vw;
+    height: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    border-radius: 50%;
+    background-color: rgba(230, 50, 38);
+    box-shadow:
+        /* middle magenta */
+        10px 30px 20px 5px rgba(230, 50, 38, .8),
+        /* middle magenta */
+        -10px -30px 20px 5px rgba(230, 50, 38, .5),
+        -10px 30px 20px 5px rgba(230, 50, 38, .5),
+        /* inner white */
+        30px 10px 20px 10px rgba(230, 50, 38, .1);
+    z-index: 50;
+}
+
+#red-heading {
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    text-align: center;
+
+}

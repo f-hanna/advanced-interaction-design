@@ -225,7 +225,7 @@ protoTl.to(".proto-start", {  //tween
     borderRadius: 100,
     xPercent: -50,
     yPercent: -50,
-    duration: 8, 
+    duration: 8,
 })
 
 
@@ -293,9 +293,9 @@ massTl.from(".line", 1.8, {
     delay: 1,
     skewY: 20,
     stagger: {
-      amount: 1
+        amount: 1
     }
-  })
+})
 
 massTl.to("#mass", {
     // yPercent: 120,
@@ -321,6 +321,84 @@ massTl.to("#mass", {
 /******************************* 
  * RED SUPER GIANT
 **************************************/
+
+const redTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inner-4",
+        start: "top top",
+        end: "+=20000",
+        scrub: 2,
+        markers: true,
+        pin: true,
+        pinSpacing: false,
+        overwrite: "auto",
+
+    },
+});
+
+redTl.from("#red", 5, {
+    yPercent: -100,
+    width: "10em",
+    height: "10em",
+    ease: "power4.out",
+    opacity: 0,
+    // skewY: 20,
+    stagger: {
+        amount: 1
+    }
+})
+    .from("#red-heading", 5, {
+        y: -300,
+        ease: "power4.out",
+        opacity: 0,
+        skewZ: 20,
+        delay: 2,
+        stagger: {
+            amount: 1
+        }
+
+    }, 0)
+
+//start the duration of beating heart
+
+
+redTl.to("#red", {
+    // yPercent: 120,
+    yPercent: 10,
+    // xPercent: 50,
+    width: "10em",
+    height: "10em",
+    transformOrigin: "center top",
+    delay: 10,
+    opacity: 1,
+    duration: 10
+}
+)
+    .to("#red-heading", {
+        opacity: 0,
+        ease: "power1.out",
+        duration: 1
+    }, 0
+    );
+
+redTl.to("#red", {
+    // // yPercent: 120,
+    // yPercent: 10,
+    // // xPercent: 50,
+    // scale: .3,
+    // transformOrigin: "center top",
+    // delay: 10,
+    opacity: .5,
+    duration: 10
+}, 0
+)
+    .to("#red-heading", {
+        opacity: 0,
+        ease: "power1.out",
+        duration: 1
+    }, 0
+    );
+
 
 
 
