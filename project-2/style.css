@@ -311,3 +311,63 @@ h1 {
     text-align: center;
 
 }
+
+  /* SUPERNOVA */
+
+  .black {
+    color: var(--black);
+  }
+
+  #six {
+    height: 10000px;
+    position: relative;
+}
+
+#inner-5 > * {
+    position: absolute;
+}
+
+#supernova {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 10%; */
+    /* border-radius: 50%; */
+    background-color: white;
+    
+    z-index: 2;
+}
+
+.supernova-heading, .black {
+    z-index: 90;
+}
+
+.supernova-heading {
+    display: flex;
+    gap: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40vh;
+}
+
+.stage-supernova {
+    /* phttps://codepen.io/ositidon: relative; */
+    overflow: hidden;
+
+}
+
+#nova-blackHole {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    /* border-radius: 50%; */
+    background-color: var(--black);
+    
+    z-index: 90;
+    border-radius: 50%;
+}

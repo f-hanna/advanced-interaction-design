@@ -461,7 +461,111 @@ redTl.to("#red", {
 }
 )
 
+/******************************* 
+ * RED SUPER GIANT
+**************************************/
 
+const supernovaTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#inner-5",
+        start: "top top",
+        end: "+=10000",
+        scrub: .5,
+        markers: true,
+        delay: 1,
+        pin: true,
+        pinSpacing: false,
+        overwrite: "auto",
+
+    },
+});
+
+supernovaTl.set('#heading-super', {
+    opacity: 0,
+    yPercent: -100
+})
+    .set('#heading-nova', {
+        opacity: 0,
+        yPercent: 100
+    })
+    .set('#nova-blackHole', {
+        opacity: 0,
+        yPercent: 100
+    })
+
+supernovaTl.to('#heading-super', {
+    yPercent: 0,
+    opacity: 1,
+    // skewY: 0,
+    duration: .1
+})
+    .to('#heading-nova', {
+        yPercent: 0,
+        opacity: 1,
+        duration: .1
+    }, 0)
+
+supernovaTl.to('#nova-blackHole', {
+    yPercent: 20,
+    width: "5em",
+    height: "5em",
+    delay: .01,
+    opacity: 1,
+    duration: .1
+})
+    .to('#heading-super', {
+        skewY: -60,
+        delay: .1,
+        duration: .1,
+        yPercent: -40,
+        xPercent: 40,
+        scale: .5
+    }, 0)
+
+    .to('#heading-nova', {
+        skewY: 60,
+        delay: .1,
+        duration: .1,
+        yPercent: 40,
+        xPercent: -40,
+        scale: .5
+    }, 0)
+
+
+supernovaTl.to('#nova-blackHole', {
+    yPercent: -20,
+    width: "50em",
+    height: "50em",
+    delay: .11,
+    opacity: 1,
+    duration: 1
+}, 0)
+    .to('#heading-super', {
+        delay: .15,
+        opacity: 0,
+        duration: .5,
+        yPercent: -60,
+        xPercent: 60,
+
+    }, 0)
+
+    .to('#heading-nova', {
+        delay: .15,
+        opacity: 0,
+        duration: .5,
+        yPercent: 40,
+        xPercent: -40,
+
+    }, 0)
+
+    supernovaTl.to('#nova-blackHole', {
+        yPercent: -20,
+        width: "200em",
+        height: "200em",
+        delay: .21,
+        // opacity: 1,
+        duration: 2
+    })
 
 
 
