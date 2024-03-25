@@ -1,10 +1,46 @@
+/***
+ 
+ * GLOBAL
+
+ */
 
 
-gsap.registerPlugin(ScrollTrigger);
+// Register plugins
+gsap.registerPlugin(ScrollTrigger); // Register MotionPathPlugin
+gsap.registerPlugin(MotionPathPlugin) 
 
 // Get the viewport dimensions
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
+
+const centerX = window.innerWidth / 2;
+const centerY = window.innerHeight / 2;
+
+//Set all intial sections to 0
+gsap.set(".section:not(#two)", { autoAlpha: 0 });
+
+//Set ScrollTrigger between sections: https://gsap.com/community/forums/topic/30744-how-use-scrolltrigger-to-move-between-sections/
+document.querySelectorAll(".section").forEach((section, index, sections) => {
+    if (index > 0) {
+        gsap.to(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top top",
+                end: "bottom top",
+                toggleActions: "play play play reverse",
+                markers: true
+            },
+            duration: 0.001,
+            autoAlpha: 1,
+        });
+    }
+});
+
+
+/***
+ 
+ * TITLE
+ */
 
 
 const tl = gsap.timeline({
@@ -69,8 +105,7 @@ for (let i = 0; i < 30; i++) {
     nebulaDiv.appendChild(star);
 }
 
-// GSAP ScrollTrigger effect
-gsap.registerPlugin(ScrollTrigger);
+
 
 const nebulaT1 = gsap.timeline({
     scrollTrigger: {
@@ -78,6 +113,7 @@ const nebulaT1 = gsap.timeline({
         start: "top top",
         end: "+=7000",
         scrub: 2,
+        markers: true,
         pin: true,
         pinSpacing: false,
 
@@ -87,30 +123,26 @@ const nebulaT1 = gsap.timeline({
 
         onUpdate: (self) => {
             animateStars(self);
-        },
+        }
     },
 });
 
-nebulaT1.set("#stage-nebula", { 
-    yPercent: 200,
-    opacity: 0 
+nebulaT1.set("#stage-nebula", {
+    yPercent: -100,
+    opacity: 0
 }); // Set initial opacity to 0
 
-
-nebulaT1.to("#stage-nebula", { 
-    yPercent: 60,
+nebulaT1.to("#stage-nebula", {  //tween
+    yPercent: 120,
     opacity: 1,
     // fontSize: "1em", 
-    duration: 5 })
+    duration: 5
+})
 
 const stars = gsap.utils.toArray(".nebula-star");
 
 function animateStars(self) {
     const progress = self.progress;
-
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-
 
     stars.forEach((star) => {
 
@@ -128,30 +160,47 @@ function animateStars(self) {
     });
 }
 
-
-
-
-
 /******
  *      PROTOSTAR
  *****/
-const protoT1 = gsap.timeline({
+
+const protoStars = document.querySelectorAll(".proto-start")
+
+// console.log(protoStars)
+
+protoStars.forEach((protoStar) => {
+    const size = randomInRange(.5, 2);
+    protoStar.style.width = size + 'em';
+    protoStar.style.height = size + 'em';
+    protoStar.style.left = randomInRange(centerX - 100, centerX + 100) + 'px'; // Adjust left position
+    protoStar.style.top = randomInRange(centerY - 100, centerY + 100) + 'px'; // Adjust top position
+
+});
+
+const protoTl = gsap.timeline({
     scrollTrigger: {
-        trigger: "#inner-1",
-        start: "7000px 10", // Adjusted start point
-        end: "+=5000",
+        trigger: "#inner-2",
+        start: "top top",
+        end: "+=7000",
+        scrub: 2,
+        markers: true,
         pin: true,
         pinSpacing: false,
-
-        onEnter: (self) => {
-            animateStars(self);
-        },
-
-        onUpdate: (self) => {
-            animateStars(self);
-        },
+        overwrite: "auto"
     },
 });
+
+
+protoTl.to("#stage-proto", {  //tween
+    yPercent: 320,
+    opacity: 1,
+    duration: 5
+})
+
+
+
+
+
 
 
 

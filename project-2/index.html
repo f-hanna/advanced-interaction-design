@@ -37,7 +37,7 @@
 
     </div>
 
-    <div class="star-container" id="two">
+    <div class="star-container section" id="two">
 
         <div class="inner" id="inner-1">
             <p class="caption">The Birth</p>
@@ -48,7 +48,57 @@
 
             <h1 class="stage" id="stage-nebula">Nebula</h1>
 
-            
+
+
+        </div>
+
+    </div>
+
+    <!-- add a scroll trigger to all sections, gsap.set() to hide all sections, maintain 0 opacity until the top hits the top, end at bottom top, when the next section appears (opacity 1) when the top appears the top - hides the next section, until the previous section finishes 
+
+        --- 
+
+    overlay 
+
+    transition would be on the inner, not the section
+    
+    pin is fix 
+
+-->
+
+    <div class="star-container section" id="three">
+
+        <div class="inner" id="inner-2">
+            <p class="caption">The Birth</p>
+
+            <div id="proto">
+
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+                <div class="nebula-star proto-start"></div>
+            </div>
+
+            <h1 class="stage" id="stage-proto">Proto Star</h1>
+
+
 
         </div>
 
@@ -59,10 +109,13 @@
 
 
 
+
+
     <!-- Load GSAP (Animation Library) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- Load the scroll library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
 
     <!-- SCRIPTS -->
     <script src="scripts/stars.js"></script>
