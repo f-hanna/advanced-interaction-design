@@ -16,7 +16,7 @@ const centerX = window.innerWidth / 2;
 const centerY = window.innerHeight / 2;
 
 //Set all intial sections to 0
-gsap.set(".section:not(#two)", { autoAlpha: 0 });
+gsap.set(".section:not(#two):not(#five)", { autoAlpha: 0 });
 
 // https://gsap.com/community/forums/topic/30744-how-use-scrolltrigger-to-move-between-sections/
 document.querySelectorAll(".section").forEach((section, index, sections) => {
@@ -326,8 +326,8 @@ const redTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#inner-4",
         start: "top top",
-        end: "+=20000",
-        scrub: 2,
+        end: "+=15000",
+        scrub: .5,
         markers: true,
         pin: true,
         pinSpacing: false,
@@ -336,68 +336,132 @@ const redTl = gsap.timeline({
     },
 });
 
-redTl.from("#red", 5, {
-    yPercent: -100,
-    width: "10em",
-    height: "10em",
-    ease: "power4.out",
-    opacity: 0,
-    // skewY: 20,
-    stagger: {
-        amount: 1
-    }
-})
-    .from("#red-heading", 5, {
-        y: -300,
-        ease: "power4.out",
-        opacity: 0,
-        skewZ: 20,
-        delay: 2,
-        stagger: {
-            amount: 1
-        }
+// redTl.from("#red", 1, {
+//     yPercent: -100,
+//     width: "10em",
+//     height: "10em",
+//     ease: "power4.out",
+//     opacity: 0,
+//     // skewY: 20,
+//     stagger: {
+//         amount: 1
+//     }
+// }, 0)
+//     .from("#red-heading", 1, {
+//         y: -100,
+//         ease: "power4.out",
+//         opacity: 0,
+//         skewZ: 20,
+//         // delay: 2,
+//         // stagger: {
+//         //     amount: 1
+//         // }
 
-    }, 0)
-
-//start the duration of beating heart
+//     }, 0)//start the duration of beating heart
 
 
 redTl.to("#red", {
     // yPercent: 120,
     yPercent: 10,
     // xPercent: 50,
-    width: "10em",
-    height: "10em",
+    width: "20em",
+    height: "20em",
     transformOrigin: "center top",
-    delay: 10,
+    // delay: .5,
     opacity: 1,
-    duration: 10
-}
-)
-    .to("#red-heading", {
-        opacity: 0,
-        ease: "power1.out",
-        duration: 1
-    }, 0
-    );
+    duration: .1
+}, 0
+).to("#red-heading", {
+    opacity: 0,
+    yPercent: 10,
+    // delay: 1,
+    ease: "power1.out",
+    duration: .1
+}, 0
+);
 
 redTl.to("#red", {
-    // // yPercent: 120,
-    // yPercent: 10,
-    // // xPercent: 50,
-    // scale: .3,
-    // transformOrigin: "center top",
-    // delay: 10,
+    transformOrigin: "center center",
+    // delay: 5,
     opacity: .5,
-    duration: 10
-}, 0
+    duration: .1,
+    width: "17em",
+    height: "17em"
+}
 )
-    .to("#red-heading", {
-        opacity: 0,
-        ease: "power1.out",
-        duration: 1
-    }, 0
-    );
+
+redTl.to("#red", {
+
+    transformOrigin: "center center",
+    // delay: 5,
+    opacity: 1,
+    duration: .1,
+    width: "19em",
+    height: "19em"
+}
+)
+
+
+redTl.to("#red", {
+
+    transformOrigin: "center center",
+    // delay: 5,
+    opacity: .5,
+    width: "15em",
+    height: "15em",
+    duration: .1
+}
+)
+
+redTl.to("#red", {
+
+    transformOrigin: "center cemter",
+    // delay: 5,
+    opacity: 1,
+    width: "17em",
+    height: "17em",
+    duration: .05
+}
+)
+
+redTl.to("#red", {
+
+    transformOrigin: "center center",
+    // delay: 5,
+    opacity: .5,
+    yPercent: 10,
+    width: "13em",
+    height: "13em",
+    duration: .05
+}
+)
+
+redTl.to("#red", {
+
+    transformOrigin: "center center",
+    // delay: 5,
+    opacity: 1,
+    width: "15em",
+    yPercent: 50,
+    height: "15em",
+    duration: .05
+}
+)
+
+redTl.to("#red", {
+    // delay: 5,
+    opacity: 1,
+    width: "100vw",
+    yPercent: -50,
+    height: "100vw",
+    backgroundColor: "white",
+    duration: .1,
+    scale: 2,
+    boxShadow: "10px 30px 20px 5px rgba(255, 255, 255, .8)"
+}
+)
+
+
 
 
 
