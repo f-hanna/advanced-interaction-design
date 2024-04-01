@@ -41,3 +41,24 @@ h1 {
     transition: transform 1s ease;
 }
 
+.main-wrapper {
+    width: 60%;
+    margin: 10% auto;
+}
+
+.btn-wrapper {
+    text-align: center;
+}
+
+.load-btn {
+    margin-top: 60px;
+    width: 50%;
+    font-family: 'LT Cushion', sans-serif;
+    background-color: var(--black);
+    border: none;
+    color: white;
+    padding: 20px 0;
+    border-radius: 30px;
+    
+
+}

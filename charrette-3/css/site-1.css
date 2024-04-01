@@ -1,2 +1,70 @@
 @import url(style.css);
 
+#glasses {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 15%;  
+    
+}
+
+.lens-container {
+    position: relative;
+    height: 20em;
+    width: 20em;
+}
+
+.lens {
+    position: absolute;
+    height: 20em;
+    width: 20em;
+    border-radius: 100%;
+    border: 5px solid var(--black);
+    z-index: 1;
+}
+
+.lens-background {
+    position: absolute;
+    height: 20em;
+    width: 20em;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: url(../imgs/sight-chart.jpg);
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+    overflow: hidden;
+    animation: blur 0.5s forwards; /* Add animation */
+
+}
+
+#bridge {
+    background-color: var(--black);
+    width: 100px;
+    height: 10px;
+    justify-content: center
+}
+
+.blur-effect {
+    animation: unblur 0.5s forwards; /* Add animation */
+
+}
+
+@keyframes unblur {
+    from {
+        filter: blur(10px);
+    }
+    to {
+        filter: blur(0);
+    }
+}
+
+@keyframes blur {
+    from {
+        filter: blur(0);
+    }
+    to {
+        filter: blur(10px);
+    }
+}
