@@ -78,7 +78,10 @@ h1 {
     border-radius: 30px;
     font-size: 1.3em;
     
+}
 
+.load-btn:hover {
+    background-color: var(--grey);
 }
 
 .black {

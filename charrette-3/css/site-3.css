@@ -1,0 +1,28 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#wall-wrapper {
+    height: 60vh;
+    width: auto;
+    background-image: url(../imgs/site-3/brick-wall.jpg);
+    object-fit: cover; 
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.img {
+
+    position: absolute;    
+    width:  120px;
+    height: 200px;
+    object-fit: cover;
+}
+
