@@ -1,0 +1,21 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+
+#image-wrapper {
+    height: 50vh;
+    width: auto;
+}
+
+#image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 30px;
+    filter: grayscale(100%);
+
+}
+

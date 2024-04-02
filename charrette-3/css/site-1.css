@@ -1,5 +1,9 @@
 @import url(style.css);
 
+body {
+    background-color: var(--black);
+}
+
 #glasses {
     display: flex;
     align-items: center;
@@ -9,13 +13,13 @@
 }
 
 .lens-container {
-    position: relative;
+    /* position: relative; */
     height: 20em;
     width: 20em;
 }
 
 .lens {
-    position: absolute;
+    /* position: absolute; */
     height: 20em;
     width: 20em;
     border-radius: 100%;
@@ -27,8 +31,8 @@
     position: absolute;
     height: 20em;
     width: 20em;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     border-radius: 100%;
     background-image: url(../imgs/sight-chart.jpg);
     background-size: cover;
@@ -36,14 +40,18 @@
     z-index: -1;
     overflow: hidden;
     animation: blur 0.5s forwards; /* Add animation */
+    border: 5px solid  white;
+
 
 }
 
 #bridge {
-    background-color: var(--black);
-    width: 100px;
+    /* background-color: white; */
+    width: 60px;
     height: 10px;
     justify-content: center
+    
+
 }
 
 .blur-effect {
