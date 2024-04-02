@@ -4,11 +4,15 @@ body {
     background-color: var(--black);
 }
 
+.nav > * {
+    color: white;
+}
+
 #glasses {
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-top: 15%;  
+    margin-top: 5%;  
     
 }
 

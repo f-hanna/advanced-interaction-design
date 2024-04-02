@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site 1</title>
+    <title>Site 2</title>
 
     <!-- SRCS -->
     <link rel="stylesheet" href="../css/site-2.css">
@@ -16,28 +16,44 @@
 </head>
 
 <body>
-    <div class="body">
+    <div class="main-wrapper">
 
-        <div class="main-wrapper">
+        <div class="nav">
 
-            <div id="image-wrapper">
+            <a class="nav-text" href="site-1.html">
+                PREVIOUS                                
+            </a>
 
-                <img src="../imgs/rainbow.jpg" alt="rainbow">
+            <a class="nav-text" href="../index.html">
+                HOME                                
+            </a>
 
-            </div>    
-            
-            <div class="btn-wrapper">
-                <button class="load-btn" id="glasses-btn" onclick="addOpacity()">
-                    Load
-                </button>
-            </div>          
+            <a class="nav-text" href="site-3.html">
+                NEXT                                
+            </a>
 
         </div>
 
-        
+        <h1 class="title black">2. Add Color</h1>
 
-        <script src="../script.js"></script>
+
+        <div id="image-wrapper">
+
+            <img id="img-rainbow" src="../imgs/rainbow.jpg" alt="rainbow">
+
+        </div>    
+        
+        <div class="btn-wrapper">
+            <button class="load-btn" id="rainbow-btn" onclick="decreaseGrayscale()">
+                Load
+            </button>
+        </div>          
+
     </div>
+
+    
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

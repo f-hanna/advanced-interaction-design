@@ -24,6 +24,23 @@ h1 {
     max-width: 90%;
 }
 
+.nav {
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-text {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav-text:hover {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -43,7 +60,7 @@ h1 {
 
 .main-wrapper {
     width: 60%;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 .btn-wrapper {
@@ -51,7 +68,7 @@ h1 {
 }
 
 .load-btn {
-    margin-top: 60px;
+    margin-top: 4em;
     width: 50%;
     font-family: 'LT Cushion', sans-serif;
     background-color: var(--black);
@@ -62,4 +79,12 @@ h1 {
     font-size: 1.3em;
     
 
+}
+
+.black {
+    color: var(--black) !important;
+}
+
+.white {
+    color: white !important;
 }
