@@ -110,3 +110,28 @@ function zoom() {
     img.style.transform = 'scale(10)'; 
 }
 
+//SITE 10
+
+function countdown() {
+    var audio = document.getElementById("audio");
+    audio.currentTime = 12
+    audio.play();
+
+    var countdownDuration = 10;
+
+    // Get the countdown element
+    var countdownElement = document.getElementById("countdown");
+
+    // Update the countdown every second
+    var countdownInterval = setInterval(function() {
+        countdownElement.textContent = countdownDuration;
+        countdownDuration--;
+
+        // When countdown ends, display the image
+        if (countdownDuration < 0) {
+            clearInterval(countdownInterval); // Stop the countdown timer
+            document.getElementById("img-countdown").style.display = "block";
+            document.getElementById("countdown").style.display = "none";
+        }
+    }, 1000);
+}

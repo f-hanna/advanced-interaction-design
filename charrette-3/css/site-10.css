@@ -1,0 +1,32 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+
+#countdown-wrapper {
+    height: 50vh;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-countdown {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 10px;
+    display: none;
+    margin: auto;
+    /* filter: grayscale(100%); */
+}
+
+#countdown {
+    font-size: 10rem;
+    margin: 0;
+}
+
+
