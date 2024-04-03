@@ -1,0 +1,43 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#puzzle-wrapper {
+    height: 60vh;
+    width: auto;
+    /* background-image: url(../imgs/site-3/brick-wall.jpg); */
+    border-radius: 10px;
+    position: relative;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+    display: table-cell;
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--black);
+    background: url("../imgs/einstein.png"); 
+    cursor: pointer;
+  }
+  
+  .tile1 {background-position: left top;}
+  .tile2 {background-position: center top;}
+  .tile3 {background-position: right top;}
+  .tile4 {background-position: left center;}
+  .tile5 {background-position: center center;}
+  .tile6 {background-position: right center;}
+  .tile7 {background-position: left bottom;}
+  .tile8 {background-position: center bottom;}
+  .tile9 {background: white; cursor: default;}
+
