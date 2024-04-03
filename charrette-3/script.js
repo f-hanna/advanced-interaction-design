@@ -287,4 +287,17 @@ function light() {
     }, duration);
 }
 
+// SITE 14 
+
+function toast() {
+    const toast = document.getElementById('toast');
+    // Add the fly class
+    toast.classList.add('fly');
+
+    // After 3 seconds, remove the fly class
+    setTimeout(function() {
+        toast.classList.remove('fly');
+    }, 1000);
+}
+
 
