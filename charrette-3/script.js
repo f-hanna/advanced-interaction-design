@@ -333,3 +333,30 @@ function evolve() {
     
 
 }
+
+// SITE 17
+
+function traffic() {
+    var redLight = document.getElementById('red');
+    var yellowLight = document.getElementById('yellow');
+    var greenLight = document.getElementById('green');
+    var trafficLight = document.getElementById('traffic-container');
+
+    redLight.style.opacity = 1;
+    setTimeout(function() {
+        redLight.style.opacity = 0.3;
+        yellowLight.style.opacity = 1;
+    }, 1000);
+
+    setTimeout(function() {
+        yellowLight.style.opacity = 0.3;
+        greenLight.style.opacity = 1;
+    }, 2000);
+
+    setTimeout(function() {
+        trafficLight.style.display = "none"
+        document.getElementById('img-traffic').style.display = "block"
+    }, 3000);
+
+
+}

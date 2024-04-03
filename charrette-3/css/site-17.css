@@ -1,0 +1,65 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#traffic-wrapper {
+    height: 40vh;
+    width: auto;
+}
+
+#img-traffic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 10px;
+    /* display: none; */
+    /* filter: grayscale(100%); */
+}
+
+#traffic-container {
+    display: block;
+    text-align: center;
+    /* height: 10vh; */
+    margin: auto;
+    /* margin-top: 5em; */
+}
+
+.img {
+    /* text-align: center; */
+    /* position: absolute;     */
+    width:  auto;
+    height: 10%;
+    object-fit: cover;
+    transition: transform 5s, opacity 5s;
+    border-radius: 10px;
+    display: none;
+   
+}
+
+.traffic-light {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    opacity: .3;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#red {
+    background-color: var(--red);
+}
+
+#yellow {
+    background-color: var(--yellow);
+}
+
+#green {
+    background-color: var(--green);
+}
+
