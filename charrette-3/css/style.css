@@ -20,12 +20,16 @@ body {
     font-family: 'LT Cushion', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     max-width: 90%;
 }
 
 h3 {
-    line-height: 1.5em;
+    line-height: 1.5em;    
 }
 
 .nav {
@@ -45,21 +49,46 @@ h3 {
     text-decoration: line-through;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 10px;
-    padding: 20px;
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em auto;
 }
 
-/* Optional: Style the grid items */
+#intro-title h1 {
+    font-size: 3em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, calc(20vw - 20px));
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-left: 5px;
+}
+
 .container {
-    border: 1px solid #ddd;
-    height: 15em;
+    border: 1px solid var(--black);
+    /* padding: 10px; */
+    /* text-align: center; */
+    height: calc(20vw - 20px);
     border-radius: 5px;
-    color: white;
+    background-color: white;
     transition: transform 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    
+}
+
+.black-bg {
+    color: white;
+    background-color: var(--black);
 }
 
 .main-wrapper {
