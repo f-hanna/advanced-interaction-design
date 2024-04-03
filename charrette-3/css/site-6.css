@@ -1,0 +1,32 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+
+#math-wrapper {
+    height: auto;
+    width: auto;
+}
+
+#img-math {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 10px;
+    display: none;
+    /* filter: grayscale(100%); */
+}
+
+#math-container {
+    display: block;
+    text-align: center;
+}
+
+.math-question {
+    text-align: left;
+}
+
+
+

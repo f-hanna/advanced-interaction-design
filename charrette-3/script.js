@@ -85,6 +85,23 @@ function openWindow() {
     windowScreens.forEach((screen) => 
         screen.classList.toggle("open")
     );
- 
-    // windowScreen.classList.toggle("open");
+ }
+
+//SITE 6 
+function solve() {
+    var input = document.getElementById("guess").value;
+    var btn = document.getElementById("math-btn")
+    var img = document.getElementById("img-math")
+
+    if (input == 22) {
+        btn.innerHTML = "Math GOAT moment"
+        img.style.display = "block"
+        document.getElementById("math-container").style.display = "none"
+                
+
+    } else {
+        alert ("git gud.")
+        
+    }
 }
+
