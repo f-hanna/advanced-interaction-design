@@ -239,7 +239,7 @@ function ghostDown() {
 
 function scareGhost() {
     const img = document.getElementById('img-ghost');
-    opacityInterval = setInterval(function() { // Start a new interval for decreasing opacity
+    opacityInterval = setInterval(function () { // Start a new interval for decreasing opacity
         var currentOpacity = parseFloat(window.getComputedStyle(img).opacity);
         if (currentOpacity > 0) {
             img.style.opacity = (currentOpacity - opacityStep).toFixed(2);
@@ -257,7 +257,7 @@ function prison() {
 
     bars.forEach((bar) =>
         bar.classList.add("open")
-        
+
     );
     img.style.backgroundImage = "url(https://st.depositphotos.com/1000975/4859/i/450/depositphotos_48594023-stock-photo-prisoner-with-guns.jpg)"
     btn.innerHTML = "Ruh roh..."
@@ -272,10 +272,10 @@ function light() {
     var img = document.getElementById('img-light');
     var counter = 0;
 
-    var interval = setInterval(function() {
+    var interval = setInterval(function () {
         if (counter < 5) {
             img.src = (counter % 2 === 0) ? '../imgs/site-13/on.png' : '../imgs/site-13/off.png';
-            
+
         } else {
             clearInterval(interval);
             img.src = '../imgs/site-13/on.png'; // Ensure it ends on "on.png"
@@ -296,7 +296,7 @@ function toast() {
     toast.classList.add('fly');
 
     // After 3 seconds, remove the fly class
-    setTimeout(function() {
+    setTimeout(function () {
         toast.classList.remove('fly');
     }, 1000);
 }
@@ -330,7 +330,7 @@ function evolve() {
         }
     }
 
-    
+
 
 }
 
@@ -343,17 +343,17 @@ function traffic() {
     var trafficLight = document.getElementById('traffic-container');
 
     redLight.style.opacity = 1;
-    setTimeout(function() {
+    setTimeout(function () {
         redLight.style.opacity = 0.3;
         yellowLight.style.opacity = 1;
     }, 1000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         yellowLight.style.opacity = 0.3;
         greenLight.style.opacity = 1;
     }, 2000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         trafficLight.style.display = "none"
         document.getElementById('img-traffic').style.display = "block"
     }, 3000);
@@ -376,25 +376,68 @@ function filter() {
     //     img.src = "../imgs/site-19/img-2.png";
     // }, 1000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-3.png";
     }, 2000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-4.png";
     }, 3000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-5.png";
     }, 4000);
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-6.png";
     }, 5000);
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-7.png";
     }, 6000);
-    setTimeout(function() {
+    setTimeout(function () {
         img.src = "../imgs/site-19/img-8.png";
     }, 7000);
+
+}
+
+// SITE 20
+
+var clickedItems = []; // Array to store clicked item IDs
+
+function toggleCaptcha(itemId) {
+    var index = clickedItems.indexOf(itemId);
+    var item = document.getElementById(itemId);
+
+    if (index === -1) {
+        // If item is not in array, add it and add blue border
+        clickedItems.push(itemId);
+        item.classList.add('clicked');
+    } else {
+        // If item is in array, remove it and remove blue border
+        clickedItems.splice(index, 1);
+        item.classList.remove('clicked');
+    }
+
+    console.log(clickedItems); // For testing, log clicked items array
+}
+
+function captcha() {
+
+    if (clickedItems.includes('f-1') && 
+    clickedItems.includes('f-3') &&
+    clickedItems.includes('f-5') && 
+    clickedItems.includes('f-9')
+    ) {
+        console.log("Success");
+        document.getElementById("img-captcha").style.display = "block"
+        document.getElementById("captcha-container").style.display = "none"
+        document.getElementById("captcha-btn").innerHTML = "SLAY"
+      }
+      else {
+        alert("THIEF >:(")
+        document.getElementById("img-captcha").style.display = "block"
+        document.getElementById("img-captcha").src = "https://pbs.twimg.com/profile_images/759875995151151104/DsdFSFKE_400x400.jpg"
+        document.getElementById("captcha-container").style.display = "none"
+        document.getElementById("captcha-btn").style.display = "none"
+      }
 
 }

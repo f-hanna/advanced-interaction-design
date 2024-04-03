@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 20</title>
+
+    <!-- SRCS -->
+    <link rel="stylesheet" href="../css/site-20.css">
+    <link href="https://fonts.cdnfonts.com/css/lt-cushion" rel="stylesheet">
+                
+    <script src="https://kit.fontawesome.com/a5212137dc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="nav">
+
+            <a class="nav-text" href="site-19.html">
+                PREVIOUS                                
+            </a>
+
+            <a class="nav-text" href="../index.html">
+                HOME                                
+            </a>
+
+            <a class="nav-text" href="site-1.html">
+                NEXT                                
+            </a>
+
+        </div>
+
+        <h1 class="title black">20. Captcha</h1>
+        <h3>Authenticate your identity by picking all the frogs.</h3>
+        <div id="captcha-wrapper">
+
+            <div id="captcha-container">
+
+                <div class="captcha-item" id="f-1" onclick="toggleCaptcha('f-1')">
+                    <img src="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg">
+                  </div>
+                  <div class="captcha-item" id="f-2" onclick="toggleCaptcha('f-2')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFEP0O_Tuv5uD3Os7xoLKEgzRzOlJqImaqVlkv5vrnYQ&s">
+                  </div>
+                  <div class="captcha-item" id="f-3" onclick="toggleCaptcha('f-3')">
+                    <img src="https://kids.earth.org/wp-content/uploads/2023/07/Untitled-683-%C3%97-1024px-1024-%C3%97-683px-2023-07-26T184215.475-900x600.jpg">
+                  </div>
+
+                  <!-- ROW -->
+                  <div class="captcha-item" id="f-4" onclick="toggleCaptcha('f-4')">
+                    <img src="https://ih1.redbubble.net/image.703059315.0149/clk3q,black,black,1000x-c,115,0,675,900.jpg">
+                  </div>
+
+                  <div class="captcha-item" id="f-5" onclick="toggleCaptcha('f-5')">
+                    <img src="https://preview.redd.it/the-turtle-frog-one-of-the-rarest-frogs-in-the-world-they-v0-ngtt4cb3m99c1.jpg?width=640&crop=smart&auto=webp&s=80b8f718029d92f1f1c492db27b9bc9d99b2a856">
+                  </div>
+
+                  <div class="captcha-item" id="f-6" onclick="toggleCaptcha('f-6')">
+                    <img src="https://i.redd.it/kd21xpg12py21.jpg">
+                  </div>          
+                  
+                  <!-- ROW -->
+                  <div class="captcha-item" id="f-7" onclick="toggleCaptcha('f-7')">
+                    <img src="https://i.redd.it/8igh5xg8bc631.jpg">
+                  </div>
+                  
+                  <div class="captcha-item" id="f-8" onclick="toggleCaptcha('f-8')">
+                    <img src="https://indie88.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-02-at-10.01.56-PM-878x1024.png">
+                  </div>
+                  <div class="captcha-item" id="f-9" onclick="toggleCaptcha('f-9')">
+                    <img src="https://preview.redd.it/oynwh156ak181.jpg?width=640&crop=smart&auto=webp&s=82cd14d0cfdea3e520502ea0236968892b86173f">
+                  </div>
+
+            </div>
+                     
+
+            <img id="img-captcha" src="https://ih1.redbubble.net/image.525689517.5737/flat,750x1000,075,f.u2.jpg" alt="status">
+            
+
+
+        </div>    
+        
+        
+        <div class="btn-wrapper">
+            <button class="load-btn" id="captcha-btn" onclick="captcha()">
+                Verify to Load
+            </button>
+        </div>          
+
+    </div>
+
+    
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

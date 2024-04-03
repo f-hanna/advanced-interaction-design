@@ -1,0 +1,60 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+
+#captcha-wrapper {
+    /* height: 50vh; */
+    width: auto;
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#img-captcha {
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+    border-radius: 10px;
+    display: none;
+    margin: auto;
+    /* filter: grayscale(100%); */
+}
+
+#countdown {
+    font-size: 10rem;
+    margin: 0;
+}
+
+#captcha-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust the gap between images */
+  }
+
+  .captcha-item {
+    position: relative;
+    padding-bottom: 100%; /* Creates a square aspect ratio */
+    overflow: hidden;
+    border: 3px solid white; 
+
+  }
+
+  .captcha-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+  .captcha-item.clicked {
+    border: 3px solid var(--blue); /* Blue border for clicked items */
+  }
+
+
+
