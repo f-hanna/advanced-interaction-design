@@ -357,6 +357,11 @@ function traffic() {
         trafficLight.style.display = "none"
         document.getElementById('img-traffic').style.display = "block"
     }, 3000);
+}
 
+// SITE 18
 
+function door() {
+    var element = document.querySelector(".door");
+    element.classList.toggle("doorOpen");
 }

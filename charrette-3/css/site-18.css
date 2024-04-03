@@ -1,0 +1,58 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+/* 
+#prison-wrapper {
+    height: 80vh;
+    width: auto;
+    background-image: url("https://st2.depositphotos.com/1000975/6012/i/450/depositphotos_60127289-stock-photo-prison-inmate-in-funny-concept.jpg");
+    background-size: cover; 
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+   
+} */
+
+.backDoor
+{
+  /* background-color: #333; */
+  position:relative;
+  width:250px;
+  height:300px;
+  
+  margin: 0 auto;
+  margin-top:50px;
+  background-image: url("https://media2.giphy.com/media/3og0IFrHkIglEOg8Ba/200w.gif?cid=6c09b952w1clx5hr7fr8je150q2vnee5nz73u858v66jyc2o&ep=v1_gifs_search&rid=200w.gif&ct=g");
+  background-size: cover; 
+}
+
+.door
+{
+  /* background-color: brown; */
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:250px;
+  height:300px;
+  background-image: url("../imgs/wood.jpeg");
+  background-size: cover; 
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen
+{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+
+
+
