@@ -263,3 +263,28 @@ function prison() {
     btn.innerHTML = "Ruh roh..."
 
 }
+
+// SITE 13
+
+let duration = 500
+
+function light() {
+    var img = document.getElementById('img-light');
+    var counter = 0;
+
+    var interval = setInterval(function() {
+        if (counter < 5) {
+            img.src = (counter % 2 === 0) ? '../imgs/site-13/on.png' : '../imgs/site-13/off.png';
+            
+        } else {
+            clearInterval(interval);
+            img.src = '../imgs/site-13/on.png'; // Ensure it ends on "on.png"
+        }
+        // duration = duration * 2
+        // console.log(duration)
+        counter++;
+
+    }, duration);
+}
+
+
