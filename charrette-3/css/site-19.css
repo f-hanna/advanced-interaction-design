@@ -1,0 +1,44 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#filter-wrapper {
+    height: 70vh;
+    width: 100%;
+}
+
+#img-filter {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+    /* display: none; */
+    /* filter: grayscale(100%); */
+}
+
+#filter-container {
+    display: block;
+    text-align: center;
+    /* height: 10vh; */
+    margin: auto;
+    /* margin-top: 5em; */
+}
+
+.img {
+    /* text-align: center; */
+    /* position: absolute;     */
+    width:  auto;
+    height: 10%;
+    object-fit: cover;
+    transition: transform 5s, opacity 5s;
+    border-radius: 10px;
+    /* display: none; */
+   
+}
+

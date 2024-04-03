@@ -365,3 +365,36 @@ function door() {
     var element = document.querySelector(".door");
     element.classList.toggle("doorOpen");
 }
+
+// SITE 19
+
+function filter() {
+
+    var img = document.getElementById('img-filter');
+
+    // setTimeout(function() {
+    //     img.src = "../imgs/site-19/img-2.png";
+    // }, 1000);
+
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-3.png";
+    }, 2000);
+
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-4.png";
+    }, 3000);
+
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-5.png";
+    }, 4000);
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-6.png";
+    }, 5000);
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-7.png";
+    }, 6000);
+    setTimeout(function() {
+        img.src = "../imgs/site-19/img-8.png";
+    }, 7000);
+
+}
