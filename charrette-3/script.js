@@ -63,12 +63,10 @@ function addPoster() {
         wall.appendChild(poster)
         site3Index = site3Index + 1
 
-    } 
+    }
     else {
         document.getElementById("movie-btn").innerHTML = "Loaded All Posters"
     }
-
-
 }
 
 // SITE 4
@@ -82,10 +80,10 @@ function pixelateImage() {
 function openWindow() {
     var windowScreens = document.querySelectorAll(".window-screen");
 
-    windowScreens.forEach((screen) => 
+    windowScreens.forEach((screen) =>
         screen.classList.toggle("open")
     );
- }
+}
 
 //SITE 6 
 function solve() {
@@ -97,11 +95,18 @@ function solve() {
         btn.innerHTML = "Math GOAT moment"
         img.style.display = "block"
         document.getElementById("math-container").style.display = "none"
-                
 
     } else {
-        alert ("git gud.")
-        
+        alert("git gud.")
+
     }
+}
+
+// SITE 7
+
+function zoom() {
+    var img = document.getElementById('img-planet');
+    img.style.opacity = "100%";
+    img.style.transform = 'scale(10)'; 
 }
 

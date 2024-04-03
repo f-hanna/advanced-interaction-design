@@ -1,0 +1,35 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#planet-wrapper {
+    height: 40vh;
+    width: auto;
+    /* background-image: url(../imgs/site-3/brick-wall.jpg); */
+    border-radius: 10px;
+    position: relative;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.img {
+    /* text-align: center; */
+    /* position: absolute;     */
+    width:  auto;
+    height: 10%;
+    object-fit: cover;
+    transition: transform 5s, opacity 5s;
+    opacity: 60%;
+   
+}
+
