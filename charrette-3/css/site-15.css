@@ -1,0 +1,41 @@
+@import url(style.css);
+
+body {
+    background-color: var(--black);
+}
+
+.nav > * {
+    color: white;
+}
+
+#boo-wrapper {
+    height: 60vh;
+    width: auto;
+    /* background-image: url(../imgs/site-3/brick-wall.jpg); */
+    border-radius: 10px;
+    position: relative;
+    /* text-align: center; */
+
+}
+
+
+#img-boo {
+    /* text-align: center; */
+    position: absolute;    
+    width:  auto;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 5s, opacity 5s;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: top 2s ease, opacity 1s ease;
+
+}
+
+#img-boo.click {
+    top: 50%;
+    opacity: 1;
+}
+

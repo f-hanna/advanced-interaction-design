@@ -290,6 +290,7 @@ function light() {
 // SITE 14 
 
 function toast() {
+    console.log("boo")
     const toast = document.getElementById('toast');
     // Add the fly class
     toast.classList.add('fly');
@@ -300,4 +301,11 @@ function toast() {
     }, 1000);
 }
 
+// SITE 15
 
+function boo() {
+    console.log("boo")
+    const ghost = document.getElementById("img-boo")
+    ghost.classList.add("click")
+    document.getElementById("boo-btn").innerHTML = "Jeepers!"
+}
