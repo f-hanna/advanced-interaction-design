@@ -1,0 +1,37 @@
+@import url(style.css);
+
+/* body {
+    background-color: var(--black);
+} */
+
+
+#prison-wrapper {
+    height: 80vh;
+    width: auto;
+    background-image: url("https://st2.depositphotos.com/1000975/6012/i/450/depositphotos_60127289-stock-photo-prison-inmate-in-funny-concept.jpg");
+    background-size: cover; 
+    border-radius: 10px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.bar {
+    background-color: var(--black);
+    opacity: .8;
+    height: 100%;
+    width: 5%;
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+.bar.open {
+    transform: translateY(100%);
+
+}
+
+
+
+

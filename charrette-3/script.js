@@ -248,3 +248,18 @@ function scareGhost() {
         }
     }, 100); // Adjust the interval duration as needed
 }
+
+// SITE 12
+function prison() {
+    var bars = document.querySelectorAll(".bar");
+    var img = document.getElementById("prison-wrapper")
+    var btn = document.getElementById("prison-btn")
+
+    bars.forEach((bar) =>
+        bar.classList.add("open")
+        
+    );
+    img.style.backgroundImage = "url(https://st.depositphotos.com/1000975/4859/i/450/depositphotos_48594023-stock-photo-prisoner-with-guns.jpg)"
+    btn.innerHTML = "Ruh roh..."
+
+}
