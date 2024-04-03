@@ -70,3 +70,10 @@ function addPoster() {
 
 
 }
+
+// SITE 4
+
+function pixelateImage() {
+    var img = document.getElementById('img-block');
+    img.src = "../imgs/site-4/unpixellated.png"; // Apply CSS filter
+}
