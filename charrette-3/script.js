@@ -110,6 +110,20 @@ function zoom() {
     img.style.transform = 'scale(10)'; 
 }
 
+// SITE 8
+
+function google() {
+
+    var img = document.getElementById("img-holder")
+    img.style.display = "block"
+
+    setTimeout(function() {
+        // document.getElementById("image-wrapper").style.height = "40vh"
+        img.src = "https://media.licdn.com/dms/image/C5112AQESSXLEM7P8yw/article-inline_image-shrink_400_744/0/1552144216522?e=1716422400&v=beta&t=n6pWs_TvfstHfA0P_OQePB4JccxGaHOtisQexZSXFuU"
+    }, 5000); // 5000 milliseconds = 5 seconds
+
+}
+
 //SITE 10
 
 function countdown() {
