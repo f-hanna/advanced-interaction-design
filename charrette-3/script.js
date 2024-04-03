@@ -126,7 +126,7 @@ function google() {
 
 // SITE 9
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     shuffle()
 });
 
@@ -209,4 +209,42 @@ function countdown() {
             document.getElementById("countdown").style.display = "none";
         }
     }, 1000);
+}
+
+// SITE 11
+
+var opacityInterval;
+var opacityStep = 0.5;
+
+function ghost() {
+
+    console.log("hold")
+    const img = document.getElementById('img-ghost');
+
+    opacityInterval = setInterval(function () {
+        console.log("hold")
+        var currentOpacity = parseFloat(window.getComputedStyle(img).opacity);
+
+        console.log(currentOpacity)
+        if (currentOpacity < 1) {
+            img.style.opacity = (currentOpacity + opacityStep).toFixed(2);
+        }
+    }, 100); // Adjust the interval duration as needed
+}
+
+function ghostDown() {
+    clearInterval(opacityInterval);
+    scareGhost()
+}
+
+function scareGhost() {
+    const img = document.getElementById('img-ghost');
+    opacityInterval = setInterval(function() { // Start a new interval for decreasing opacity
+        var currentOpacity = parseFloat(window.getComputedStyle(img).opacity);
+        if (currentOpacity > 0) {
+            img.style.opacity = (currentOpacity - opacityStep).toFixed(2);
+        } else {
+            clearInterval(opacityInterval); // Stop the interval when opacity reaches 0
+        }
+    }, 100); // Adjust the interval duration as needed
 }
