@@ -309,3 +309,27 @@ function boo() {
     ghost.classList.add("click")
     document.getElementById("boo-btn").innerHTML = "Jeepers!"
 }
+
+// SITE 16
+
+var evolveCounter = 0
+var evolveIndex = 1
+
+function evolve() {
+    var img = document.getElementById("img-evolve")
+    evolveCounter = evolveCounter + 1
+    console.log(evolveCounter)
+    if (evolveCounter % 4 == 0) {
+        console.log(evolveIndex);
+        img.src = "../imgs/site-16/e-" + evolveIndex + ".jpg";
+        evolveIndex = evolveIndex + 1;
+        // Reset evolveIndex when it reaches 4 (assuming you have images named e-0.jpg to e-3.jpg)
+        if (evolveIndex === 5) {
+            alert("Can not evolve anymore!")
+            img.src = "../imgs/site-16/e-3.jpg";
+        }
+    }
+
+    
+
+}
