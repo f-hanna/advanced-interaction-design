@@ -77,3 +77,14 @@ function pixelateImage() {
     var img = document.getElementById('img-block');
     img.src = "../imgs/site-4/unpixellated.png"; // Apply CSS filter
 }
+
+//SITE 5
+function openWindow() {
+    var windowScreens = document.querySelectorAll(".window-screen");
+
+    windowScreens.forEach((screen) => 
+        screen.classList.toggle("open")
+    );
+ 
+    // windowScreen.classList.toggle("open");
+}
