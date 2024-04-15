@@ -19,3 +19,50 @@ body {
     font-family: 'LT Cushion', sans-serif;
 }
 
+.gallery {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    padding: 5rem;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container  {
+    display: flex;
+    gap: 5vw;
+    width: 50vw;
+}
+
+.img-container {
+    display: inline-flex;
+}
+
+.painting {
+    padding: 2rem;
+}
+
+.painting-vertical {
+    width: 20vw;
+}
+
+.speed {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  
+
+
+
+
+  /* FIXED ELEMENTS */
+
+  .fixed {
+    position: fixed;
+  }
+
