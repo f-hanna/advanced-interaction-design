@@ -31,7 +31,7 @@
             <div class="intro-right">
                 <p>blah blah blah blah</p>
             </div>
-            
+
         </div>
 
     </section>
@@ -46,7 +46,8 @@
             </div>
 
             <div class="france img-div">
-                <img id="france-2" class="painting painting-horizontal" src="./img/neoclassism-clear.jpg" alt="france-2">
+                <img id="france-2" class="painting painting-horizontal" src="./img/neoclassism-clear.jpg"
+                    alt="france-2">
                 <h3>Oath of the Horatii</h3>
                 <p>Jacques-Louis David</p>
                 <button class="read">Read More</button>
@@ -62,11 +63,11 @@
 
             <div class="france img-div">
                 <img id="france-5" class="painting painting-vertical" src="./img/rococo-clear.jpg" alt="france-5">
-            </div>          
-            
-            
+            </div>
 
-            
+
+
+
         </div>
 
 
@@ -84,21 +85,81 @@
 
         </div>
 
-        <div class="quiz-container">
+        <div class="btn-quiz-container">
 
-            <button id="btn-france-quiz">Take Quiz</button>
+            <button id="btn-france-quiz" onclick>Take Quiz</button>
 
         </div>
 
     </section>
 
-   
+    <!-- QUIZ POPUP -->
 
-    
-     <!-- Load GSAP (Animation Library) -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-     <!-- Load the scroll library -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <div class="quiz-container" id="fra-quiz-container">
+        <div class="fra-questions">
+            <div>
+                <a href="">Q1. Rococo</a>
+            </div>
+            <div>
+                <a href="">Q2. Neoclassism</a>
+            </div>
+
+        </div>
+        <div class="fra-question-wrapper">
+
+            <h3 id="fra-question">Question</h3>
+
+            <div id="fra-question-options">
+                <!-- A -->
+
+                <div class="q-a">
+                    <label for="fra-a">A.</label>
+                    <input type="radio" id="fra-a" name="fra" value="a" />
+                    <label for="fra-a" class="question" id="fra-q-a">a</label>
+                </div>
+
+
+                <!-- B -->
+                <div class="q-b">
+                    <label for="fra-b">B.</label>
+                    <input type="radio" id="fra-b" name="fra" value="b" />
+                    <label for="fra-b" class="question" id="fra-q-b">Phone</label>
+                </div>
+
+
+                <!-- C -->
+                <div class="q-c">
+                    <label for="fra-c">C.</label>
+                    <input type="radio" id="fra-c" name="fra" value="c" />
+                    <label for="fra-c" class="question" id="fra-q-c">Mail</label>
+                </div>
+
+
+                <!-- D -->
+                <div class="q-d">
+                    <label for="fra-d">D.</label>
+                    <input type="radio" id="fra-d" name="fra" value="d" />
+                    <label for="fra-c" class="question" id="fra-q-d">Mail</label>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Load GSAP (Animation Library) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Load the scroll library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script src="scripts/france.js"></script>
     <script src="scripts/scroll.js"></script>
