@@ -2,7 +2,7 @@
 let currentQuestion = "q1"
 
 function JSON() {
-    fetch('./json/fra-q.json')
+    fetch('https://f-hanna.github.io/advanced-interaction-design/project-3/json/fra-q.json')
         .then((response) => response.json())
         .then((json) => console.log(json));
 
