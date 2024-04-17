@@ -14,16 +14,25 @@
     --grey: rgb(160, 160, 160);
 }
 
+/* MAIN TAG STYLING */
+
 body {
     margin: 0;
     font-family: 'LT Cushion', sans-serif;
 }
 
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+/* GENERAL STYLING */
+
 .gallery {
     overflow-x: scroll;
     overflow-y: hidden;
     display: flex;
-    padding: 5rem;
+    margin: 0 5rem;
+    height: 100%;
 }
 
 .intro {
@@ -38,16 +47,49 @@ body {
     width: 50vw;
 }
 
-.img-container {
-    display: inline-flex;
+.img-gallery {
+     height: 100vh;
 }
 
-.painting {
-    padding: 2rem;
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-div {
+    padding: 0 4rem;
+    position: relative;
+}
+
+.img-div h3, .img-div h5 {
+
+    line-height: 1.5em;
+
 }
 
 .painting-vertical {
     width: 20vw;
+}
+
+.painting-horizontal {
+    width: 40vw;
+}
+
+.painting {
+    max-height: 45vh;
+    object-fit: cover;
+    /* text-align: left; */
+}
+
+.timeline {
+    background-color: var(--black);
+    height: 5px;
+    width: 100%;
+
+    /* margin-right: 1em; */
 }
 
 .speed {
