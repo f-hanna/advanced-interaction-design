@@ -105,92 +105,89 @@
 
     <div class="quiz-container" id="fra-quiz-container">
 
-        <div class="quiz-wrapper">
-            <button onclick="close()">Close</button>
-
-            <div class="tab-group">
-                <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
-                <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
+        <div class="quiz-info">
+            <div class="quiz-text">
+                Explanation of the quiz goes here
 
             </div>
-            <div class="fra-question-wrapper">
-
-                <div class="content" id="rococo-content">
-
-                    <h3 class="fra-question">Rococo Question</h3>
-
-                    <div class="fra-question-options">
-
-                        <!-- A -->
-                        <div class="q-a">
-                            <input type="radio" id="rococo-a" name="rococo" value="false" />
-                            <label for="rococo-a" class="question">A. </label>
-                        </div>
-                        <!-- B -->
-                        <div class="q-b">
-                            <input type="radio" id="rococo-b" name="rococo" value="true" />
-                            <label for="rococo-b" class="question">B. </label>
-                        </div>
-                        <!-- C -->
-                        <div class="q-c">
-                            <input type="radio" id="rococo-c" name="rococo" value="false" />
-                            <label for="rococo-c" class="question">C. </label>
-                        </div>
-                        <!-- D -->
-                        <div class="q-d">
-                            <input type="radio" id="rococo-d" name="rococo" value="false" />
-                            <label for="rococo-d" class="question">D. </label>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-                <div class="content" id="neo-content">
-
-                    <h3 class="fra-question">Neoclassism Question</h3>
-
-                    <div class="fra-question-options">
-
-                        <!-- A -->
-                        <div class="q-a">
-                            <input type="radio" id="neo-a" name="neo" value="true" />
-                            <label for="neo-a" class="question">A. </label>
-                        </div>
-                        <!-- B -->
-                        <div class="q-b">
-                            <input type="radio" id="neo-b" name="neo" value="false" />
-                            <label for="neo-b" class="question">B. </label>
-                        </div>
-                        <!-- C -->
-                        <div class="q-c">
-                            <input type="radio" id="neo-c" name="neo" value="false" />
-                            <label for="neo-c" class="question">C. </label>
-                        </div>
-                        <!-- D -->
-                        <div class="q-d">
-                            <input type="radio" id="neo-d" name="neo" value="false" />
-                            <label for="neo-d" class="question">D. </label>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-
             <button onclick="checkAnswer()">Submit</button>
+        </div>
+        <div class="tab-group">
+            <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
+            <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
 
         </div>
+        <div class="fra-question-wrapper">
+
+            <div class="content" id="rococo-content">
+
+                <h3 class="fra-question">Rococo Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="rococo-a" name="rococo" value="false" />
+                        <label for="rococo-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="rococo-b" name="rococo" value="true" />
+                        <label for="rococo-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="rococo-c" name="rococo" value="false" />
+                        <label for="rococo-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="rococo-d" name="rococo" value="false" />
+                        <label for="rococo-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="content" id="neo-content">
+
+                <h3 class="fra-question">Neoclassism Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="neo-a" name="neo" value="true" />
+                        <label for="neo-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="neo-b" name="neo" value="false" />
+                        <label for="neo-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="neo-c" name="neo" value="false" />
+                        <label for="neo-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="neo-d" name="neo" value="false" />
+                        <label for="neo-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
 
 
 
+            </div>
+
+
+        </div>
 
     </div>
 
