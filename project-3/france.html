@@ -39,18 +39,26 @@
     <section class="img-gallery">
         <div class="img-container">
             <div class="france img-div">
-                <img id="france-1" class="painting painting-vertical" src="./img/rococo-sketch.jpg" alt="france-1">
-                <h3>The Swing</h3>
-                <p>Jean-Honoré Fragonard</p>
-                <button class="read">Read More</button>
+                <img id="rococo" class="painting painting-vertical" src="./img/rococo-sketch.jpg" alt="france-1">
+
+                <div class="plaque">
+                    <h3>The Swing</h3>
+                    <p>Jean-Honoré Fragonard</p>
+                    <button class="read">Read More</button>
+
+                </div>
+
             </div>
 
             <div class="france img-div">
-                <img id="france-2" class="painting painting-horizontal" src="./img/neoclassism-clear.jpg"
-                    alt="france-2">
-                <h3>Oath of the Horatii</h3>
-                <p>Jacques-Louis David</p>
-                <button class="read">Read More</button>
+                <img id="neo" class="painting painting-horizontal" src="./img/neo-sketch.jpg" alt="france-2">
+                <div class="plaque">
+                    <h3>Oath of the Horatii</h3>
+                    <p>Jacques-Louis David</p>
+                    <button class="read">Read More</button>
+
+                </div>
+
             </div>
 
             <div class="france img-div">
@@ -96,59 +104,93 @@
     <!-- QUIZ POPUP -->
 
     <div class="quiz-container" id="fra-quiz-container">
-        <div class="fra-questions">
-            <div>
-                <a href="">Q1. Rococo</a>
+
+        <div class="quiz-wrapper">
+            <button onclick="close()">Close</button>
+
+            <div class="tab-group">
+                <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
+                <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
+
             </div>
-            <div>
-                <a href="">Q2. Neoclassism</a>
+            <div class="fra-question-wrapper">
+
+                <div class="content" id="rococo-content">
+
+                    <h3 class="fra-question">Rococo Question</h3>
+
+                    <div class="fra-question-options">
+
+                        <!-- A -->
+                        <div class="q-a">
+                            <input type="radio" id="rococo-a" name="rococo" value="false" />
+                            <label for="rococo-a" class="question">A. </label>
+                        </div>
+                        <!-- B -->
+                        <div class="q-b">
+                            <input type="radio" id="rococo-b" name="rococo" value="true" />
+                            <label for="rococo-b" class="question">B. </label>
+                        </div>
+                        <!-- C -->
+                        <div class="q-c">
+                            <input type="radio" id="rococo-c" name="rococo" value="false" />
+                            <label for="rococo-c" class="question">C. </label>
+                        </div>
+                        <!-- D -->
+                        <div class="q-d">
+                            <input type="radio" id="rococo-d" name="rococo" value="false" />
+                            <label for="rococo-d" class="question">D. </label>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="content" id="neo-content">
+
+                    <h3 class="fra-question">Neoclassism Question</h3>
+
+                    <div class="fra-question-options">
+
+                        <!-- A -->
+                        <div class="q-a">
+                            <input type="radio" id="neo-a" name="neo" value="true" />
+                            <label for="neo-a" class="question">A. </label>
+                        </div>
+                        <!-- B -->
+                        <div class="q-b">
+                            <input type="radio" id="neo-b" name="neo" value="false" />
+                            <label for="neo-b" class="question">B. </label>
+                        </div>
+                        <!-- C -->
+                        <div class="q-c">
+                            <input type="radio" id="neo-c" name="neo" value="false" />
+                            <label for="neo-c" class="question">C. </label>
+                        </div>
+                        <!-- D -->
+                        <div class="q-d">
+                            <input type="radio" id="neo-d" name="neo" value="false" />
+                            <label for="neo-d" class="question">D. </label>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
             </div>
+
+            <button onclick="checkAnswer()">Submit</button>
 
         </div>
-        <div class="fra-question-wrapper">
-
-            <h3 id="fra-question">Question</h3>
-
-            <div id="fra-question-options">
-
-                <!-- A -->
-                <div class="q-a">
-                    <label for="fra-a">A.</label>
-                    <input type="radio" id="fra-a" name="fra" value="a" />
-                    <label for="fra-a" class="question" id="fra-q-a"> </label>
-                </div>
-
-
-                <!-- B -->
-                <div class="q-b">
-                    <label for="fra-b">B.</label>
-                    <input type="radio" id="fra-b" name="fra" value="b" />
-                    <label for="fra-b" class="question" id="fra-q-b">Phone</label>
-                </div>
-
-
-                <!-- C -->
-                <div class="q-c">
-                    <label for="fra-c">C.</label>
-                    <input type="radio" id="fra-c" name="fra" value="c" />
-                    <label for="fra-c" class="question" id="fra-q-c">Mail</label>
-                </div>
-
-
-                <!-- D -->
-                <div class="q-d">
-                    <label for="fra-d">D.</label>
-                    <input type="radio" id="fra-d" name="fra" value="d" />
-                    <label for="fra-c" class="question" id="fra-q-d">Mail</label>
-
-                </div>
-
-
-            </div>
 
 
 
-        </div>
 
     </div>
 

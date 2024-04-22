@@ -19,6 +19,8 @@
 body {
     margin: 0;
     font-family: 'LT Cushion', sans-serif;
+    color: var(--grey);
+
 }
 
 h1,
@@ -39,6 +41,9 @@ p {
     display: flex;
     margin: 0 5rem;
     height: 100%;
+    background-image: url("./img/bg-1.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .intro {
@@ -49,7 +54,7 @@ p {
 
 .intro-container {
     display: flex;
-    gap: 5vw;
+    gap: 10vw;
     width: 50vw;
 }
 
@@ -66,8 +71,9 @@ p {
 }
 
 .img-div {
-    padding: 0 4rem;
+    padding: 0 5rem;
     position: relative;
+    /* text-align: center; */
 }
 
 .img-div h3,
@@ -79,16 +85,30 @@ p {
 
 .painting-vertical {
     width: 20vw;
+    max-height: 60vh;
 }
 
 .painting-horizontal {
-    width: 40vw;
+    width: 35vw;
+    max-height: 40vh;
 }
 
 .painting {
-    max-height: 45vh;
     object-fit: cover;
     /* text-align: left; */
+    border: 10px solid #171717;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+.plaque {
+    margin-top: .5rem;
+    /* background-color: var(--black) ; */
+    padding: 1rem;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .timeline {
