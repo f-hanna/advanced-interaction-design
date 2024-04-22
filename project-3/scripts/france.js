@@ -5,7 +5,7 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
-function close() {
+function closeQuiz() {
     console.log("close")
     $('#fra-quiz-container').hide();
     $(".overlay").hide()
@@ -65,4 +65,6 @@ function checkAnswer() {
     $(".overlay").hide()
 
 }
+
+close
 
