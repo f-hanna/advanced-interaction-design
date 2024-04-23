@@ -71,10 +71,31 @@ function checkAnswer() {
 
 }
 
-document.getElementById('closeButton').addEventListener('click', function () {
-    console.log("Close button clicked");
-    closeQuiz();
-});
+// document.getElementById('closeButton').addEventListener('click', function () {
+//     console.log("Close button clicked");
+//     closeQuiz();
+// });
+
+$("#closeButton").click(
+    function () {
+
+        document.getElementById("page-trigger").style.display = "block"
+        let blockers = document.querySelectorAll('.blocker');
+        blockers.forEach(blocker => {
+            blocker.style.display = "block"
+        });
+
+        console.log(blockers)
+
+        let pamphlet = document.querySelector(".quiz-container")
+        pamphlet.style.opacity = ".3"
+        pamphlet.style.top = "120%"
+
+        $(".overlay").hide()
+
+    }
+
+)
 
 function closeQuiz() {
     console.log("close")
@@ -94,7 +115,7 @@ function closeQuiz() {
 
     $(".overlay").hide()
 
-    
+
 
 }
 
