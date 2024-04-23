@@ -66,5 +66,5 @@ function checkAnswer() {
 
 }
 
-close
+
 

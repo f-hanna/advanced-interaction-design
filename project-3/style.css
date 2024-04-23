@@ -139,14 +139,14 @@ p {
 /* QUIZ POPUP */
 .quiz-container {
     display: none;
-    top: 50%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 80%;
     /* background-color: white; */
     z-index: 10;
     position: fixed;
-    /* position: relative; */
+    height: 70vh;
     color: var(--black);
 }
 
