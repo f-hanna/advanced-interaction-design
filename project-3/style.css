@@ -155,11 +155,11 @@ p {
     opacity: .4;
 }
 
-.quiz-container.center-version {
+/* .quiz-container.center-version {
     top: 70%;
     opacity: 1;
     transition: all .5s ease-in-out;
-}
+} */
 
 .quiz-container:hover {
     opacity: 1;

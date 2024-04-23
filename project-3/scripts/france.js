@@ -67,6 +67,8 @@ function checkAnswer() {
 
     }
 
+    closeQuiz()
+
     // $(".overlay").hide()
 
 }
@@ -76,32 +78,18 @@ function checkAnswer() {
 //     closeQuiz();
 // });
 
-$("#closeButton").click(
-    function () {
+// $("#closeButton").on("click", function() {
 
-        document.getElementById("page-trigger").style.display = "block"
-        let blockers = document.querySelectorAll('.blocker');
-        blockers.forEach(blocker => {
-            blocker.style.display = "block"
-        });
+//     closeQuiz()
+// }
 
-        console.log(blockers)
 
-        let pamphlet = document.querySelector(".quiz-container")
-        pamphlet.style.opacity = ".3"
-        pamphlet.style.top = "120%"
-
-        $(".overlay").hide()
-
-    }
-
-)
+//)
 
 function closeQuiz() {
     console.log("close")
-
     // let pamphlet = document.querySelector(".quiz-container")
-    //let quiz = document.getElementById("fra-quiz-container")
+    // let quiz = document.getElementById("fra-quiz-container")
 
     document.getElementById("page-trigger").style.display = "block"
     let blockers = document.querySelectorAll('.blocker');
@@ -109,11 +97,14 @@ function closeQuiz() {
         blocker.style.display = "block"
     });
 
-    let pamphlet = document.querySelector(".quiz-container")
+    let pamphlet = document.getElementById("fra-quiz-container")
     pamphlet.style.opacity = ".3"
     pamphlet.style.top = "120%"
 
+    document.querySelector(".overlay").style.backgroundColor = "white"
+
     $(".overlay").hide()
+    console.log(pamphlet)
 
 
 
