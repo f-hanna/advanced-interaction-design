@@ -5,60 +5,91 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
+<<<<<<< Updated upstream
 function close() {
+=======
+// immediately loads to rococo
+window.onload = function () {
+    openQuestion("rococo-content")
+};
+
+document.getElementById('closeButton').addEventListener('click', function () {
+    console.log("Close button clicked");
+    closeQuiz();
+});
+
+function closeQuiz() {
+>>>>>>> Stashed changes
     console.log("close")
-    $('#fra-quiz-container').hide();
+
+    // let pamphlet = document.querySelector(".quiz-container")
+    let quiz = document.getElementById("fra-quiz-container")
+
+    quiz.classList.remove("center-version")
+    console.log(quiz)
     $(".overlay").hide()
-    
+
+    document.getElementById("page-trigger").style.display = "block"
+    let blockers = document.querySelectorAll('.blocker');
+    blockers.forEach(blocker => {
+        blocker.style.display = "block"
+    });
+
 }
 
-$("#btn-france-quiz").click(function () {
-    $('#fra-quiz-container').show();
-    $('#fra-quiz-container').css("display", "flex");
-    if ($('#fra-quiz-container').is(":visible")) {
-        $(".overlay").show()
-        openQuestion("rococo-content")
-    }
-})
+function openQuiz() {
+    let pamphlet = document.querySelector(".quiz-container")
+    pamphlet.classList.add("center-version")
+    $(".overlay").show()
+
+    document.getElementById("page-trigger").style.display = "none"
+    let blockers = document.querySelectorAll('.blocker');
+    blockers.forEach(blocker => {
+        blocker.style.display = "none"
+    });
+
+    // let pages = document.querySelectorAll()
+
+}
 
 function openQuestion(movement) {
 
     console.log(movement)
     // Declare all variables
     var i, tabcontent, tablinks;
-  
+
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("content");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
+
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
+
     // Show the current tab, and add an "active" class to the button that opened the tab
     let currentTab = document.getElementById(movement)
     currentTab.style.display = "block";
-  }
+}
 
 function checkAnswer() {
     console.log("hi!")
 
     for (let i = 0; i < paintings.length; i++) {
         var movement = paintings[i]
-        userAnswer[i] = $(`input[type='radio'][name='${movement}']:checked`).val();     
-        
+        userAnswer[i] = $(`input[type='radio'][name='${movement}']:checked`).val();
+
     }
     console.log(userAnswer);
 
     for (let i = 0; i < paintings.length; i++) {
         if (userAnswer[i] == "true") {
-            document.getElementById(paintings[i]).src = "./img/" +  paintings[i] + "-clear.jpg"         
-        }         
-        
+            document.getElementById(paintings[i]).src = "./img/" + paintings[i] + "-clear.jpg"
+        }
+
     }
 
     $('#fra-quiz-container').hide();

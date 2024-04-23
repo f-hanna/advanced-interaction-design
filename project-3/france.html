@@ -95,7 +95,7 @@
 
         <div class="btn-quiz-container">
 
-            <button id="btn-france-quiz" onclick>Take Quiz</button>
+            <button id="btn-france-quiz" onclick="openQuiz()">Take Quiz</button>
 
         </div>
 
@@ -103,8 +103,9 @@
 
     <!-- QUIZ POPUP -->
 
-    <div class="quiz-container" id="fra-quiz-container">
+    <div class="quiz-container" id="fra-quiz-container" onclick="openQuiz()">
 
+<<<<<<< Updated upstream
         <div class="quiz-info">
             <div class="quiz-text">
                 Explanation of the quiz goes here
@@ -113,11 +114,28 @@
             <button onclick="checkAnswer()">Submit</button>
         </div>
         <div class="tab-group">
+=======
+        
+        <div class="tab-group page">
+            <div class="blocker">
+
+            </div>
+>>>>>>> Stashed changes
             <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
             <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
 
         </div>
-        <div class="fra-question-wrapper">
+        <div class="fra-question-wrapper page">
+
+            <div id="page-trigger">
+
+                <h2>
+                    Click to take quiz.
+                </h2>
+
+                
+
+            </div>
 
             <div class="content" id="rococo-content">
 
@@ -188,10 +206,24 @@
 
 
         </div>
+<<<<<<< Updated upstream
+=======
+        <div class="quiz-info page">
+            <div class="blocker">
+
+            </div>
+            <div class="quiz-text">
+                Explanation of the quiz goes here
+
+            </div>
+            <button onclick="checkAnswer()">Submit</button>
+            <button id="closeButton">Close</button>
+        </div>
+>>>>>>> Stashed changes
 
     </div>
 
-    <div class="overlay"></div>
+    <div class="overlay" onclick="closeQuiz()"></div>
 
 
 
