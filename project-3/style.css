@@ -204,15 +204,15 @@ p {
 
 .quiz-container > * {
     display: inline-block !important;
-} */
+} 
 
 .quiz-info, .tab-group  {
-    transform: skewY(3deg);
+    transform: skewY(5deg);
     box-shadow: inset 20px 0px 50px rgba(0, 0, 0, .5);
 }
 
 .fra-question-wrapper {
-    transform: skewY(-3deg);
+    transform: skewY(-5deg);
     box-shadow: inset 20px 0px 50px rgba(0, 0, 0, .5);
 }
 

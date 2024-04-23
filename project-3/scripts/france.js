@@ -5,41 +5,16 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
-<<<<<<< Updated upstream
-function close() {
-=======
 // immediately loads to rococo
 window.onload = function () {
     openQuestion("rococo-content")
 };
 
-document.getElementById('closeButton').addEventListener('click', function () {
-    console.log("Close button clicked");
-    closeQuiz();
-});
-
-function closeQuiz() {
->>>>>>> Stashed changes
-    console.log("close")
-
-    // let pamphlet = document.querySelector(".quiz-container")
-    let quiz = document.getElementById("fra-quiz-container")
-
-    quiz.classList.remove("center-version")
-    console.log(quiz)
-    $(".overlay").hide()
-
-    document.getElementById("page-trigger").style.display = "block"
-    let blockers = document.querySelectorAll('.blocker');
-    blockers.forEach(blocker => {
-        blocker.style.display = "block"
-    });
-
-}
 
 function openQuiz() {
     let pamphlet = document.querySelector(".quiz-container")
-    pamphlet.classList.add("center-version")
+    pamphlet.style.opacity = "1"
+    pamphlet.style.top = "70%"
     $(".overlay").show()
 
     document.getElementById("page-trigger").style.display = "none"
@@ -92,8 +67,35 @@ function checkAnswer() {
 
     }
 
-    $('#fra-quiz-container').hide();
-    $(".overlay").hide()
+    // $(".overlay").hide()
 
 }
+
+document.getElementById('closeButton').addEventListener('click', function () {
+    console.log("Close button clicked");
+    closeQuiz();
+});
+
+function closeQuiz() {
+    console.log("close")
+
+    // let pamphlet = document.querySelector(".quiz-container")
+    //let quiz = document.getElementById("fra-quiz-container")
+
+    document.getElementById("page-trigger").style.display = "block"
+    let blockers = document.querySelectorAll('.blocker');
+    blockers.forEach(blocker => {
+        blocker.style.display = "block"
+    });
+
+    let pamphlet = document.querySelector(".quiz-container")
+    pamphlet.style.opacity = ".3"
+    pamphlet.style.top = "120%"
+
+    $(".overlay").hide()
+
+    
+
+}
+
 

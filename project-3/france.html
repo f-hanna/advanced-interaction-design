@@ -37,6 +37,7 @@
     </section>
 
     <section class="img-gallery">
+        <!-- <button id="closeButton">Close</button> -->
         <div class="img-container">
             <div class="france img-div">
                 <img id="rococo" class="painting painting-vertical" src="./img/rococo-sketch.jpg" alt="france-1">
@@ -105,22 +106,13 @@
 
     <div class="quiz-container" id="fra-quiz-container" onclick="openQuiz()">
 
-<<<<<<< Updated upstream
-        <div class="quiz-info">
-            <div class="quiz-text">
-                Explanation of the quiz goes here
+       
 
-            </div>
-            <button onclick="checkAnswer()">Submit</button>
-        </div>
-        <div class="tab-group">
-=======
         
         <div class="tab-group page">
             <div class="blocker">
 
             </div>
->>>>>>> Stashed changes
             <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
             <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
 
@@ -206,8 +198,6 @@
 
 
         </div>
-<<<<<<< Updated upstream
-=======
         <div class="quiz-info page">
             <div class="blocker">
 
@@ -216,14 +206,20 @@
                 Explanation of the quiz goes here
 
             </div>
+
+            <div onclick="checkAnswer()">
+                Submit
+            </div>
+            <div id="closeButton" onclick="closeQuiz()">
+                Close
+            </div>
             <button onclick="checkAnswer()">Submit</button>
             <button id="closeButton">Close</button>
         </div>
->>>>>>> Stashed changes
 
     </div>
 
-    <div class="overlay" onclick="closeQuiz()"></div>
+    <!-- <div class="overlay" onclick="closeQuiz()"></div> -->
 
 
 
