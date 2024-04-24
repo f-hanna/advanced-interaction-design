@@ -20,7 +20,7 @@ body {
     margin: 0;
     font-family: 'LT Cushion', sans-serif;
     color: var(--grey);
-   
+
 
 }
 
@@ -109,7 +109,7 @@ p {
     /* padding: 1rem; */
     max-width: 60%;
     margin-left: 10px;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
 .plaque > * {
@@ -146,10 +146,11 @@ p {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:80%;
+    width: 80%;
     /* background-color: white; */
     z-index: 10;
     position: fixed;
+    height: 70vh;
     color: var(--black);
     transition: all .5s ease-in-out;
     opacity: .4;
@@ -188,23 +189,31 @@ p {
     padding-bottom: 5em;
 }
 
+.page {
+    transition: .5s;
+    box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    background-color: white;
+    padding: 4em;
+}
+
 .overlay {
-    position: fixed; 
-    display: none; 
+    position: fixed;
+    display: none;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); 
-    z-index: 2; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
     /* cursor: pointer; */
-  }
+}
 
-.quiz-container > * {
+/* .quiz-container>* {
     display: inline-block !important;
-} 
+} */
 
 .quiz-info, .tab-group  {
     transform: skewY(5deg);

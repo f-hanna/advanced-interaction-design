@@ -5,10 +5,12 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
-// immediately loads to rococo
-window.onload = function () {
-    openQuestion("rococo-content")
-};
+function closeQuiz() {
+    console.log("close")
+    $('#fra-quiz-container').hide();
+    $(".overlay").hide()
+    
+}
 
 
 function openQuiz() {
@@ -73,41 +75,5 @@ function checkAnswer() {
 
 }
 
-// document.getElementById('closeButton').addEventListener('click', function () {
-//     console.log("Close button clicked");
-//     closeQuiz();
-// });
-
-// $("#closeButton").on("click", function() {
-
-//     closeQuiz()
-// }
-
-
-//)
-
-function closeQuiz() {
-    console.log("close")
-    // let pamphlet = document.querySelector(".quiz-container")
-    // let quiz = document.getElementById("fra-quiz-container")
-
-    document.getElementById("page-trigger").style.display = "block"
-    let blockers = document.querySelectorAll('.blocker');
-    blockers.forEach(blocker => {
-        blocker.style.display = "block"
-    });
-
-    let pamphlet = document.getElementById("fra-quiz-container")
-    pamphlet.style.opacity = ".3"
-    pamphlet.style.top = "120%"
-
-    document.querySelector(".overlay").style.backgroundColor = "white"
-
-    $(".overlay").hide()
-    console.log(pamphlet)
-
-
-
-}
 
 
