@@ -1,6 +1,10 @@
 let paintings = [
+    "classic",
     "rococo",
-    "neo"
+    "neo",
+    "roman", 
+    "imp", 
+    "post"
 ]
 
 let userAnswer = [paintings.length]

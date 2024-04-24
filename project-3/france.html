@@ -48,6 +48,10 @@
         <!-- <button id="closeButton">Close</button> -->
         <div class="img-container">
             <div class="france img-div">
+                <img id="france-6" class="painting painting-vertical" src="./img/rococo-clear.jpg" alt="france-3">
+            </div>
+
+            <div class="france img-div">
                 <img id="rococo" class="painting painting-vertical" src="./img/rococo-sketch.jpg" alt="france-1">
 
                 <div class="plaque">
@@ -154,17 +158,57 @@
 
     <div class="quiz-container" id="fra-quiz-container">
 
-    
+
         <div class="tab-group page">
             <!-- <div class="">
 
             </div> -->
-            <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
-            <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
-            <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
+            <button class="tablinks" onclick="openQuestion('classic-content')">Q1. Neoclassicism</button>
+            <button class="tablinks" onclick="openQuestion('rococo-content')">Q2. Rococo</button>
+            <button class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
+            <button class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
+            <button class="tablinks" onclick="openQuestion('imp-content')">Q5. Impressionism</button>
+            <button class="tablinks" onclick="openQuestion('post-content')">Q6. Post-Impressionism</button>
+
 
         </div>
         <div class="fra-question-wrapper page">
+
+            <div class="content" id="classic-content">
+
+                <h5 class="caption">Classicism</h5>
+
+                <h3 class="fra-question">Classicism Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="classic-a" name="classic" value="flase" />
+                        <label for="classic-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="classic-b" name="classic" value="true" />
+                        <label for="classic-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="classic-c" name="classic" value="false" />
+                        <label for="classic-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="classic-d" name="classic" value="false" />
+                        <label for="classic-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
 
             <div class="content" id="rococo-content">
 
@@ -208,7 +252,7 @@
 
             <div class="content" id="neo-content">
 
-                <h5 class="caption">Noclassism</h5>
+                <h5 class="caption">Neoclassism</h5>
 
                 <h3 class="fra-question">Neoclassism Question</h3>
 
@@ -233,6 +277,114 @@
                     <div class="q-d">
                         <input type="radio" id="neo-d" name="neo" value="false" />
                         <label for="neo-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="content" id="roman-content">
+
+                <h5 class="caption">Romanticism</h5>
+
+                <h3 class="fra-question">Romanticism Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="roman-a" name="roman" value="false" />
+                        <label for="roman-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="roman-b" name="roman" value="false" />
+                        <label for="roman-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="roman-c" name="roman" value="false" />
+                        <label for="roman-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="roman-d" name="roman" value="true" />
+                        <label for="roman-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="content" id="imp-content">
+
+                <h5 class="caption">Impressionism</h5>
+
+                <h3 class="fra-question">Impressionism Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="imp-a" name="imp" value="false" />
+                        <label for="imp-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="imp-b" name="imp" value="false" />
+                        <label for="imp-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="imp-c" name="imp" value="true" />
+                        <label for="imp-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="imp-d" name="imp" value="false" />
+                        <label for="imp-d" class="question">D. </label>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="content" id="post-content">
+
+                <h5 class="caption">Post-Impressionism</h5>
+
+                <h3 class="fra-question">Post-Impressionism Question</h3>
+
+                <div class="fra-question-options">
+
+                    <!-- A -->
+                    <div class="q-a">
+                        <input type="radio" id="post-a" name="post" value="true" />
+                        <label for="post-a" class="question">A. </label>
+                    </div>
+                    <!-- B -->
+                    <div class="q-b">
+                        <input type="radio" id="post-b" name="post" value="false" />
+                        <label for="post-b" class="question">B. </label>
+                    </div>
+                    <!-- C -->
+                    <div class="q-c">
+                        <input type="radio" id="post-c" name="post" value="false" />
+                        <label for="post-c" class="question">C. </label>
+                    </div>
+                    <!-- D -->
+                    <div class="q-d">
+                        <input type="radio" id="post-d" name="post" value="false" />
+                        <label for="post-d" class="question">D. </label>
                     </div>
 
 
