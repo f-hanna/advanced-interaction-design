@@ -15,17 +15,16 @@ let userAnswer = [paintings.length]
 function closeQuiz() {
     console.log("close")
     $('#fra-quiz-container').hide();
+    $('#fra-quiz-container').css("top", "240%");
     $(".overlay").hide()
     
 }
 
 function openQuiz(movement) {
     $('#fra-quiz-container').show();
-    $('#fra-quiz-container').css("display", "flex");
-    if ($('#fra-quiz-container').is(":visible")) {
-        $(".overlay").show()
-        openQuestion(movement)
-    }
+    $('#fra-quiz-container').css("top", "50%");
+    $(".overlay").show()
+    openQuestion(movement)
 }
 
 $("#btn-france-quiz").click(function() {
@@ -36,7 +35,6 @@ $("#btn-france-quiz").click(function() {
 
 function openQuestion(movement) {
 
-    console.log(movement)
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -65,14 +63,11 @@ function openQuestion(movement) {
   }
 
 function checkAnswer() {
-    console.log("hi!")
-
     for (let i = 0; i < paintings.length; i++) {
         var movement = paintings[i]
         userAnswer[i] = $(`input[type='radio'][name='${movement}']:checked`).val();     
         
     }
-    console.log(userAnswer);
 
     for (let i = 0; i < paintings.length; i++) {
         if (userAnswer[i] == "true") {

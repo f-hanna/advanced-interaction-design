@@ -250,8 +250,8 @@ i {
 
 /* QUIZ POPUP */
 .quiz-container {
-    display: none;
-    top: 50%;
+    display: flex;
+    top: 240%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
