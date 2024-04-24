@@ -83,12 +83,16 @@ i {
 }
 
 .intro-left {
-    width: 30vw;
+    width: 50vw;
 
 }
 
 .intro-right>* {
     margin-bottom: 1em;
+}
+
+.intro-left>* {
+    margin-bottom: .5em;
 }
 
 .img-gallery {
