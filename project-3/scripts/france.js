@@ -3,8 +3,7 @@ let paintings = [
     "rococo",
     "neo",
     "roman", 
-    "imp", 
-    "post"
+    "imp"
 ]
 
 let userAnswer = [paintings.length]

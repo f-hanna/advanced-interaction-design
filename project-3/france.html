@@ -25,18 +25,21 @@
         <div class="intro-container">
             <div class="intro-left">
                 <h1>
-                    France
+                    French Art
                 </h1>
+                <p>(1650-1900)</p>
             </div>
             <div class="intro-right">
                 <p> Welcome to our art gallery, where you'll embark on a captivating journey through centuries of French
                     artistic expression, spanning from the traditional Classicism period to the revolutionary
-                    Post-Impressionist
+                    Impressionist
                     movement.</p>
                 <p>
-                    Our gallery invites you to explore the evolution of French art, providing an artistic window into
-                    the cultural, social, and ideological
-                    transformations that shaped the course of modern history.
+                    We urge you to read the plaques next to the painting, as learning more about the timeframe will allow you to enjoy this gallery's experience in a different light (literally).
+                </p>
+
+                <p>
+                    Scroll to move throughout the gallery.
                 </p>
             </div>
 
@@ -291,9 +294,9 @@
 
             </div>
 
-            <div class="france img-div">
+            <!-- <div class="france img-div">
                 <img id="france-5" class="painting painting-vertical" src="./img/post-sketch.jpg" alt="france-5">
-            </div>
+            </div> -->
 
 
 
@@ -309,17 +312,13 @@
     <!-- FIXED OBJECTS -->
     <section class="fixed">
 
-        <div class="exit-container">
+        <!-- <div class="exit-container">
 
             <button class="exit">Go to Main Entrance</button>
 
-        </div>
+        </div> -->
 
-        <div class="btn-quiz-container">
-
-            <button id="btn-france-quiz">Take Quiz</button>
-
-        </div>
+        <button id="btn-france-quiz"><i class="fa-solid fa-eye"></i> Take Quiz to Reveal</button>
 
     </section>
 
@@ -337,8 +336,8 @@
             <button id="tab-neo" class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
             <button id="tab-roman" class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
             <button id="tab-imp" class="tablinks" onclick="openQuestion('imp-content')">Q5. Impressionism</button>
-            <button id="tab-post" class="tablinks" onclick="openQuestion('post-content')">Q6.
-                Post-Impressionism</button>
+            <!-- <button id="tab-post" class="tablinks" onclick="openQuestion('post-content')">Q6.
+                Post-Impressionism</button> -->
 
 
         </div>
@@ -549,51 +548,24 @@
 
             </div>
 
-            <div class="content" id="post-content">
-
-                <h5 class="caption">Post-Impressionism</h5>
-
-                <h3 class="fra-question">Post-Impressionism Question</h3>
-
-                <div class="fra-question-options">
-
-                    <!-- A -->
-                    <div class="q-a">
-                        <input type="radio" id="post-a" name="post" value="true" />
-                        <label for="post-a" class="question">A. </label>
-                    </div>
-                    <!-- B -->
-                    <div class="q-b">
-                        <input type="radio" id="post-b" name="post" value="false" />
-                        <label for="post-b" class="question">B. </label>
-                    </div>
-                    <!-- C -->
-                    <div class="q-c">
-                        <input type="radio" id="post-c" name="post" value="false" />
-                        <label for="post-c" class="question">C. </label>
-                    </div>
-                    <!-- D -->
-                    <div class="q-d">
-                        <input type="radio" id="post-d" name="post" value="false" />
-                        <label for="post-d" class="question">D. </label>
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
+            
+            
 
 
         </div>
         <div class="quiz-info page">
             <div class="quiz-text">
-                Explanation of the quiz goes here
+                <h2 id="quiz-header">
+                    "Art is not a handicraft, it is the transmission of feeling the artist has experienced." - Leo Tolstoy
+                </h2>
+
+                <h4>How does this work?</h4>
+
+                <p>Essentially, in this gallery there are 5 pieces, each representing a French art movement. Subseqeuntly, there are also 5 questions tied to each movement you must answer in order to see the paintings. If you get that question correct, you gain a new perspective and the painting is revealed.</p>
 
             </div>
-            <button onclick="checkAnswer()">Submit</button>
-            <button onclick="closeQuiz()">Close</button>
+            <button id="btn-submit" onclick="checkAnswer()">Submit</button>
+            <button id="btn-close" onclick="closeQuiz()">Close</button>
         </div>
 
     </div>
