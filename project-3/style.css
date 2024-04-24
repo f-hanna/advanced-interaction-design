@@ -39,6 +39,10 @@ p {
     line-height: 120%;
 }
 
+i {
+    margin-right: 4px;
+}
+
 /* GENERAL STYLING */
 
 .gallery {
@@ -150,8 +154,16 @@ p {
 }
 
 /* INDIVIDUAL PAINTINGS */
+#classic {
+    max-height: 80vh;
+
+}
+
 #neo {
     margin-top: 3em;
+    max-height: 70vh;
+    width: 45vw;
+    
 }
 
 .timeline {

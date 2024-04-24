@@ -30,7 +30,7 @@ function openQuiz(movement) {
 }
 
 $("#btn-france-quiz").click(function() {
-    openQuiz("rococo-content")
+    openQuiz("classic-content")
 });
 
 

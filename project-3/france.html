@@ -48,7 +48,43 @@
         <!-- <button id="closeButton">Close</button> -->
         <div class="img-container">
             <div class="france img-div">
-                <img id="france-6" class="painting painting-vertical" src="./img/rococo-clear.jpg" alt="france-3">
+                <img id="classic" class="painting painting-vertical" src="./img/classic-sketch.jpg" alt="france-3">
+
+                <div class="plaque">
+                    <h3 class="painting-title">Portrait of Louis XIV in Coronation Robes</h3>
+                    <p>Hyacinthe Rigaud</p>
+                    <button onclick="openQuiz('classic-content')" class="test-trigger">
+                        <i class="fa-solid fa-eye"></i> Reveal</button>
+
+                </div>
+            </div>
+
+            <div class="info-plaque-container" id="classic-plaque">
+
+                <div class="info-plaque">
+
+                    <h4>
+                        French Classicism
+                    </h4>
+
+                    <p class="plaque-text">
+                        Mid 1600s - Early 1700s
+                    </p>
+
+                    <p class="plaque-text">
+                        Much like the rest of Europe, French Classicism was deeply influenced by the principles of order and reason derived from ancient Greek and Roman art.
+                    </p>
+
+                    <p class="plaque-text">
+                        However, the French Classicism period was unique compared to the rest of Europe because the arts were heavily utilized to glorify King Louis XIV, the Sun King. Under his rule, France saw the centralization of power, the establishment of absolute monarchy, and the consolidation of French cultural influence in Europe.
+                    </p>
+
+                    <p class="plaque-text">
+                        Another notable aspect of this time frame was the French Salons, a social gathering where a guests discussed not only art, but also literature, philosophy, music, and politics. The democratization of ideas set the roots for the Age of Enlightment, and would set up France as an intellectual powerhouse in Europe.
+                    </p>
+
+                </div>
+
             </div>
 
             <div class="france img-div">
@@ -69,7 +105,7 @@
                 <div class="info-plaque">
 
                     <h4>
-                        The Rococo Period
+                        Rococo
                     </h4>
 
                     <p class="plaque-text">
@@ -77,8 +113,8 @@
                     </p>
 
                     <p class="plaque-text">
-                        The French Rococo period emerged after the Baroque era, known for its ornate and playful
-                        aesthetic, mirroring France's period of peace and prosperity.
+                        The Rococo period emerged as a reponse to the Classicism era, known for its ornate and playful
+                        aesthetic compared to Classicism's focus on reason, mirroring France's frivolous spending by the aristocracy. 
                     </p>
 
                     <p class="plaque-text">
@@ -86,8 +122,7 @@
                         This era revolved around the aristocracy, who moved from Versailles to Paris, embracing leisure
                         and indulging in romantic intrigues, creating a culture of luxury and excess. This contrasted
                         sharply with the majority of French society, as the aristocracy, a small fraction of the
-                        population, owned 90% the country's wealth. Resentment from the common people grew, sowing the
-                        seeds for a revolution.
+                        population, owned 90% the country's wealth. 
 
                     </p>
 
@@ -108,7 +143,8 @@
                 <div class="plaque">
                     <h3>Oath of the Horatii</h3>
                     <p>Jacques-Louis David</p>
-                    <button class="read">Read More</button>
+                    <button onclick="openQuiz('neo-content')" class="test-trigger">
+                        <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
 
@@ -163,7 +199,7 @@
             <!-- <div class="">
 
             </div> -->
-            <button class="tablinks" onclick="openQuestion('classic-content')">Q1. Neoclassicism</button>
+            <button class="tablinks" onclick="openQuestion('classic-content')">Q1. Classicism</button>
             <button class="tablinks" onclick="openQuestion('rococo-content')">Q2. Rococo</button>
             <button class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
             <button class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
@@ -178,29 +214,30 @@
 
                 <h5 class="caption">Classicism</h5>
 
-                <h3 class="fra-question">Classicism Question</h3>
+                <h3 class="fra-question">
+                    Although similar to other European countries, how did French Classicism differ from the rest of Europe?</h3>
 
                 <div class="fra-question-options">
 
                     <!-- A -->
                     <div class="q-a">
-                        <input type="radio" id="classic-a" name="classic" value="flase" />
-                        <label for="classic-a" class="question">A. </label>
+                        <input type="radio" id="classic-a" name="classic" value="false" />
+                        <label for="classic-a" class="question">A. By promoting artistic freedom and individual expression.</label>
                     </div>
                     <!-- B -->
                     <div class="q-b">
                         <input type="radio" id="classic-b" name="classic" value="true" />
-                        <label for="classic-b" class="question">B. </label>
+                        <label for="classic-b" class="question">B. By using the principles of order and reason to glorify King Louis XIV.</label>
                     </div>
                     <!-- C -->
                     <div class="q-c">
                         <input type="radio" id="classic-c" name="classic" value="false" />
-                        <label for="classic-c" class="question">C. </label>
+                        <label for="classic-c" class="question">C. By specifically celebrating France's military involvement and accomplishments throughout Europe. </label>
                     </div>
                     <!-- D -->
                     <div class="q-d">
                         <input type="radio" id="classic-d" name="classic" value="false" />
-                        <label for="classic-d" class="question">D. </label>
+                        <label for="classic-d" class="question">D. By pionering Enlightment ideals such as liberty and freedom in their art.</label>
                     </div>
 
 
