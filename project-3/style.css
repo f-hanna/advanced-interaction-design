@@ -12,6 +12,8 @@
     --pink: rgb(255, 45, 85);
     --black: rgb(10, 13, 21);
     --grey: rgb(160, 160, 160);
+    --lightGrey: rgb(191, 191, 191);
+    --bg: rgb(37, 37, 36);
 }
 
 /* MAIN TAG STYLING */
@@ -33,6 +35,10 @@ p {
     margin: 0;
 }
 
+p {
+    line-height: 120%;
+}
+
 /* GENERAL STYLING */
 
 .gallery {
@@ -42,7 +48,7 @@ p {
     display: flex;
     margin: 0 5rem;
     height: 100%;
-    background-image: url("./img/bg-1.jpeg");
+    background-image: url("./img/bg-2.jpg");
     background-repeat: repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -52,12 +58,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 30vw;
 }
 
 .intro-container {
     display: flex;
     gap: 10vw;
     width: 50vw;
+}
+
+.intro-right > * {
+    margin-bottom: 1em;
 }
 
 .img-gallery {
@@ -78,6 +89,8 @@ p {
     /* text-align: center; */
 }
 
+
+
 .img-div h3,
 .img-div h5 {
 
@@ -86,13 +99,13 @@ p {
 }
 
 .painting-vertical {
-    width: 20vw;
+    width: 25vw;
     max-height: 60vh;
 }
 
 .painting-horizontal {
-    width: 35vw;
-    max-height: 40vh;
+    width: 50vw;
+    max-height: 50vh;
 }
 
 .painting {
@@ -107,13 +120,37 @@ p {
     margin-top: 1rem;
     /* background-color: var(--black) ; */
     /* padding: 1rem; */
-    max-width: 60%;
+
     margin-left: 10px;
     margin-right: auto;
 }
 
 .plaque > * {
     margin-bottom: .2em;
+}
+
+.painting-title {
+    color: var(--lightGrey);
+}
+
+.test-trigger {
+    padding: 10px 20px;
+    font-family: 'LT Cushion', sans-serif;
+    color: var(--grey);
+    background: rgba(255, 255, 255, 0.145);
+    border: none;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+
+.test-trigger:hover {
+    color: var(--lightGrey);
+}
+
+/* INDIVIDUAL PAINTINGS */
+#neo {
+    margin-top: 3em;
 }
 
 .timeline {
@@ -128,6 +165,37 @@ p {
     position: fixed;
     left: 1rem;
     bottom: 1rem;
+}
+
+/* info plaque */
+.info-plaque-container {
+    width: 30vw;
+    padding: 1em;
+    border-radius: 10px;
+    margin-right: 10vw;
+    /* border: 1px solid var(--grey); */
+    /* background-color: var(--bg); */
+}
+
+.info-plaque {
+    opacity: .2;    
+}
+
+.info-plaque > * {
+    margin-bottom: .5em;
+    
+}
+
+.info-plaque:hover {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    color: var(--lightGrey);
+}
+
+
+.plaque-text {
+    font-size: small;
+    line-height: 120%;
 }
 
 
@@ -230,4 +298,22 @@ p {
 .quiz-container div:nth-child(3){
 	background-position: -300px;
   margin-left:0px;
+}
+
+/* styling the quiz */
+
+.caption {
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    color: var(--grey);
+}
+
+.fra-question-options {
+    margin-top: 1em;
+
+}
+
+.fra-question-options>* {
+    margin-bottom: .5em;
+
 }

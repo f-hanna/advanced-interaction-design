@@ -8,7 +8,7 @@
     <title>France</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/france.css">
+    
 
     <!-- JQUERY + FONTS -->
     <link rel="stylesheet" href="style.css">
@@ -29,7 +29,15 @@
                 </h1>
             </div>
             <div class="intro-right">
-                <p>blah blah blah blah</p>
+                <p>Welcome to our art gallery, where you'll embark on a captivating journey through centuries of French
+                    artistic expression, spanning from the elegant Rococo period to the revolutionary Impressionist
+                    movement.</p>
+                <p>
+                    Our gallery invites you to explore the evolution of French art, from the opulence of Rococo to the
+                    groundbreaking vision of Impressionism, providing a window into the cultural, social, and artistic
+                    transformations that shaped the course of art history. Enjoy your journey through these timeless
+                    treasures.
+                </p>
             </div>
 
         </div>
@@ -43,9 +51,49 @@
                 <img id="rococo" class="painting painting-vertical" src="./img/rococo-sketch.jpg" alt="france-1">
 
                 <div class="plaque">
-                    <h3>The Swing</h3>
+                    <h3 class="painting-title">The Swing</h3>
                     <p>Jean-Honoré Fragonard</p>
-                    <button class="read">Read More</button>
+                    <button onclick="openQuiz('rococo-content')" class="test-trigger">
+                        <i class="fa-solid fa-eye"></i> Reveal</button>
+
+                </div>
+
+            </div>
+
+            <div class="info-plaque-container" id="rococo-plaque">
+
+                <div class="info-plaque">
+
+                    <h4>
+                        The Rococo Period
+                    </h4>
+
+                    <p class="plaque-text">
+                        Early 1700s - Mid 1700s
+                    </p>
+
+                    <p class="plaque-text">
+                        The French Rococo period emerged after the Baroque era, known for its ornate and playful
+                        aesthetic, mirroring France's period of peace and prosperity.
+                    </p>
+
+                    <p class="plaque-text">
+
+                        This era revolved around the aristocracy, who moved from Versailles to Paris, embracing leisure
+                        and indulging in romantic intrigues, creating a culture of luxury and excess. This contrasted
+                        sharply with the majority of French society, as the aristocracy, a small fraction of the
+                        population, owned 90% the country's wealth. Resentment from the common people grew, sowing the
+                        seeds for a revolution.
+
+                    </p>
+
+                    <p class="plaque-text">
+
+                        Reflecting this wealth divide, Rococo art moved away from Baroque grandeur towards a whimsical
+                        style, characterized by asymmetry, delicate curves, pastel hues, and intricate ornamentation,
+                        embodying luxury and refinement.
+
+                    </p>
 
                 </div>
 
@@ -106,8 +154,8 @@
 
     <div class="quiz-container" id="fra-quiz-container">
 
-        
-        <div class="tab-group page" >
+
+        <div class="tab-group page">
             <button class="tablinks" onclick="openQuestion('rococo-content')">Q1. Rococo</button>
             <button class="tablinks" onclick="openQuestion('neo-content')">Q2. Neoclassism</button>
 
@@ -116,29 +164,31 @@
 
             <div class="content" id="rococo-content">
 
-                <h3 class="fra-question">Rococo Question</h3>
+                <h5 class="caption">Rococo</h5>
+
+                <h3 class="fra-question">How did the Rococo period reflect the societal dynamics in France during that time?</h3>
 
                 <div class="fra-question-options">
 
                     <!-- A -->
                     <div class="q-a">
                         <input type="radio" id="rococo-a" name="rococo" value="false" />
-                        <label for="rococo-a" class="question">A. </label>
+                        <label for="rococo-a" class="question">A. By emphasizing the struggles and hardships faced by the common people.</label>
                     </div>
                     <!-- B -->
                     <div class="q-b">
                         <input type="radio" id="rococo-b" name="rococo" value="true" />
-                        <label for="rococo-b" class="question">B. </label>
+                        <label for="rococo-b" class="question">B. By celebrating the opulence and leisure of the aristocracy.</label>
                     </div>
                     <!-- C -->
                     <div class="q-c">
                         <input type="radio" id="rococo-c" name="rococo" value="false" />
-                        <label for="rococo-c" class="question">C. </label>
+                        <label for="rococo-c" class="question">C. By focusing on political themes and revolutionary ideas based off of France's past miliary glories.</label>
                     </div>
                     <!-- D -->
                     <div class="q-d">
                         <input type="radio" id="rococo-d" name="rococo" value="false" />
-                        <label for="rococo-d" class="question">D. </label>
+                        <label for="rococo-d" class="question">D. By exploring the natural world and landscapes in a realistic manner.</label>
                     </div>
 
 
@@ -148,6 +198,8 @@
             </div>
 
             <div class="content" id="neo-content">
+
+                <h5 class="caption">Noclassism</h5>
 
                 <h3 class="fra-question">Neoclassism Question</h3>
 

@@ -16,16 +16,20 @@ function closeQuiz() {
     
 }
 
-function openQuiz() {
+function openQuiz(movement) {
     $('#fra-quiz-container').show();
     $('#fra-quiz-container').css("display", "flex");
     if ($('#fra-quiz-container').is(":visible")) {
         $(".overlay").show()
-        openQuestion("rococo-content")
+        openQuestion(movement)
     }
 }
 
-$("#btn-france-quiz").on("click", openQuiz)
+$("#btn-france-quiz").click(function() {
+    openQuiz("rococo-content")
+});
+
+
 
 function openQuestion(movement) {
 
