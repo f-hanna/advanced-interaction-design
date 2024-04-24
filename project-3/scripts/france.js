@@ -5,9 +5,9 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
-window.onload = function () {
-    openQuestion("rococo-content")
-};
+// window.onload = function () {
+//     openQuestion("rococo-content")
+// };
 
 function closeQuiz() {
     console.log("close")
@@ -16,14 +16,16 @@ function closeQuiz() {
     
 }
 
-$("#btn-france-quiz").click(function () {
+function openQuiz() {
     $('#fra-quiz-container').show();
     $('#fra-quiz-container').css("display", "flex");
     if ($('#fra-quiz-container').is(":visible")) {
         $(".overlay").show()
         openQuestion("rococo-content")
     }
-})
+}
+
+$("#btn-france-quiz").on("click", openQuiz)
 
 function openQuestion(movement) {
 
