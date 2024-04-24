@@ -225,7 +225,7 @@ i {
 
 .plaque-text,
 .question {
-    font-size: small;
+    /* font-size: small; */
     line-height: 120%;
 }
 
