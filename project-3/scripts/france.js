@@ -66,13 +66,12 @@ function checkAnswer() {
 
     for (let i = 0; i < paintings.length; i++) {
         if (userAnswer[i] == "true") {
-            document.getElementById(paintings[i]).src = "./img/" +  paintings[i] + "-clear.jpg"         
+            document.getElementById(paintings[i]).src = "./img/" +  paintings[i] + "-clear.jpg"
+            document.getElementById(paintings[i]).style.cursor = "zoom-in"         
         }         
         
     }
 
-    $('#fra-quiz-container').hide();
-    $(".overlay").hide()
-
+    closeQuiz()
 }
 
