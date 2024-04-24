@@ -142,15 +142,15 @@ p {
 
 /* QUIZ POPUP */
 .quiz-container {
-    display: flex;
-    top: 120%;
+    display: none;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     /* background-color: white; */
     z-index: 10;
     position: fixed;
-    height: 70vh;
+    /* position: relative; */
     color: var(--black);
     transition: all .5s ease-in-out;
     opacity: .4;

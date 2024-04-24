@@ -5,6 +5,10 @@ let paintings = [
 
 let userAnswer = [paintings.length]
 
+window.onload = function () {
+    openQuestion("rococo-content")
+};
+
 function closeQuiz() {
     console.log("close")
     $('#fra-quiz-container').hide();
@@ -75,5 +79,5 @@ function checkAnswer() {
 
 }
 
-
+close
 
