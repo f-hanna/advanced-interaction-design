@@ -169,6 +169,11 @@ i {
     margin-top: 6em;
 }
 
+#imp {
+    width: 40vw;
+    max-height: 70vh;
+}
+
 
 .speed {
     position: fixed;
@@ -178,10 +183,10 @@ i {
 
 /* info plaque */
 .info-plaque-container {
-    width: 40vw;
+    width: 30vw;
     padding: 1em;
     border-radius: 10px;
-    margin-right: 10vw;
+    margin-right: 15vw;
     /* border: 1px solid var(--grey); */
     /* background-color: var(--bg); */
 }
