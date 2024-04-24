@@ -188,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="info-plaque-container" id="neo-plaque">
+            <div class="info-plaque-container" id="roman-plaque">
 
                 <div class="info-plaque">
 
@@ -219,7 +219,14 @@
             </div>
 
             <div class="france img-div">
-                <img id="france-4" class="painting painting-vertical" src="./img/imp-sketch.jpg" alt="france-4">
+                <img id="imp" class="painting painting-vertical" src="./img/imp-sketch.jpg" alt="france-4">
+                <div class="plaque">
+                    <h3 class="painting-title">Impression, Sunrise</h3>
+                    <p>Claude Monet</p>
+                    <button onclick="openQuiz('imp-content')" class="test-trigger">
+                        <i class="fa-solid fa-eye"></i> Reveal</button>
+
+                </div>
             </div>
 
             <div class="france img-div">
@@ -263,12 +270,12 @@
             <!-- <div class="">
 
             </div> -->
-            <button class="tablinks" onclick="openQuestion('classic-content')">Q1. Classicism</button>
-            <button class="tablinks" onclick="openQuestion('rococo-content')">Q2. Rococo</button>
-            <button class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
-            <button class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
-            <button class="tablinks" onclick="openQuestion('imp-content')">Q5. Impressionism</button>
-            <button class="tablinks" onclick="openQuestion('post-content')">Q6. Post-Impressionism</button>
+            <button id="tab-classic" class="tablinks" onclick="openQuestion('classic-content')">Q1. Classicism</button>
+            <button id="tab-rococo" class="tablinks" onclick="openQuestion('rococo-content')">Q2. Rococo</button>
+            <button id="tab-neo" class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
+            <button id="tab-roman" class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
+            <button id="tab-imp" class="tablinks" onclick="openQuestion('imp-content')">Q5. Impressionism</button>
+            <button id="tab-post" class="tablinks" onclick="openQuestion('post-content')">Q6. Post-Impressionism</button>
 
 
         </div>

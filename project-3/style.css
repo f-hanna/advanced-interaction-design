@@ -122,9 +122,6 @@ i {
 
 .plaque {
     margin-top: 1rem;
-    /* background-color: var(--black) ; */
-    /* padding: 1rem; */
-
     margin-left: 10px;
     margin-right: auto;
 }
@@ -145,7 +142,7 @@ i {
     border: none;
     margin-top: 10px;
     border-radius: 30px;
-    cursor:help;
+    cursor: help;
 }
 
 
@@ -163,7 +160,7 @@ i {
     margin-top: -1em;
     max-height: 70vh;
     width: 45vw;
-    
+
 }
 
 #roman {
@@ -172,13 +169,6 @@ i {
     margin-top: 6em;
 }
 
-.timeline {
-    background-color: var(--black);
-    height: 5px;
-    width: 100%;
-
-    /* margin-right: 1em; */
-}
 
 .speed {
     position: fixed;
@@ -212,7 +202,8 @@ i {
 }
 
 
-.plaque-text, .question {
+.plaque-text,
+.question {
     font-size: small;
     line-height: 120%;
 }
@@ -335,6 +326,28 @@ i {
     background: none;
     font-family: 'LT Cushion', sans-serif;
     font-size: larger;
+    /* Add padding for spacing */
+
+}
+
+.tablinks.active {
+    color: white;
+    /* background-image: url("./img/tab-bg.jpg");
+    background-size: cover; */
+    flex-grow: 1;
+    background-image: linear-gradient(0deg, rgba(38, 1, 74, 0.3), rgba(10, 0, 10, 0)), url(img/tab-bg.jpg);
+    /* Distribute equal height among child elements */
+    border: 1px solid #ccc;
+    /* Optional: Add border for visual separation */
+    box-sizing: border-box;
+    /* Ensure borders are included in the height calculation */
+    text-align: center;
+    /* Center text horizontally */
+    padding: 10px;
+    /* background: none; */
+    font-family: 'LT Cushion', sans-serif;
+    font-size: larger;
+    font-weight: bold;
     /* Add padding for spacing */
 
 }

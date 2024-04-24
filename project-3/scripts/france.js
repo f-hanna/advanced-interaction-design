@@ -56,6 +56,13 @@ function openQuestion(movement) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     let currentTab = document.getElementById(movement)
     currentTab.style.display = "block";
+    
+    let tabStringContent = "tab-"+ movement
+    let tabString = tabStringContent.replace('-content', '')
+    let tabName = document.getElementById(tabString)
+    // console.log(tabString)
+    tabName.className += " active";
+    
   }
 
 function checkAnswer() {
