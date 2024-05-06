@@ -77,7 +77,14 @@ i {
 }
 
 #intro-scroll {
-    margin-top: 5em;
+    margin-top: 4em;
+}
+
+#scroll-direction {
+    width: 20%;
+    margin-left: 1em;
+    margin-top: 1em;
+
 }
 
 .intro-container {
@@ -441,7 +448,11 @@ i {
 
 }
 
-#btn-close {
+#btn-close, .scroll-trigger {
     background: none;
     border: 1px solid var(--black);
+}
+
+.scroll-trigger {
+    margin-top: 1em;
 }

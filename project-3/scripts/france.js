@@ -1,3 +1,6 @@
+
+gsap.registerPlugin(ScrollToPlugin)
+
 let paintings = [
     "classic",
     "rococo",
@@ -20,9 +23,16 @@ window.onload = function () {
     calculateAnswer(0)
 };
 
+
+function scrollPainting(painting) {
+    // console.log(painting)
+    closeQuiz()
+    gsap.to(window, {duration: 1, scrollTo:{x:"#" + painting, offsetX:500}});
+}
+
 function closeQuiz() {
     console.log("close")
-    $('#fra-quiz-container').hide();
+    // $('#fra-quiz-container').hide();
     $('#fra-quiz-container').css("top", "240%");
     $(".overlay").hide()
     
@@ -105,5 +115,6 @@ function checkAnswer() {
 function calculateAnswer(correct) {
     document.getElementById("quiz-header").innerHTML = correct
 }
+
 
 

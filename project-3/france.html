@@ -43,6 +43,8 @@
                 <h4 id="intro-scroll">
                     Scroll up and down to move throughout the gallery.
                 </h4>
+
+                <img id="scroll-direction" src="img/scroll-direction.png" alt="icon">
             </div>
 
         </div>
@@ -59,7 +61,7 @@
                     <h3 class="painting-title">Portrait of Louis XIV in Coronation Robes</h3>
                     <p>Hyacinthe Rigaud</p>
                     <button id="classic-reveal" onclick="openQuiz('classic-content')" class="test-trigger">
-                        <i class="fa-solid fa-eye"></i> Reveal</button>
+                        <i class="fa-solid fa-eye"></i> Unlock Painting</button>
 
                 </div>
             </div>
@@ -106,7 +108,7 @@
                     <h3 class="painting-title">The Swing</h3>
                     <p>Jean-Honoré Fragonard</p>
                     <button id="rococo-reveal" onclick="openQuiz('rococo-content')" class="test-trigger">
-                        <i class="fa-solid fa-eye"></i> Reveal</button>
+                        <i class="fa-solid fa-eye"></i> Unlock Painting</button>
 
                 </div>
 
@@ -158,7 +160,7 @@
                     <h3 class="painting-title">Oath of the Horatii</h3>
                     <p>Jacques-Louis David</p>
                     <button id="neo-reveal" onclick="openQuiz('neo-content')" class="test-trigger">
-                        <i class="fa-solid fa-eye"></i> Reveal</button>
+                        <i class="fa-solid fa-eye"></i> Unlock Painting</button>
 
                 </div>
 
@@ -208,7 +210,7 @@
                     <h3 class="painting-title">Liberty Leading the People</h3>
                     <p>Eugéne Delacroix</p>
                     <button id="roman-reveal" onclick="openQuiz('roman-content')" class="test-trigger">
-                        <i class="fa-solid fa-eye"></i> Reveal</button>
+                        <i class="fa-solid fa-eye"></i> Unlock Painting</button>
 
                 </div>
             </div>
@@ -256,7 +258,7 @@
                     <h3 class="painting-title">Impression, Sunrise</h3>
                     <p>Claude Monet</p>
                     <button id="imp-reveal" onclick="openQuiz('imp-content')" class="test-trigger">
-                        <i class="fa-solid fa-eye"></i> Reveal</button>
+                        <i class="fa-solid fa-eye"></i> Unlock Painting</button>
 
                 </div>
             </div>
@@ -380,6 +382,8 @@
 
                 <h5 class="caption">Classicism</h5>
 
+                
+
                 <h3 class="fra-question">
                     Although similar to other European countries, how did French Classicism differ from the rest of
                     Europe?</h3>
@@ -413,6 +417,10 @@
 
 
                 </div>
+
+                <button class="scroll-trigger" onclick="scrollPainting('classic')">
+                    View Painting
+                </button>
 
 
 
@@ -454,6 +462,10 @@
 
 
                 </div>
+
+                <button class="scroll-trigger" onclick="scrollPainting('rococo')">
+                    View Painting
+                </button>
 
 
             </div>
@@ -499,6 +511,10 @@
 
                 </div>
 
+                <button class="scroll-trigger" onclick="scrollPainting('neo')">
+                    View Painting
+                </button>
+
 
 
             </div>
@@ -540,6 +556,10 @@
 
 
                 </div>
+
+                <button class="scroll-trigger" onclick="scrollPainting('roman')">
+                    View Painting
+                </button>
 
 
 
@@ -587,6 +607,10 @@
 
                 </div>
 
+                <button class="scroll-trigger" onclick="scrollPainting('imp')">
+                    View Painting
+                </button>
+
 
 
             </div>
@@ -601,7 +625,7 @@
                 <div id="quiz-header-wrapper">
                     <h1 id="quiz-header"></h1>
                     <h2>Paintings Unlocked</h2>
-                    
+
                 </div>
 
                 <h4>How does this work?</h4>
@@ -633,6 +657,7 @@
 
     <!-- Load GSAP (Animation Library) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <!-- Load the scroll library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
