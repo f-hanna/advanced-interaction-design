@@ -263,7 +263,7 @@ i {
 /* QUIZ POPUP */
 .quiz-container {
     display: flex;
-    top: 240%;
+    top: 250%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -397,6 +397,15 @@ i {
 
 /* styling the quiz */
 
+.quiz-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: 100% 20%;
+    border-radius: 10px;
+    
+}
+
 .caption {
     text-transform: uppercase;
     margin-bottom: .5em;
@@ -451,5 +460,7 @@ i {
 }
 
 .scroll-trigger {
-    margin-bottom: 1em;
+    margin: 1em 0;
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
 }
