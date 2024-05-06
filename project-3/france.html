@@ -36,12 +36,13 @@
                     Impressionist
                     movement.</p>
                 <p>
-                    We urge you to read the plaques next to the painting, as learning more about the timeframe will allow you to enjoy this gallery's experience in a different light (literally).
+                    We urge you to read the plaques next to the painting, as learning more about the timeframe will
+                    allow you to enjoy this gallery's experience in a different light (literally).
                 </p>
 
-                <p>
-                    Scroll to move throughout the gallery.
-                </p>
+                <h4 id="intro-scroll">
+                    Scroll up and down to move throughout the gallery.
+                </h4>
             </div>
 
         </div>
@@ -57,7 +58,7 @@
                 <div class="plaque">
                     <h3 class="painting-title">Portrait of Louis XIV in Coronation Robes</h3>
                     <p>Hyacinthe Rigaud</p>
-                    <button onclick="openQuiz('classic-content')" class="test-trigger">
+                    <button id="classic-reveal" onclick="openQuiz('classic-content')" class="test-trigger">
                         <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
@@ -104,7 +105,7 @@
                 <div class="plaque">
                     <h3 class="painting-title">The Swing</h3>
                     <p>Jean-Honoré Fragonard</p>
-                    <button onclick="openQuiz('rococo-content')" class="test-trigger">
+                    <button id="rococo-reveal" onclick="openQuiz('rococo-content')" class="test-trigger">
                         <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
@@ -156,7 +157,7 @@
                 <div class="plaque">
                     <h3 class="painting-title">Oath of the Horatii</h3>
                     <p>Jacques-Louis David</p>
-                    <button onclick="openQuiz('neo-content')" class="test-trigger">
+                    <button id="neo-reveal" onclick="openQuiz('neo-content')" class="test-trigger">
                         <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
@@ -206,7 +207,7 @@
                 <div class="plaque">
                     <h3 class="painting-title">Liberty Leading the People</h3>
                     <p>Eugéne Delacroix</p>
-                    <button onclick="openQuiz('roman-content')" class="test-trigger">
+                    <button id="roman-reveal" onclick="openQuiz('roman-content')" class="test-trigger">
                         <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
@@ -254,7 +255,7 @@
                 <div class="plaque">
                     <h3 class="painting-title">Impression, Sunrise</h3>
                     <p>Claude Monet</p>
-                    <button onclick="openQuiz('imp-content')" class="test-trigger">
+                    <button id="imp-reveal" onclick="openQuiz('imp-content')" class="test-trigger">
                         <i class="fa-solid fa-eye"></i> Reveal</button>
 
                 </div>
@@ -280,13 +281,17 @@
                         Similar to Romanticists, Impressionist art also responded to rapid industrialization. Rather
                         than rejecting urbanization, artists focused on the modern contemporary life, capturing fleeting
                         moments in the bustling city, reflecting the dynamism and energy of urban existence. Inventions
-                        such as the camera inspired artists: artists wanted to emulate the camera's  ability to capture spontaneous moments and fleeting effects of light.
+                        such as the camera inspired artists: artists wanted to emulate the camera's ability to capture
+                        spontaneous moments and fleeting effects of light.
 
                     </p>
 
                     <p class="plaque-text">
 
-                        Impressionism also reflected the demographic shifts of the time. With industrialization emerged a new economic class: the middle class. This economic expansion created new consumer markets and cultural tastes. Leisure acitivities that previously was rstricted to the aristocrats could now be enjoyed by more people. 
+                        Impressionism also reflected the demographic shifts of the time. With industrialization emerged
+                        a new economic class: the middle class. This economic expansion created new consumer markets and
+                        cultural tastes. Leisure acitivities that previously was rstricted to the aristocrats could now
+                        be enjoyed by more people.
 
 
                     </p>
@@ -332,11 +337,38 @@
             <!-- <div class="">
 
             </div> -->
-            <button id="tab-classic" class="tablinks" onclick="openQuestion('classic-content')">Q1. Classicism</button>
-            <button id="tab-rococo" class="tablinks" onclick="openQuestion('rococo-content')">Q2. Rococo</button>
-            <button id="tab-neo" class="tablinks" onclick="openQuestion('neo-content')">Q3. Neoclassicism</button>
-            <button id="tab-roman" class="tablinks" onclick="openQuestion('roman-content')">Q4. Romanticism</button>
-            <button id="tab-imp" class="tablinks" onclick="openQuestion('imp-content')">Q5. Impressionism</button>
+            <button id="tab-classic" class="tablinks" onclick="openQuestion('classic-content')">
+                <div class="tab-text-wrapper">
+                    <i id="classic-status" class="fa-solid fa-lock"></i>
+                    Q1. Classicism
+
+                </div>
+            </button>
+            <button id="tab-rococo" class="tablinks" onclick="openQuestion('rococo-content')">
+                <div class="tab-text-wrapper">
+                    <i id="rococo-status" class="fa-solid fa-lock"></i>
+                    Q2. Rococo
+                </div>
+
+            </button>
+            <button id="tab-neo" class="tablinks" onclick="openQuestion('neo-content')">
+                <div class="tab-text-wrapper">
+                    <i id="neo-status" class="fa-solid fa-lock"></i>
+                    Q3. Neoclassicism
+                </div>
+            </button>
+            <button id="tab-roman" class="tablinks" onclick="openQuestion('roman-content')">
+                <div class="tab-text-wrapper">
+                    <i id="roman-status" class="fa-solid fa-lock"></i>
+                    Q4. Romanticism
+                </div>
+            </button>
+            <button id="tab-imp" class="tablinks" onclick="openQuestion('imp-content')">
+                <div class="tab-text-wrapper">
+                    <i id="imp-status" class="fa-solid fa-lock"></i>
+                    Q5. Impressionism
+                </div>
+            </button>
             <!-- <button id="tab-post" class="tablinks" onclick="openQuestion('post-content')">Q6.
                 Post-Impressionism</button> -->
 
@@ -517,29 +549,39 @@
 
                 <h5 class="caption">Impressionism</h5>
 
-                <h3 class="fra-question">How did rapid industrialization, technological advancements, and shifting demographics influence the development of Impressionism as an art movement?</h3>
+                <h3 class="fra-question">How did rapid industrialization, technological advancements, and shifting
+                    demographics influence the development of Impressionism as an art movement?</h3>
 
                 <div class="fra-question-options">
 
                     <!-- A -->
                     <div class="q-a">
                         <input type="radio" id="imp-a" name="imp" value="false" />
-                        <label for="imp-a" class="question">A. Impressionism emerged as a rejection of modern urban life, with artists distancing themselves from contemporary themes and focusing solely on rural landscapes and traditional subjects.</label>
+                        <label for="imp-a" class="question">A. Impressionism emerged as a rejection of modern urban
+                            life, with artists distancing themselves from contemporary themes and focusing solely on
+                            rural landscapes and traditional subjects.</label>
                     </div>
                     <!-- B -->
                     <div class="q-b">
                         <input type="radio" id="imp-b" name="imp" value="false" />
-                        <label for="imp-b" class="question">B.  Shifting demographics, particularly the rise of the working class, resulted in Impressionist art primarily depicting scenes of labor and social activism, reflecting the struggles of the working-class population.</label>
+                        <label for="imp-b" class="question">B. Shifting demographics, particularly the rise of the
+                            working class, resulted in Impressionist art primarily depicting scenes of labor and social
+                            activism, reflecting the struggles of the working-class population.</label>
                     </div>
                     <!-- C -->
                     <div class="q-c">
                         <input type="radio" id="imp-c" name="imp" value="true" />
-                        <label for="imp-c" class="question">C. The influence of rapid industrialization and technological advancements led Impressionist artists to embrace the dynamism and energy of urban existence, capturing fleeting moments and effects of light in bustling city scenes.</label>
+                        <label for="imp-c" class="question">C. The influence of rapid industrialization and
+                            technological advancements led Impressionist artists to embrace the dynamism and energy of
+                            urban existence, capturing fleeting moments and effects of light in bustling city
+                            scenes.</label>
                     </div>
                     <!-- D -->
                     <div class="q-d">
                         <input type="radio" id="imp-d" name="imp" value="false" />
-                        <label for="imp-d" class="question">D. The emergence of the middle class and its expanding cultural tastes had no significant impact on Impressionism, as artists continued to focus solely on aristocratic leisure activities and historical themes.</label>
+                        <label for="imp-d" class="question">D. The emergence of the middle class and its expanding
+                            cultural tastes had no significant impact on Impressionism, as artists continued to focus
+                            solely on aristocratic leisure activities and historical themes.</label>
                     </div>
 
 
@@ -549,22 +591,36 @@
 
             </div>
 
-            
-            
+
+
 
 
         </div>
         <div class="quiz-info page">
             <div class="quiz-text">
-                <h2 id="quiz-header">
-                    "Art is not a handicraft, it is the transmission of feeling the artist has experienced." - Leo Tolstoy
-                </h2>
+                <div id="quiz-header-wrapper">
+                    <h1 id="quiz-header"></h1>
+                    <h2>Paintings Unlocked</h2>
+                    
+                </div>
 
                 <h4>How does this work?</h4>
 
-                <p>Essentially, in this gallery there are 5 pieces, each representing a French art movement. Subseqeuntly, there are also 5 questions tied to each movement you must answer in order to see the paintings. If you get that question correct, you gain a new perspective and the painting is revealed.</p>
+                <p>Essentially, in this gallery there are 5 pieces, each representing a French art movement.
+                    Subseqeuntly, there are also 5 questions tied to each movement you must answer in order to see the
+                    paintings. If you get that question correct, you gain a new perspective and the painting is
+                    revealed.</p>
 
             </div>
+            <!-- <div class="quiz-result">
+                <h2 class="quiz-header">
+                    Paintings Locked
+                </h2>
+                <div class="quiz-locked">
+
+                </div>
+
+            </div> -->
             <button id="btn-submit" onclick="checkAnswer()">Submit</button>
             <button id="btn-close" onclick="closeQuiz()">Close</button>
         </div>

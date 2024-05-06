@@ -76,6 +76,10 @@ i {
     margin-right: 30vw;
 }
 
+#intro-scroll {
+    margin-top: 5em;
+}
+
 .intro-container {
     display: flex;
     gap: 10vw;
@@ -407,11 +411,17 @@ i {
 
 /* rightmost panel */
 #quiz-header {
+    font-size: 10em;
+    text-align: center;
+}
+
+#quiz-header-wrapper {
     color: white;
     background-image: url("img/tab-bg-3.jpg");
     height: 50%;
     padding: 1em;
     border-radius: 10px;
+    text-align: center;
 }
 
 .quiz-text > * {

@@ -6,11 +6,19 @@ let paintings = [
     "imp"
 ]
 
+let movementNames = [
+    "Classicism",
+    "Rococo",
+    "Neoclassicism",
+    "Romanticism", 
+    "Impressionism"
+]
+
 let userAnswer = [paintings.length]
 
-// window.onload = function () {
-//     openQuestion("rococo-content")
-// };
+window.onload = function () {
+    calculateAnswer(0)
+};
 
 function closeQuiz() {
     console.log("close")
@@ -63,6 +71,8 @@ function openQuestion(movement) {
   }
 
 function checkAnswer() {
+
+    correctNum = 0
     for (let i = 0; i < paintings.length; i++) {
         var movement = paintings[i]
         userAnswer[i] = $(`input[type='radio'][name='${movement}']:checked`).val();     
@@ -70,13 +80,30 @@ function checkAnswer() {
     }
 
     for (let i = 0; i < paintings.length; i++) {
+
         if (userAnswer[i] == "true") {
             document.getElementById(paintings[i]).src = "./img/" +  paintings[i] + "-clear.jpg"
-            document.getElementById(paintings[i]).style.cursor = "zoom-in"         
-        }         
+            document.getElementById(paintings[i]).style.cursor = "zoom-in"   
+
+            document.getElementById(paintings[i] + "-status").className = "fa-solid fa-lock-open"
+
+            document.getElementById(paintings[i] + "-reveal").style.display = "none"
+            correctNum++;
+            
+            
+
+        }
+        // else if (userAnswer[i] == "false") {
+        //     alert("Wrong answer!")
+        // }         
         
     }
 
-    closeQuiz()
+    calculateAnswer(correctNum)
 }
+
+function calculateAnswer(correct) {
+    document.getElementById("quiz-header").innerHTML = correct
+}
+
 
