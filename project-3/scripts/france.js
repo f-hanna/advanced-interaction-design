@@ -99,6 +99,8 @@ function checkAnswer() {
 
             document.getElementById(paintings[i] + "-reveal").style.display = "none"
             correctNum++;
+
+            document.getElementById("caption-" + paintings[i]).innerHTML = movementNames[i] + " - UNLOCKED"
             
             
 

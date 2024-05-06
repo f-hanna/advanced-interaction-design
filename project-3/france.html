@@ -40,9 +40,9 @@
                     allow you to enjoy this gallery's experience in a different light (literally).
                 </p>
 
-                <h4 id="intro-scroll">
+                <h3 id="intro-scroll">
                     Scroll up and down to move throughout the gallery.
-                </h4>
+                </h3>
 
                 <img id="scroll-direction" src="img/scroll-direction.png" alt="icon">
             </div>
@@ -380,9 +380,11 @@
 
             <div class="content" id="classic-content">
 
-                <h5 class="caption">Classicism</h5>
+                <h5 class="caption" id="caption-classic">Classicism</h5>
 
-                
+                <button class="scroll-trigger" onclick="scrollPainting('classic')">
+                    View Painting
+                </button>               
 
                 <h3 class="fra-question">
                     Although similar to other European countries, how did French Classicism differ from the rest of
@@ -418,9 +420,7 @@
 
                 </div>
 
-                <button class="scroll-trigger" onclick="scrollPainting('classic')">
-                    View Painting
-                </button>
+                
 
 
 
@@ -428,7 +428,11 @@
 
             <div class="content" id="rococo-content">
 
-                <h5 class="caption">Rococo</h5>
+                <h5 class="caption" id="caption-rococo">Rococo</h5>
+
+                <button class="scroll-trigger" onclick="scrollPainting('rococo')">
+                    View Painting
+                </button>
 
                 <h3 class="fra-question">How did the Rococo period reflect the societal dynamics in France during that
                     time?</h3>
@@ -463,16 +467,17 @@
 
                 </div>
 
-                <button class="scroll-trigger" onclick="scrollPainting('rococo')">
-                    View Painting
-                </button>
-
-
+                
             </div>
 
             <div class="content" id="neo-content">
 
-                <h5 class="caption">Neoclassism</h5>
+                <h5 class="caption" id="caption-neo">Neoclassism</h5>
+
+                <button class="scroll-trigger" onclick="scrollPainting('neo')">
+                    View Painting
+                </button>
+
 
                 <h3 class="fra-question">
                     How did the Neoclassical movement reflect the historical context of idealogical shifts and political
@@ -511,17 +516,16 @@
 
                 </div>
 
-                <button class="scroll-trigger" onclick="scrollPainting('neo')">
-                    View Painting
-                </button>
-
-
-
+                
             </div>
 
             <div class="content" id="roman-content">
 
-                <h5 class="caption">Romanticism</h5>
+                <h5 class="caption" id="caption-roman">Romanticism</h5>
+
+                <button class="scroll-trigger" onclick="scrollPainting('roman')">
+                    View Painting
+                </button>
 
                 <h3 class="fra-question">How did Romanticism influence the themes and subjects depicted in art during
                     the 19th century?</h3>
@@ -557,17 +561,16 @@
 
                 </div>
 
-                <button class="scroll-trigger" onclick="scrollPainting('roman')">
-                    View Painting
-                </button>
-
-
-
+                
             </div>
 
             <div class="content" id="imp-content">
 
-                <h5 class="caption">Impressionism</h5>
+                <h5 class="caption" id="caption-imp">Impressionism</h5>
+
+                <button class="scroll-trigger" onclick="scrollPainting('imp')">
+                    View Painting
+                </button>
 
                 <h3 class="fra-question">How did rapid industrialization, technological advancements, and shifting
                     demographics influence the development of Impressionism as an art movement?</h3>
@@ -607,12 +610,7 @@
 
                 </div>
 
-                <button class="scroll-trigger" onclick="scrollPainting('imp')">
-                    View Painting
-                </button>
-
-
-
+                
             </div>
 
 
@@ -645,7 +643,7 @@
                 </div>
 
             </div> -->
-            <button id="btn-submit" onclick="checkAnswer()">Submit</button>
+            <button id="btn-submit" onclick="checkAnswer()">Submit Answer</button>
             <button id="btn-close" onclick="closeQuiz()">Close</button>
         </div>
 

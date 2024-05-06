@@ -245,9 +245,6 @@ i {
 }
 
 
-
-
-
 /* FIXED ELEMENTS */
 
 .fixed {
@@ -403,7 +400,7 @@ i {
 .caption {
     text-transform: uppercase;
     margin-bottom: .5em;
-    color: var(--grey);
+    /* color: var(--grey); */
 }
 
 .fra-question-options {
@@ -454,5 +451,5 @@ i {
 }
 
 .scroll-trigger {
-    margin-top: 1em;
+    margin-bottom: 1em;
 }
