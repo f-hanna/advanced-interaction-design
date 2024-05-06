@@ -101,9 +101,14 @@ function checkAnswer() {
             correctNum++;
 
             document.getElementById("caption-" + paintings[i]).innerHTML = movementNames[i] + " - UNLOCKED"
+
+            document.getElementById("wrong-" + paintings[i]).style.display = "none"
             
             
 
+        }
+        else if (userAnswer[i] == "false") {
+            document.getElementById("wrong-" + paintings[i]).style.display = "block"
         }
         // else if (userAnswer[i] == "false") {
         //     alert("Wrong answer!")

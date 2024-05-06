@@ -406,6 +406,14 @@ i {
     
 }
 
+.status-alert {
+    color: var(--red);
+    background-color:  rgba(255, 58, 48, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    display: none;
+}
+
 .caption {
     text-transform: uppercase;
     margin-bottom: .5em;
